@@ -16,7 +16,7 @@ The project is split into two phases:
 | Phase | Timeline | Focus |
 |---|---|---|
 | **Phase 1** (this repo, current) | 15 Sep – 30 Nov | Data Engineering — build the end-to-end pipeline |
-| **Phase 2** | 1 Jan – April | AI Engineer — model serving, RAG chatbot, monitoring |
+| **Phase 2** | 1 Jan – April | Agentic AI with LLM — daily news summary + News RAG Q&A |
 
 ---
 
@@ -118,9 +118,11 @@ Stock-Sentiment-Pipeline/
 - [ ] Spark streaming + inline sentiment scoring
 - [ ] Iceberg tables (raw / cleaned / aggregated) + Airflow batch jobs
 - [ ] Dashboard (price, sentiment, news feed)
-- [ ] **Phase 2:** sentiment model as a FastAPI service
-- [ ] **Phase 2:** RAG chatbot over ingested news
-- [ ] **Phase 2:** model monitoring & drift detection
+- [ ] **Phase 2:** LLM daily news summary + sentiment explanation on the Stock Detail page
+- [ ] **Phase 2:** News RAG Q&A ("Ask AI" tab in the bottom menu), scoped to the project's stock list
+- [ ] **Phase 2:** evaluation — ~50 sampled summaries, 50–100 RAG test questions vs. LLM without RAG
+
+See [docs/09_phase2_llm_rag_plan.md](docs/09_phase2_llm_rag_plan.md).
 
 ---
 
