@@ -10,5 +10,6 @@ Start here:
 7. 06_dashboard_requirements.md
 8. 07_testing_strategy.md
 9. 08_decision_log.md
+10. 09_phase2_llm_rag_plan.md
 
 These documents are intended to be completed/reviewed before feature implementation begins.
