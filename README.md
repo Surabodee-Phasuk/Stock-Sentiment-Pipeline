@@ -4,7 +4,7 @@
 
 > **Status:** Term 1/2569 — Proof of Concept
 > **Senior Capstone Project**, Computer Science, Thammasat University
-> แหล่งอ้างอิงหลัก: *Project Proposal — Stock News Sentiment* (ดู [docs/](docs/))
+> แหล่งอ้างอิงหลัก: [Project Proposal](docs/assets/Project_Proposal_Stock_News_Sentiment.pdf) · เอกสารออกแบบ: [docs/](docs/README.md) · งานทั้งหมด: [BOARD](docs/issues/BOARD.md)
 
 ---
 
@@ -94,7 +94,7 @@ flowchart LR
 - **Storage:** Amazon S3, Apache Iceberg
 - **Catalog / Query:** AWS Glue, Amazon Athena
 - **AI (เทอม 2):** LLM + RAG (ผู้ให้บริการ LLM ยังไม่ล็อก)
-- **Web App:** ยังไม่ล็อก (ดู [decision log](docs/08_decision_log.md))
+- **Web App:** ยังไม่ล็อก (ตัดสินใจใน F5-01 ดู [docs/adr/](docs/adr/))
 
 ---
 
@@ -113,6 +113,42 @@ cd Stock-Sentiment-Pipeline
 - Docker & Docker Compose (Kafka / Spark สำหรับพัฒนาในเครื่อง)
 - Python 3.10+
 - API key ของแหล่งข่าว (ดู `.env.example` เมื่อมีการเพิ่ม)
+
+---
+
+## Project Structure
+
+```
+Stock-Sentiment-Pipeline/
+├── AGENTS.md / CLAUDE.md   # ชี้ไป docs/agents.md
+├── .github/                # PR template, issue template, CI
+├── config/                 # tickers.yaml
+├── infra/                  # docker-compose (Kafka, Spark), AWS setup
+├── ingestion/              # news → Kafka, Yahoo Finance daily close
+├── streaming/              # Spark Structured Streaming + FinBERT
+├── batch/                  # ราคาปิด, aggregation รายวัน, reprocess
+├── lakehouse/              # Iceberg DDL, Athena queries, demos
+├── sentiment/              # FinBERT wrapper, gold set, eval
+├── ai/                     # LLM summary + News RAG
+├── webapp/                 # Web App + API
+├── tests/                  # integration / e2e / reliability
+└── docs/                   # design docs, ADR, issues + BOARD
+```
+
+รายละเอียดและเจ้าของแต่ละโฟลเดอร์: [docs/06-system-architecture.md](docs/06-system-architecture.md)
+
+---
+
+## Workflow
+
+**1 issue = 1 branch = 1 PR** — ทุกงานมี issue ใน [docs/issues/BOARD.md](docs/issues/BOARD.md) พร้อมชื่อ branch ที่กำหนดไว้แล้ว
+
+- `main` protected, merge ผ่าน PR (squash) หลังผ่าน CI + review จากสมาชิกอีกคน
+- ชื่อ branch: `<type>/<issue-id>-<slug>` เช่น `feat/f1-01-news-collector`
+- Commit: Conventional Commits ภาษาอังกฤษ เช่น `feat(ingestion): add RSS collector`
+- PR title: `[F1-01] Short summary`
+
+กฎเต็ม: [docs/agents.md](docs/agents.md)
 
 ---
 

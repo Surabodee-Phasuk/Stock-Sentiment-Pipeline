@@ -1,0 +1,22 @@
+# secrets
+.env
+*.pem
+.aws/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# spark / local data
+spark-warehouse/
+checkpoints/
+*.parquet
+data/
+
+# editors / os
+.idea/
+.vscode/
+.DS_Store
