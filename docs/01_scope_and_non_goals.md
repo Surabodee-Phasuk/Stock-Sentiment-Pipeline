@@ -1,25 +1,29 @@
 # Scope, Non-Goals, and Success Criteria
 
-## In Scope (Phase 1)
-- Stock price ingestion for an initial pool of ~50 stocks.
-- News / social ingestion from RSS and/or X/Twitter depending on accessible sources.
-- Pretrained sentiment model integrated into the pipeline.
-- Kafka streaming ingestion.
-- Spark Structured Streaming for cleaning, transformation, aggregation, and joins.
-- MinIO + Apache Iceberg + Nessie Lakehouse foundation.
-- Web app: Stock Selection → Watchlist → Stock Detail Dashboard.
-- Basic System Health view.
+## In Scope
+| ด้าน | อยู่ในขอบเขต |
+|---|---|
+| หุ้น | หุ้นสหรัฐฯ ~50 ตัว หลายกลุ่มอุตสาหกรรม (Tech, Auto, Energy, Space) |
+| ข่าว | ข่าวภาษาอังกฤษ ย้อนหลังตั้งแต่ปี 2020 และข่าวใหม่ทุก 5–15 นาที |
+| ราคา | ราคาปิดรายวันจาก Yahoo Finance ตั้งแต่ปี 2020 |
+| การวิเคราะห์ | sentiment รายข่าวและภาพรวมรายหุ้นรายวัน เทียบกับทิศทางราคาปิด |
+| เว็บแอป | หน้า Search, Home (Watchlist), Stock Detail, Ask AI |
+| AI | LLM สรุปข่าว, RAG ตอบเฉพาะหุ้นในระบบพร้อมแหล่งอ้างอิง |
 
-## Out of Scope (Phase 1)
-- Separate production sentiment-model API service.
-- RAG / chatbot.
-- Full model monitoring / drift detection.
-- Large-scale production authentication.
-- Academic re-training/benchmarking of the sentiment model as the main project objective.
+## Out of Scope
+| ด้าน | ไม่อยู่ในขอบเขต |
+|---|---|
+| หุ้น | หุ้นไทย, คริปโต |
+| ข่าว | โพสต์โซเชียล (X, Reddit, StockTwits) |
+| ราคา | ราคาระหว่างวัน |
+| การวิเคราะห์ | ทำนายราคา, คำแนะนำซื้อขาย |
+| เว็บแอป | แอปมือถือ |
+| AI | ฝึกโมเดลภาษาใหม่เอง |
 
 ## Success Criteria
-1. New price/news events can enter the streaming pipeline.
-2. The pipeline produces structured, queryable outputs.
-3. Sentiment outputs can be aggregated per ticker and time window.
-4. Dashboard can display current sentiment and recent news.
-5. Team can explain the end-to-end data flow and failure/recovery approach.
+ดูตารางวัตถุประสงค์และตัวชี้วัดใน 00_project_plan.md หัวข้อ 5 (ค่าเป้าหมายเป็นค่าเบื้องต้น ยืนยันหลัง PoC เทอม 1)
+
+## Limitations
+- ข่าวมีประมาณวันละ ~500 ข่าว จึงพิสูจน์ Data Lakehouse ด้วยความสามารถ ไม่ใช่ปริมาณ
+- ใช้คำว่า near real-time: API ฟรีจำกัดจำนวนครั้ง ข่าวสดช้ากว่าจริง 5–15 นาที
+- yfinance ไม่ใช่ API ทางการ จึงดึงวันละครั้งและเว้นจังหวะ

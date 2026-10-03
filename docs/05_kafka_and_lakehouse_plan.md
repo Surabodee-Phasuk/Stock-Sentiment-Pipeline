@@ -1,30 +1,37 @@
 # Kafka and Lakehouse Plan
 
 ## Kafka Topics
-| Topic | Producer | Main Consumer | Purpose |
+| Topic | Producer | Consumer | Purpose |
 |---|---|---|---|
-| `stock-price` | Stock API collector | Spark | Streaming price events |
-| `stock-news` | News/RSS/X collector | Spark | Raw news events |
-| `sentiment-result` | Spark + sentiment stage | Downstream/storage stage | Sentiment output events |
+| `stock-news` | News collector (RSS / News API, ทุก 5–15 นาที) | Spark Structured Streaming | ข่าวใหม่ |
 
-## Lakehouse Layers
+ราคาปิดรายวันไม่ผ่าน Kafka: ดึงวันละครั้งด้วย Spark batch แล้วเขียนลง Iceberg ตรง
+
+## Lakehouse: Amazon S3 + Apache Iceberg (Glue catalog, Athena query)
+ข่าวที่เข้าแบบ streaming กับราคาปิดที่เข้าแบบ batch อยู่ในตารางชุดเดียวกัน และ query รวมกันผ่าน Athena ได้
+
 ### Raw
-Original/sourced events retained for traceability and debugging.
+ข่าวดิบ เก็บไว้ประมวลผล sentiment ใหม่ได้เมื่อเปลี่ยนโมเดล (reprocess)
 
 ### Cleaned
-Validated and normalized records. Expected checks include schema, nulls, duplicates, timestamps, and abnormal values where applicable.
+ตัดข่าวซ้ำ (duplicate rate = 0%) + sentiment จาก FinBERT; เป็นแหล่งข้อมูลของ LLM และ RAG
 
 ### Aggregated
-Dashboard-ready summaries such as sentiment distribution by ticker/time window, news counts, and relevant price-window outputs.
+สรุปรายหุ้นรายวัน (sentiment distribution, จำนวนข่าว, ราคาปิด) ที่เว็บแอปอ่านผ่าน Athena
 
-## Suggested logical data sets
-- `raw_stock_price`
+## Suggested tables
 - `raw_news`
-- `clean_stock_price`
+- `raw_daily_price`
 - `clean_news`
 - `sentiment_events`
-- `sentiment_hourly`
-- `price_sentiment_hourly`
+- `sentiment_daily`
+- `price_sentiment_daily`
 
-## Initial partitioning idea
-Prefer partitioning strategies that support common dashboard filters such as ticker and date/time. Do not lock the physical partition spec until sample data volume and query patterns are measured.
+## Capabilities to demonstrate
+- time travel: ย้อนดูตาราง ณ เวลาก่อนหน้า
+- schema evolution
+- reprocess sentiment ใหม่จากชั้น Raw โดยไม่ต้องดึงข่าวจากแหล่งใหม่
+- ทำงานต่อเนื่อง ≥ 7 วัน กู้คืนจาก checkpoint ได้ ไม่สูญหายข่าว
+
+## Partitioning
+ทดสอบเทียบมีและไม่มี partition (ticker / date) ด้วย query เวลาและข้อมูลที่ Athena สแกน ก่อนล็อก partition spec; เป้าหมาย query ≤ 5 วินาที

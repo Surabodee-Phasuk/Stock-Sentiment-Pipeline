@@ -1,37 +1,32 @@
-# Phase 2 Plan — Agentic AI with LLM (LLM Summary + News RAG)
+# Plan — LLM Summary + News RAG
 
-Timeline: January – April
+PoC ในเทอม 1/2569 (สรุป 5 ชิ้น, ตอบ 10 คำถาม) และพัฒนาเต็มในเทอม 2/2570
+ใช้ข้อมูลจากชั้น Cleaned (ข่าว + ป้าย FinBERT) และราคาปิดรายวัน
 
-Phase 2 adds Agentic AI on top of the Phase 1 data (news + FinBERT sentiment + daily price).
-It has two parts: **LLM Summary** and **News RAG**.
+## 1. LLM Summary (Stock Detail)
+- สรุปข่าวประจำวันของแต่ละหุ้น และอธิบายเหตุผลของ sentiment ภาพรวม
+- Input คือข่าวที่เก็บใน Lakehouse ของหุ้นนั้นเท่านั้น พร้อมป้าย FinBERT
+- แสดงในหน้า Stock Detail ข้างการ์ด sentiment
 
-## 1. LLM Summary (Stock Detail page)
-
-- Summarizes each stock's news of the day.
-- Explains why the overall news sentiment is Positive / Neutral / Negative.
-- Output is a medium-length reason summary (not too short, not too long), e.g. 3–5 sentences.
-- Input is only news already stored in the Lakehouse for that ticker, plus its FinBERT labels.
-- Shown on the **Stock Detail page** of each stock, next to the overall sentiment card.
-
-## 2. News RAG (Q&A)
-
-- Users ask questions about news of stocks, e.g. "Why is TSLA news negative this week?"
-- Retrieval is filtered to the ticker in the question; answers cite source news (headline, source, time).
-- Answers only for stocks in the project's stock list (~50). Out-of-scope questions
-  (other tickers, buy/sell advice, unrelated topics) are refused.
-- Added as an **"Ask AI" tab in the bottom menu bar** (Home · Search · Ask AI · Profile),
-  covering every stock in the project list.
+## 2. News RAG (Ask AI)
+- ผู้ใช้ถามเกี่ยวกับข่าวหุ้น เช่น “ทำไมข่าว TSLA ช่วงนี้เป็นลบ”
+- ค้นข่าวเฉพาะหุ้นที่ถาม; ตอบพร้อมแหล่งอ้างอิง (headline, source, time)
+- ตอบเฉพาะหุ้นในระบบ (~50 ตัว); ปฏิเสธคำถามนอกขอบเขต (หุ้นอื่น, คำแนะนำซื้อขาย, เรื่องอื่น)
+- เป็นแท็บ “Ask AI” ในเมนูล่าง
 
 ## Evaluation
-
-| Part | Test set | Metrics | Baseline |
+| ส่วน | ชุดทดสอบ | ตัวชี้วัด | เป้าหมาย |
 |---|---|---|---|
-| LLM Summary | Randomly sample ~50 summaries | Content matches the real news; no hallucinated facts; overall Positive/Neutral/Negative agrees with FinBERT | Different prompts / models |
-| News RAG | ~50–100 test questions (in-scope + out-of-scope) | Retrieves news of the correct ticker; answer grounded in real news with citations; correctly refuses out-of-scope questions; latency and cost | LLM without RAG |
+| LLM สรุปข่าว | สุ่ม 50 สรุป ตรวจเทียบข่าวต้นทาง | สัดส่วนที่ไม่แต่งข้อมูล, สอดคล้องกับ FinBERT | ≥ 90% |
+| News RAG | 50–100 คำถาม (ในและนอกขอบเขต) | ค้นข่าวถูกหุ้น, อ้างอิงแหล่งถูกต้อง, ปฏิเสธนอกขอบเขต, latency และค่าใช้จ่ายต่อคำถาม | ≥ 90% |
 
-Comparing against an LLM without RAG shows whether retrieval actually improves answer accuracy.
+เทียบกับ LLM ที่ไม่มี RAG เพื่อดูว่า retrieval ช่วยเพิ่มความถูกต้องจริงหรือไม่
+
+## PoC (เทอม 1)
+- สรุป 5 ชิ้น ตรวจด้วยคน พร้อมวัดค่าใช้จ่ายต่อชิ้น
+- ตอบ 10 คำถามทดสอบ พร้อมแหล่งอ้างอิง
 
 ## Notes
-
-- Sentiment and AI answers are informational only, not investment advice.
-- Candidate stack: Amazon Bedrock (LLM + embeddings), a vector store over ingested news.
+- sentiment และคำตอบ AI เป็นข้อมูลประกอบ ไม่ใช่คำแนะนำการลงทุน
+- ไม่ฝึกโมเดลภาษาใหม่เอง
+- ผู้ให้บริการ LLM และ vector store ยังไม่ล็อก; ตั้ง budget alert และวัดค่าใช้จ่ายต่อคำถาม

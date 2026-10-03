@@ -1,5 +1,7 @@
 # Project Planning Docs
 
+อ้างอิง: Project Proposal — Stock News Sentiment (ฉบับล่าสุด)
+
 Start here:
 1. 00_project_plan.md
 2. 01_scope_and_non_goals.md
@@ -11,5 +13,3 @@ Start here:
 8. 07_testing_strategy.md
 9. 08_decision_log.md
 10. 09_phase2_llm_rag_plan.md
-
-These documents are intended to be completed/reviewed before feature implementation begins.

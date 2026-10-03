@@ -1,29 +1,57 @@
-# ชีพจรหุ้น (Stock Sentiment Pipeline) — Project Plan Before Coding
+# Stock News Sentiment (Stock Sentiment Pipeline) — Project Plan
+
+> อ้างอิง: Project Proposal — ระบบติดตามและสรุปทิศทางความรู้สึกของข่าวหุ้นแบบใกล้เคียงเวลาจริง เพื่อสนับสนุนการติดตามข้อมูลของนักลงทุนรายย่อย
 
 ## 1. Project Goal
-สร้าง Real-time Data Pipeline ที่รวบรวมข้อมูลราคาหุ้นและข่าว/โซเชียล แล้ววิเคราะห์ sentiment เป็น Positive / Neutral / Negative จัดเก็บใน Data Lakehouse และนำเสนอผ่าน Web Application ที่เข้าใจง่าย โดยเน้น “news sentiment” มากกว่าการทำ stock-trading/price-prediction application
+พัฒนาระบบติดตามทิศทางข่าวหุ้นสหรัฐฯ แบบใกล้เคียงเวลาจริง บน Data Lakehouse (Amazon S3 + Apache Iceberg) ที่รองรับข่าวย้อนหลังหลายปีและข่าวใหม่ ณ ปัจจุบัน จำแนก sentiment ด้วย FinBERT แสดงผลผ่านเว็บแอป และเพิ่ม LLM สรุปข่าว + News RAG ในเทอม 2
 
-## 2. Team
-- สุรบดี ผาสุข — 6609650707 — Primary: Data Platform / Ingestion / Lakehouse
-- รพินทร์ นะราช — 6609650624 — Primary: Processing / Sentiment / Web App
+## 2. Why a Data Lakehouse
+- ข่าวระบบรับเข้ามาสะสมทุกวัน และต้องใช้ร่วมกันทั้งเว็บ การวิเคราะห์ และ LLM
+- เก็บข่าวดิบไว้ประมวลผลใหม่ได้เมื่อเปลี่ยนโมเดล
+- ย้อนดูข้อมูล ณ เวลาก่อนหน้าได้ (time travel)
+- ใช้ข้อมูลชุดเดียวกันได้หลายงานผ่าน SQL
 
-## 3. Phase 1
-Period: 15 Sep – 30 Nov
-Focus: Data Engineering
-Initial stock pool: ~50 stocks across multiple sectors. Future expansion: ~500 / S&P 500 after Phase 1 is stable.
+## 3. Problems Solved
+1. ข่าวมาจากหลายแหล่ง ต้องเปิดหลายที่เพื่อติดตามหุ้นตัวเดียว
+2. มองภาพรวมไม่ออกว่าข่าวล่าสุดของหุ้นเป็นบวก กลาง หรือลบ
+3. ต้องอ่านและตีความเอง ซึ่งใช้เวลาและต้องมีประสบการณ์
+4. อยากถามคำถามเกี่ยวกับข่าวของหุ้น (เช่น ทำไมช่วงนี้ข่าวเป็นลบ) แต่ไม่มีเครื่องมือที่ตอบจากข่าวจริงพร้อมแหล่งอ้างอิง
 
-## 4. Core User Flow
-1. Stock Selection
-2. Watchlist
-3. Stock Detail Dashboard
+## 4. Timeline
+| เทอม | เป้าหมาย |
+|---|---|
+| เทอม 1/2569 | Proof of Concept พิสูจน์ว่าเครื่องมือแต่ละตัวใช้งานได้จริง (ดู 03_workflow_and_milestones.md) |
+| เทอม 2/2570 | พัฒนาเต็มตามวัตถุประสงค์ทั้ง 5 ข้อ |
 
-## 5. Core Pipeline
-Stock API + News/RSS/X → Kafka → Spark Structured Streaming → Sentiment / Transform → MinIO + Iceberg + Nessie → Query Layer → Web App
+ค่าเป้าหมายทั้งหมดเป็นค่าเบื้องต้น จะยืนยันหลังทำ PoC ในเทอม 1
 
-## 6. Definition of Done for Phase 1
-- End-to-end pipeline works with sample/real data.
-- Data is separated into raw / cleaned / aggregated layers.
-- Sentiment is visible as Positive / Neutral / Negative.
-- Watchlist and detail dashboard load from pipeline output, not hardcoded UI data.
-- Basic reliability/data-quality checks exist.
-- System documentation and demo flow are complete.
+## 5. Objectives and Measurable Targets
+| # | วัตถุประสงค์ | วิธีวัด | ตัวชี้วัด | เป้าหมาย |
+|---|---|---|---|---|
+| 1 | Data Lakehouse S3 + Iceberg (~50 หุ้น, Raw/Cleaned/Aggregated) | query ข่าวคู่ราคาผ่าน Athena เทียบมีและไม่มี partition | เวลา query, ข้อมูลที่ Athena สแกน | query ≤ 5 วินาที |
+| 1 | ชั้น Cleaned | ตรวจหาข่าวซ้ำ, สาธิต time travel / schema evolution, รัน sentiment ใหม่จาก Raw | duplicate rate, ผลการสาธิต | 0%, สาธิตได้ครบทุกข้อ |
+| 2 | Streaming (Kafka + Spark Structured Streaming) | เทียบเวลาเผยแพร่ข่าวกับเวลาที่แสดงบนเว็บ และหยุดระบบกลางคันแล้วเปิดใหม่ | end-to-end latency, ข่าวสูญหาย | ≤ 15 นาที, ไม่สูญหาย 7 วัน |
+| 3 | FinBERT | ทีมติดป้าย 300 ข่าวแยกกัน แล้วเทียบกับผลโมเดล | Macro-F1, Cohen's kappa ระหว่างผู้ติดป้าย | F1 ≥ 0.70 |
+| 4 | เว็บแอป | ผู้ใช้ 10 คนทำงานที่กำหนด แล้วตอบแบบสอบถาม | SUS | ≥ 68 |
+| 5 | LLM สรุปข่าว | ตรวจ 50 สรุปเทียบข่าวต้นทาง | สัดส่วนที่ไม่แต่งข้อมูล, สอดคล้องกับ FinBERT | ≥ 90% |
+| 5 | News RAG | ถาม 50–100 ข้อ | ค้นข่าวถูกหุ้น, อ้างอิงแหล่งถูกต้อง, ปฏิเสธคำถามนอกขอบเขต | ≥ 90% |
+
+## 6. Core Pipeline
+- **Streaming:** ข่าวใหม่ RSS / News API (ทุก 5–15 นาที) → Kafka → Spark Structured Streaming + FinBERT → Iceberg (Raw → Cleaned)
+- **Batch:** ราคาปิดรายวัน Yahoo Finance (วันละครั้ง) → Spark batch → Iceberg; งาน reprocess sentiment จากชั้น Raw เมื่อเปลี่ยนโมเดล
+- **Serving:** เว็บแอปอ่านชั้น Aggregated ผ่าน Athena; LLM และ RAG ใช้ข่าวจากชั้น Cleaned
+
+## 7. Core User Flow
+Search → Home (Watchlist) → Stock Detail → Ask AI (เทอม 2)
+
+## 8. Expected Benefits
+**ต่อผู้ใช้:** ดูทิศทางข่าวของหุ้นที่สนใจในหน้าเดียว, อ่านสรุปสั้นแทนข่าวทั้งหมดและถามต่อได้พร้อมแหล่งอ้างอิง, เห็นว่า sentiment ของข่าวสอดคล้องหรือสวนทางกับราคาปิด
+**ด้านวิชาการ:** สถาปัตยกรรม Data Lakehouse ที่รวม batch และ streaming พร้อมผลทดสอบประสิทธิภาพ, ผลประเมิน FinBERT และ LLM บนข่าวหุ้นจริง, ประสบการณ์ Data Engineering และ AI Engineering บน AWS ตั้งแต่ต้นจนจบ
+
+## 9. Definition of Done
+- Data Lakehouse ตอบตัวชี้วัดข้อ 1 ครบ (query ≤ 5 วินาที, duplicate 0%, time travel, schema evolution, reprocess)
+- ข่าวใหม่แสดงบนเว็บภายใน 15 นาที และระบบทำงานต่อเนื่อง ≥ 7 วันไม่สูญหายข่าว
+- FinBERT Macro-F1 ≥ 0.70 บนชุดข่าว 300 ข่าว
+- เว็บแอปดึงข้อมูลจากผลลัพธ์ของ pipeline (ไม่ hardcode) และ SUS ≥ 68
+- LLM สรุปข่าวและ News RAG ผ่านเกณฑ์ ≥ 90%
+- เอกสารระบบและ demo flow ครบ

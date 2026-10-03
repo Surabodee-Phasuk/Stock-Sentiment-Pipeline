@@ -1,35 +1,33 @@
-# Dashboard Data Requirements
+# Web App Requirements
 
-## Page 1 — Stock Selection
-Needs:
-- ticker
-- company name
-- sector
-- search/filter
-- selected count
+หน้าหลัก: **Search, Home (Watchlist), Stock Detail, Ask AI** (Ask AI เป็นแท็บใน bottom menu ในเทอม 2) — ไม่มีแอปมือถือ
+เว็บแอปอ่านชั้น Aggregated ผ่าน Athena
 
-## Page 2 — Watchlist
-Primary focus: sentiment, not technical trading indicators.
-Each card should be able to show:
-- ticker / company name
-- current price
-- price change %
-- sentiment badge
-- positive / neutral / negative percentages
-- compact sparkline (optional/contextual)
-- last updated
+## Search
+- ticker, ชื่อบริษัท, กลุ่มอุตสาหกรรม, ค้นหา/กรอง
 
-## Page 3 — Stock Detail Dashboard
-Needs:
-- current price and change
-- sentiment distribution
-- Price vs News Sentiment chart
-- latest news list
-- source and sentiment score per news item
-- basic system health
+## Home (Watchlist)
+หุ้นที่ผู้ใช้เลือก แต่ละการ์ดแสดง:
+- ticker / ชื่อบริษัท
+- ราคาปิดล่าสุด และ % เปลี่ยนแปลง
+- sentiment badge และสัดส่วน positive / neutral / negative
+- ข่าวล่าสุด และเวลาอัปเดตล่าสุด
+
+## Stock Detail
+- ราคาปิดรายวัน
+- ภาพรวม sentiment รายวัน เทียบกับทิศทางราคาปิด
+- ข่าวล่าสุดของหุ้น พร้อมแหล่งข่าว sentiment และคะแนนต่อข่าว
+- (เทอม 2) สรุปข่าวประจำวันและเหตุผลของ sentiment โดย LLM
+
+## Ask AI (เทอม 2)
+ถามคำถามเกี่ยวกับข่าวของหุ้น ตอบพร้อมแหล่งอ้างอิง
+
+## Targets
+- ข่าวใหม่แสดงบนเว็บภายใน 15 นาทีหลังแหล่งข่าวเผยแพร่
+- SUS ≥ 68 จากผู้ใช้ 10 คน
 
 ## UX principle
-The main user question is: “ข่าวของหุ้นนี้ช่วงล่าสุดมีทิศทางเป็นบวก กลาง หรือลบ?” The UI should answer that quickly.
+คำถามหลักของผู้ใช้: “ข่าวของหุ้นนี้ช่วงล่าสุดมีทิศทางเป็นบวก กลาง หรือลบ?” UI ต้องตอบได้เร็ว
 
-## Important boundary
-Sentiment is not a price prediction and must not be presented as a buy/sell recommendation.
+## Boundary
+sentiment ไม่ใช่การทำนายราคาและต้องไม่ถูกนำเสนอเป็นคำแนะนำซื้อขาย

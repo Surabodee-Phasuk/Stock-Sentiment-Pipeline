@@ -1,21 +1,19 @@
-# Data Contracts (Draft Before Coding)
+# Data Contracts (Draft)
 
-> These are planning contracts. Exact source fields may change after the chosen APIs/connectors are tested.
+> สัญญาข้อมูลฉบับร่าง ฟิลด์จริงอาจเปลี่ยนหลังทดสอบ API ที่เลือก ราคามีเฉพาะ **ราคาปิดรายวัน** (ไม่มีราคาระหว่างวัน)
 
-## 1. Stock Price Event
+## 1. Daily Close Price (batch, Yahoo Finance)
 ```json
 {
-  "event_id": "price_RKLB_20260922_100500",
   "ticker": "RKLB",
-  "price": 28.50,
-  "change_percent": 1.20,
-  "timestamp": "2026-09-22T10:05:00Z",
-  "source": "stock_api",
-  "ingested_at": "2026-09-22T10:05:02Z"
+  "trade_date": "2026-09-22",
+  "close": 28.50,
+  "source": "yahoo_finance",
+  "ingested_at": "2026-09-23T01:00:02Z"
 }
 ```
 
-## 2. News Event
+## 2. News Event (streaming, RSS / News API)
 ```json
 {
   "news_id": "news_001234",
@@ -24,7 +22,7 @@
   "source": "RSS",
   "url": "https://example.com/news/1234",
   "published_at": "2026-09-22T10:05:00Z",
-  "ingested_at": "2026-09-22T10:05:03Z"
+  "ingested_at": "2026-09-22T10:10:03Z"
 }
 ```
 
@@ -36,16 +34,17 @@
   "sentiment": "positive",
   "sentiment_score": 0.82,
   "model_name": "finbert",
-  "processed_at": "2026-09-22T10:05:05Z"
+  "model_version": "v1",
+  "processed_at": "2026-09-22T10:10:05Z"
 }
 ```
+`model_version` ช่วยให้ประมวลผล sentiment ใหม่จากชั้น Raw เมื่อเปลี่ยนโมเดลได้ และเทียบผลระหว่างเวอร์ชัน
 
-## 4. Aggregated Sentiment
+## 4. Daily Aggregated Sentiment
 ```json
 {
   "ticker": "RKLB",
-  "window_start": "2026-09-22T09:00:00Z",
-  "window_end": "2026-09-22T10:00:00Z",
+  "date": "2026-09-22",
   "total_news": 20,
   "positive_count": 13,
   "neutral_count": 4,
@@ -53,13 +52,15 @@
   "positive_percent": 65.0,
   "neutral_percent": 20.0,
   "negative_percent": 15.0,
-  "average_sentiment_score": 0.42
+  "average_sentiment_score": 0.42,
+  "close": 28.50
 }
 ```
 
-## Conventions to lock before implementation
-- Ticker field name: `ticker`
-- Timestamp format: ISO 8601 / UTC for internal events
+## Conventions
+- Ticker field: `ticker`
+- Timestamp: ISO 8601 / UTC; วันซื้อขายใช้ `trade_date` / `date`
 - Sentiment labels: `positive`, `neutral`, `negative`
-- Preserve original source URL where available
-- Keep `ingested_at` separate from source/event time
+- เก็บ URL ต้นทางของข่าวไว้เสมอ (ใช้เป็นแหล่งอ้างอิงของ RAG)
+- `ingested_at` แยกจากเวลาเผยแพร่ข่าว (ใช้วัด latency ≤ 15 นาที)
+- ไม่มีข้อมูลโซเชียลหรือราคาระหว่างวัน
