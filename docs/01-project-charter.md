@@ -27,6 +27,8 @@
 | สุรบดี ผาสุข | 6609650707 | **M1** | Data Platform / Ingestion / Lakehouse |
 | รพินทร์ นะราช | 6609650624 | **M2** | Processing / Sentiment / Web App |
 
+**อาจารย์ที่ปรึกษา:** ผศ.ดร.ปกป้อง ส่องเมือง (Asst.Prof.Dr. Pokpong Songmuang)
+
 ใช้ Primary Owner + Secondary Owner: ทุกคนต้องเข้าใจ pipeline ทั้งระบบพอจะ review, debug และนำเสนอได้ งาน LLM / RAG เป็นงานร่วม
 
 ## เกณฑ์ว่าเสร็จ (Definition of Done ของโครงงาน)
