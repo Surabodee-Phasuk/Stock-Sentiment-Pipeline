@@ -4,6 +4,7 @@
 
 > **Status:** Term 1/2569 — Proof of Concept
 > **Senior Capstone Project**, Computer Science, Thammasat University
+> **Team:** สุรบดี ผาสุข (6609650707), รพินทร์ นะราช (6609650624) · **Advisor:** ผศ.ดร.ปกป้อง ส่องเมือง (Asst.Prof.Dr. Pokpong Songmuang)
 > แหล่งอ้างอิงหลัก: [Project Proposal](docs/assets/Project_Proposal_Stock_News_Sentiment.pdf) · เอกสารออกแบบ: [docs/](docs/README.md) · งานทั้งหมด: [BOARD](docs/issues/BOARD.md)
 
 ---
