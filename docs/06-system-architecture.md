@@ -2,7 +2,9 @@
 
 ข้อมูลเข้า 2 ทาง แต่ลงตาราง Iceberg ชุดเดียวกัน ซึ่งเป็นสิ่งที่โครงงานต้องพิสูจน์ว่า Data Lakehouse ทำงานได้จริง
 
-![Architecture](assets/Stock%20Sentiment%20Pipeline.png)
+![Architecture](assets/system-architecture.png)
+
+*แผนภาพจาก [Project Proposal](assets/Project_Proposal_Stock_News_Sentiment.pdf) หน้า 3*
 
 ```mermaid
 flowchart LR
