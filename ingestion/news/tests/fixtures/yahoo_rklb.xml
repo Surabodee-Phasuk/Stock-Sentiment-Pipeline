@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+    <channel>
+        <description>Latest Financial News for RKLB</description>
+        <item>
+            <description>RKLB strengthens supply-chain resilience across its launch, spacecraft and component businesses.</description>
+            <guid isPermaLink="false">9a322847-a2cf-3423-9e4a-6e7f1120ee4e</guid>
+            <link>https://finance.yahoo.com/markets/stocks/articles/rocket-labs-supply-chain-strategy-143400470.html?.tsrc=rss</link>
+            <pubDate>Mon, 05 Oct 2026 14:34:00 +0000</pubDate>
+            <title>Can Rocket Lab's Supply-Chain   Strategy Support Future Growth?</title>
+        </item>
+        <item>
+            <guid isPermaLink="false">63459049-5037-3106-bc7c-36ace30aaaad</guid>
+            <link>https://www.fool.com/investing/2026/10/05/is-rocket-lab-stock-a-good-buy/?.tsrc=rss</link>
+            <pubDate>Mon, 05 Oct 2026 09:40:02 -0400</pubDate>
+            <title>Is Rocket Lab Stock a Good Buy Right Now?</title>
+        </item>
+        <item>
+            <link>https://example.com/no-date</link>
+            <title>Item without pubDate is skipped</title>
+        </item>
+        <item>
+            <link>https://example.com/bad-date</link>
+            <pubDate>not a date</pubDate>
+            <title>Item with bad pubDate is skipped</title>
+        </item>
+        <item>
+            <link>https://example.com/empty-title</link>
+            <pubDate>Mon, 05 Oct 2026 14:34:00 +0000</pubDate>
+            <title>   </title>
+        </item>
+    </channel>
+</rss>

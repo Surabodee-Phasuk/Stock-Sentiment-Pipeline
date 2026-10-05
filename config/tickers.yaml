@@ -1,0 +1,33 @@
+# รายชื่อหุ้นของระบบ (CONTEXT.md: ticker ต้องอยู่ในไฟล์นี้)
+# PoC (T1/2569) 10 ตัวจากหลายกลุ่มอุตสาหกรรม — ขยายเป็น ~50 ตัวใน F1-04 / F2-06
+tickers:
+  - ticker: AAPL
+    name: Apple Inc.
+    sector: Technology
+  - ticker: MSFT
+    name: Microsoft Corporation
+    sector: Technology
+  - ticker: NVDA
+    name: NVIDIA Corporation
+    sector: Semiconductors
+  - ticker: AMZN
+    name: Amazon.com, Inc.
+    sector: Consumer Discretionary
+  - ticker: TSLA
+    name: Tesla, Inc.
+    sector: Automotive
+  - ticker: JPM
+    name: JPMorgan Chase & Co.
+    sector: Financials
+  - ticker: XOM
+    name: Exxon Mobil Corporation
+    sector: Energy
+  - ticker: JNJ
+    name: Johnson & Johnson
+    sector: Healthcare
+  - ticker: KO
+    name: The Coca-Cola Company
+    sector: Consumer Staples
+  - ticker: RKLB
+    name: Rocket Lab USA, Inc.
+    sector: Aerospace

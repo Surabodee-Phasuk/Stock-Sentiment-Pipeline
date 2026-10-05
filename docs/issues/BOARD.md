@@ -19,7 +19,7 @@ PRD: [f1-ingestion/PRD.md](f1-ingestion/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | todo | `feat/f1-01-news-collector` | — |
+| [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | in-progress | `feat/f1-01-news-collector` | — |
 | [F1-02](f1-ingestion/issues/02-yahoo-daily-close.md) | Yahoo Finance daily close collector (10 หุ้น) | M1 | PoC (T1/2569) | todo | `feat/f1-02-yahoo-daily-close` | — |
 | [F1-03](f1-ingestion/issues/03-multi-source-news.md) | รวมหลายแหล่งข่าวและตัดซ้ำเบื้องต้นที่ collector | M1 | PoC (T1/2569) | todo | `feat/f1-03-multi-source-news` | — |
 | [F1-04](f1-ingestion/issues/04-backfill-2020.md) | Backfill ข่าวและราคาปิดย้อนหลังตั้งแต่ปี 2020 สำหรับ ~50 หุ้น | M1 | Full (T2/2570) | todo | `feat/f1-04-backfill-2020` | — |
