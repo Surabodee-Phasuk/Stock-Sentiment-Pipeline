@@ -10,7 +10,7 @@ PRD: [infra/PRD.md](infra/PRD.md)
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
 | [INFRA-01](infra/issues/01-project-structure.md) | โครงสร้าง repo, เอกสาร, ชื่อ branch และ workflow | M1+M2 | PoC (T1/2569) | done | `chore/infra-01-project-structure` | [#2](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/2) |
-| [INFRA-02](infra/issues/02-aws-foundation.md) | AWS: S3 bucket, Glue database, Athena workgroup, IAM, budget alert | M1 | PoC (T1/2569) | todo | `chore/infra-02-aws-foundation` | — |
+| [INFRA-02](infra/issues/02-aws-foundation.md) | AWS: S3 bucket, Glue database, Athena workgroup, IAM, budget alert | M1 | PoC (T1/2569) | in-progress | `chore/infra-02-aws-foundation` | — |
 | [INFRA-03](infra/issues/03-local-kafka-spark.md) | Docker Compose: Kafka + Spark สำหรับพัฒนาในเครื่อง | M1 | PoC (T1/2569) | todo | `chore/infra-03-local-kafka-spark` | — |
 | [INFRA-04](infra/issues/04-ci-pipeline.md) | GitHub Actions: lint + unit test ทุก PR | M2 | PoC (T1/2569) | todo | `chore/infra-04-ci-pipeline` | — |
 
