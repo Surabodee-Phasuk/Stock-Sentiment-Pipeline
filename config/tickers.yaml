@@ -1,0 +1,35 @@
+# รายชื่อหุ้นของระบบ (CONTEXT.md: ticker ต้องอยู่ในไฟล์นี้)
+# PoC (T1/2569) 10 ตัว: Magnificent 7 + AVGO, RKLB, SPCX — ขยายเป็น ~50 ตัวใน F1-04 / F2-06
+tickers:
+  # Magnificent 7
+  - ticker: AAPL
+    name: Apple Inc.
+    sector: Technology
+  - ticker: MSFT
+    name: Microsoft Corporation
+    sector: Technology
+  - ticker: GOOGL
+    name: Alphabet Inc. (Class A)
+    sector: Communication Services
+  - ticker: AMZN
+    name: Amazon.com, Inc.
+    sector: Consumer Discretionary
+  - ticker: NVDA
+    name: NVIDIA Corporation
+    sector: Semiconductors
+  - ticker: META
+    name: Meta Platforms, Inc.
+    sector: Communication Services
+  - ticker: TSLA
+    name: Tesla, Inc.
+    sector: Automotive
+  # อื่นๆ
+  - ticker: AVGO
+    name: Broadcom Inc.
+    sector: Semiconductors
+  - ticker: RKLB
+    name: Rocket Lab USA, Inc.
+    sector: Aerospace
+  - ticker: SPCX
+    name: Space Exploration Technologies Corp. (SpaceX)
+    sector: Aerospace

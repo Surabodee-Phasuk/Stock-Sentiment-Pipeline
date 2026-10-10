@@ -1,0 +1,3 @@
+# F1-01 news collector — ย้ายเข้า pyproject.toml เมื่อ INFRA-04 merge
+PyYAML>=6.0
+confluent-kafka>=2.5
