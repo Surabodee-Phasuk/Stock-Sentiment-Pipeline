@@ -1,0 +1,86 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3ListProjectBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:ListBucketMultipartUploads"
+      ],
+      "Resource": "arn:aws:s3:::stock-sentiment-lakehouse-surabodee"
+    },
+    {
+      "Sid": "S3ReadWriteProjectObjects",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:AbortMultipartUpload",
+        "s3:ListMultipartUploadParts"
+      ],
+      "Resource": "arn:aws:s3:::stock-sentiment-lakehouse-surabodee/*"
+    },
+    {
+      "Sid": "GlueProjectDatabaseAndTables",
+      "Effect": "Allow",
+      "Action": [
+        "glue:GetDatabase",
+        "glue:GetDatabases",
+        "glue:GetTable",
+        "glue:GetTables",
+        "glue:GetTableVersion",
+        "glue:GetTableVersions",
+        "glue:CreateTable",
+        "glue:UpdateTable",
+        "glue:DeleteTable",
+        "glue:GetPartition",
+        "glue:GetPartitions",
+        "glue:BatchGetPartition"
+      ],
+      "Resource": [
+        "arn:aws:glue:ap-southeast-2:ACCOUNT_ID:catalog",
+        "arn:aws:glue:ap-southeast-2:ACCOUNT_ID:database/stock_sentiment",
+        "arn:aws:glue:ap-southeast-2:ACCOUNT_ID:table/stock_sentiment/*"
+      ]
+    },
+    {
+      "Sid": "AthenaProjectWorkgroup",
+      "Effect": "Allow",
+      "Action": [
+        "athena:GetWorkGroup",
+        "athena:StartQueryExecution",
+        "athena:StopQueryExecution",
+        "athena:GetQueryExecution",
+        "athena:GetQueryResults",
+        "athena:GetQueryRuntimeStatistics",
+        "athena:BatchGetQueryExecution",
+        "athena:ListQueryExecutions"
+      ],
+      "Resource": "arn:aws:athena:ap-southeast-2:ACCOUNT_ID:workgroup/stock-sentiment"
+    },
+    {
+      "Sid": "AthenaDefaultCatalog",
+      "Effect": "Allow",
+      "Action": [
+        "athena:GetDataCatalog",
+        "athena:ListDatabases",
+        "athena:GetDatabase",
+        "athena:ListTableMetadata",
+        "athena:GetTableMetadata"
+      ],
+      "Resource": "arn:aws:athena:ap-southeast-2:ACCOUNT_ID:datacatalog/AwsDataCatalog"
+    },
+    {
+      "Sid": "AthenaListOnly",
+      "Effect": "Allow",
+      "Action": [
+        "athena:ListWorkGroups",
+        "athena:ListDataCatalogs"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
