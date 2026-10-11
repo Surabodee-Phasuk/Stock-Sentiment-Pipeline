@@ -10,8 +10,8 @@ PRD: [infra/PRD.md](infra/PRD.md)
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
 | [INFRA-01](infra/issues/01-project-structure.md) | โครงสร้าง repo, เอกสาร, ชื่อ branch และ workflow | M1+M2 | PoC (T1/2569) | done | `chore/infra-01-project-structure` | [#2](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/2) |
-| [INFRA-02](infra/issues/02-aws-foundation.md) | AWS: S3 bucket, Glue database, Athena workgroup, IAM, budget alert | M1 | PoC (T1/2569) | todo | `chore/infra-02-aws-foundation` | — |
-| [INFRA-03](infra/issues/03-local-kafka-spark.md) | Docker Compose: Kafka + Spark สำหรับพัฒนาในเครื่อง | M1 | PoC (T1/2569) | todo | `chore/infra-03-local-kafka-spark` | — |
+| [INFRA-02](infra/issues/02-aws-foundation.md) | AWS: S3 bucket, Glue database, Athena workgroup, IAM, budget alert | M1 | PoC (T1/2569) | in-progress | `chore/infra-02-aws-foundation` | — |
+| [INFRA-03](infra/issues/03-local-kafka-spark.md) | Docker Compose: Kafka + Spark สำหรับพัฒนาในเครื่อง | M1 | PoC (T1/2569) | in-progress | `chore/infra-03-local-kafka-spark` | — |
 | [INFRA-04](infra/issues/04-ci-pipeline.md) | GitHub Actions: lint + unit test ทุก PR | M2 | PoC (T1/2569) | todo | `chore/infra-04-ci-pipeline` | — |
 
 ## F1 — Ingestion — ข่าวและราคาปิด
@@ -19,7 +19,7 @@ PRD: [f1-ingestion/PRD.md](f1-ingestion/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | in-progress | `feat/f1-01-news-collector` | — |
+| [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | done | `feat/f1-01-news-collector` | [#4](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/4) |
 | [F1-02](f1-ingestion/issues/02-yahoo-daily-close.md) | Yahoo Finance daily close collector (10 หุ้น) | M1 | PoC (T1/2569) | todo | `feat/f1-02-yahoo-daily-close` | — |
 | [F1-03](f1-ingestion/issues/03-multi-source-news.md) | รวมหลายแหล่งข่าวและตัดซ้ำเบื้องต้นที่ collector | M1 | PoC (T1/2569) | todo | `feat/f1-03-multi-source-news` | — |
 | [F1-04](f1-ingestion/issues/04-backfill-2020.md) | Backfill ข่าวและราคาปิดย้อนหลังตั้งแต่ปี 2020 สำหรับ ~50 หุ้น | M1 | Full (T2/2570) | todo | `feat/f1-04-backfill-2020` | — |
