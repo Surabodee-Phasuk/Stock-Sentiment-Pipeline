@@ -9,13 +9,13 @@
 
 ## งาน
 
-- [x] S3 bucket สำหรับ warehouse และ checkpoint
+- [x] S3 bucket สำหรับ warehouse และ checkpoint (`stock-sentiment-lakehouse-surabodee`, region `ap-southeast-2`)
 - [x] Glue database `stock_sentiment`
-- [x] Athena workgroup พร้อม result location
-- [ ] IAM user/role แบบ least privilege (ตอนนี้ใช้ FullAccess 3 policy)
-- [x] AWS budget alert (ยังไม่ได้ทดสอบส่งอีเมล)
+- [x] Athena workgroup พร้อม result location (`stock-sentiment`)
+- [ ] IAM user/role แบบ least privilege — มี user `surabodee-dev` และเขียน `infra/aws/policy-dev.json` แล้ว แต่ยังใช้ FullAccess 3 ตัวอยู่
+- [x] AWS budget alert (`Stock_Sentiment` $10/เดือน)
 - [ ] ตัดสินใจ scheduler สำหรับงาน batch (ADR ถ้าเลือกเครื่องมือใหม่)
-- [ ] สคริปต์/คู่มือ setup ใน `infra/aws/`
+- [x] สคริปต์/คู่มือ setup ใน `infra/aws/` (`README.md`, `policy-dev.json`, `check.sh`)
 
 ## Acceptance criteria
 
@@ -29,15 +29,13 @@
 
 ## Evidence
 
-- Athena `SELECT 1` ผ่าน workgroup `stock-sentiment` ได้ (M1, 2026-10-10)
-- _(ยังขาด: ภาพอีเมลทดสอบ budget alert, IAM policy แบบ least privilege)_
+- Athena `SELECT 1` ผ่าน workgroup `stock-sentiment`: สถานะ Completed ได้ผล `1` ใช้เวลา 178 ms (M1 ทดสอบผ่าน Console)
+- ผล `bash infra/aws/check.sh`:
+  ```
+  _(วางผลรันที่นี่ ต้องจบด้วย "all checks passed" — ลบเลข account ออกก่อนวาง)_
+  ```
+- ไม่มี credential ใน repo: key อยู่ใน `~/.aws/` นอกโปรเจกต์, `policy-dev.json` ใช้ `ACCOUNT_ID` เป็น placeholder
+- ยังไม่ผ่าน: budget alert ส่งอีเมลทดสอบ (ยังไม่ได้ทดสอบ)
 
 ## Comments
-
-- **2026-10-11 (Claude, ขอโดย M1):** M1 สร้าง resource ด้วยมือแล้วเมื่อ 2026-10-10 บันทึกย้อนหลังไว้ที่นี่
-  - Region: `ap-southeast-2` (Sydney) เพราะบัญชี AWS Free plan บังคับ region นี้
-  - S3 bucket `stock-sentiment-lakehouse-surabodee` (warehouse ที่ `s3://stock-sentiment-lakehouse-surabodee/warehouse` ใช้ใน `infra/spark/spark-defaults.conf`)
-  - Glue database `stock_sentiment`, Athena workgroup `stock-sentiment`
-  - IAM user `surabodee-dev` ตั้งค่าผ่าน `aws configure` (key อยู่ใน `~/.aws` นอก repo)
-  - Budget `Stock_Sentiment` $10/เดือน
-  - ค้าง: เปิด MFA ให้ root account, ทดสอบอีเมล budget alert, ลดสิทธิ์ IAM ให้เหลือ least privilege, เลือก scheduler ของงาน batch, เขียนคู่มือ setup ใน `infra/aws/`
+- 2026-10-10 (Claude, ขอโดย M1): resource ทั้งหมดสร้างด้วยมือผ่าน Console ที่ `ap-southeast-2` (Sydney) เพราะ Free plan บังคับ region นี้ คู่มือและค่าต่างๆ อยู่ใน `infra/aws/README.md` ที่ยังเหลือก่อนปิด: ถอด FullAccess แล้วใช้ `policy-dev.json` แทน, ทดสอบอีเมล budget, ตัดสินใจ scheduler และยืนยันว่าเปิด MFA ให้บัญชีหลักแล้ว
