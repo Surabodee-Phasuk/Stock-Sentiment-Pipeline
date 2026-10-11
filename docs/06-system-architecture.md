@@ -25,6 +25,18 @@ flowchart LR
 - **Batch:** ราคาปิดรายวันจาก Yahoo Finance วันละครั้ง และงาน reprocess sentiment จากชั้น Raw เมื่อเปลี่ยนโมเดล
 - **Serving:** เว็บแอปอ่านชั้น Aggregated ผ่าน Athena; LLM และ RAG ใช้ข่าวจากชั้น Cleaned
 
+## Environment (PoC)
+| ส่วน | ค่า | Issue |
+|---|---|---|
+| AWS region | `ap-southeast-2` (Sydney) เพราะบัญชี AWS Free plan บังคับ | INFRA-02 |
+| S3 bucket | `stock-sentiment-lakehouse-surabodee`, Iceberg warehouse ที่ `s3://stock-sentiment-lakehouse-surabodee/warehouse` | INFRA-02 |
+| Glue database | `stock_sentiment` (Spark เรียก catalog นี้ว่า `glue`) | INFRA-02 |
+| Athena workgroup | `stock-sentiment` | INFRA-02 |
+| Kafka (ในเครื่อง) | Kafka 4.3.1 แบบ KRaft โหนดเดียว เชื่อมจากเครื่องที่ `localhost:9092` และจาก container ที่ `kafka:19092` | INFRA-03 |
+| Spark (ในเครื่อง) | Spark 4.0.4 local mode + Iceberg 1.12.0 ใน Docker | INFRA-03 |
+
+วิธีเปิดใช้: [infra/README.md](../infra/README.md)
+
 ## โครงสร้าง repository
 ทุกโฟลเดอร์ถูกสร้างไว้แล้วพร้อม README บอกขอบเขต ห้ามสร้างโฟลเดอร์ระดับบนสุดใหม่โดยไม่มี ADR
 

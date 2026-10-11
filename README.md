@@ -110,14 +110,21 @@ flowchart LR
 ```bash
 git clone https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline.git
 cd Stock-Sentiment-Pipeline
+
+# Kafka + Spark ในเครื่อง (รายละเอียด: infra/README.md)
+docker compose -f infra/docker-compose.yml up -d
+
+# News collector → Kafka (รายละเอียด: ingestion/news/README.md)
+uv venv .venv && uv pip install --python .venv -r ingestion/news/requirements.txt
+KAFKA_BOOTSTRAP_SERVERS=localhost:9092 .venv/bin/python -m ingestion.news.collector --once
 ```
 
 ### Prerequisites
 
-- บัญชี AWS (S3, Glue, Athena) พร้อมตั้ง budget alert
+- บัญชี AWS (S3, Glue, Athena) region `ap-southeast-2` พร้อมตั้ง budget alert และรัน `aws configure` แล้ว (ดู INFRA-02)
 - Docker & Docker Compose (Kafka / Spark สำหรับพัฒนาในเครื่อง)
-- Python 3.10+
-- API key ของแหล่งข่าว (ดู `.env.example` เมื่อมีการเพิ่ม)
+- Python 3.10+ และ [uv](https://docs.astral.sh/uv/)
+- ค่าที่ปรับได้ของ Docker Compose: `infra/.env.example` ยังไม่ต้องใช้ API key ข่าว (PoC ใช้ Yahoo Finance RSS)
 
 ---
 
@@ -161,7 +168,7 @@ Stock-Sentiment-Pipeline/
 
 **เทอม 1/2569 — Proof of Concept**
 - [x] ออกแบบระบบและสถาปัตยกรรม
-- [ ] ดึงข่าวสดและราคา: ครบ 10 หุ้น
+- [ ] ดึงข่าวสดและราคา: ครบ 10 หุ้น (ข่าวเสร็จแล้วใน F1-01 เหลือราคาปิด F1-02)
 - [ ] Kafka → Spark → Iceberg: ข่าวใหม่ปรากฏในตารางภายใน 15 นาที
 - [ ] ราคาปิดแบบ batch ในตารางชุดเดียวกับข่าว: query ผ่าน Athena ได้
 - [ ] Time travel และ reprocess: สาธิตกับข่าวชุดทดสอบ
