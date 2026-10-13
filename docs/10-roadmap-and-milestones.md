@@ -10,9 +10,15 @@
 | ราคาปิดแบบ batch | ราคาปิดรายวันกับข่าว streaming อยู่ในตารางชุดเดียวกัน | Query ข่าวคู่กับราคาผ่าน Athena ได้ | F2-04 |
 | Time travel และ reprocess | ย้อนดูตาราง ณ เวลาก่อนหน้า และรัน sentiment ใหม่จากชั้น Raw ได้ | สาธิตได้กับข่าวชุดทดสอบ | F2-05, F3-04 |
 | FinBERT | ความแม่นและความเร็วบนข่าวจริง | วัด F1 บน 100 ข่าว และวัดจำนวนข่าวต่อวินาที | F3-01, F3-02 |
+| UX/UI | ผู้ใช้เข้าใจหน้าจอ | Prototype ครบ 4 หน้า และหน้า Stock Detail ดึงข้อมูลจริงได้ | F5-01, F5-02 |
+
+เทอม 1 ยังไม่แตะ LLM สรุปข่าว (F6) และ News RAG (F7) — ทั้ง PoC และตัวเต็มทำในเทอม 2
+
+## เทอม 2/2570 — PoC ของ LLM และ RAG
+| งาน | สิ่งที่ต้องพิสูจน์ | เกณฑ์ผ่าน | Issue |
+|---|---|---|---|
 | LLM สรุปข่าว | สรุปข่าวของหุ้นหนึ่งตัวได้ถูกต้อง | สรุป 5 ชิ้น ตรวจด้วยคน พร้อมค่าใช้จ่ายต่อชิ้น | F6-01 |
 | News RAG | ค้นข่าวถูกหุ้นและตอบพร้อมแหล่งอ้างอิง | ตอบ 10 คำถามทดสอบได้ | F7-01 |
-| UX/UI | ผู้ใช้เข้าใจหน้าจอ | Prototype ครบ 4 หน้า และหน้า Stock Detail ดึงข้อมูลจริงได้ | F5-01, F5-02 |
 
 ## Milestones
 | Milestone | เนื้อหา | Issues |
@@ -21,7 +27,7 @@
 | M1 Infra Ready | AWS (S3/Glue/Athena/budget), Kafka + Spark local, CI | INFRA-02..04 |
 | M2 PoC Ingestion | ข่าว + ราคา 10 หุ้น | F1-01..03 |
 | M3 PoC Lakehouse | Kafka → Spark → Iceberg, batch ราคา, Athena, time travel | F2-01..05 |
-| M4 PoC Models | FinBERT F1/throughput, reprocess, LLM 5 ชิ้น, RAG 10 คำถาม | F3-01, F3-02, F3-04, F6-01, F7-01 |
+| M4 PoC Models | FinBERT F1/throughput, reprocess | F3-01, F3-02, F3-04 |
 | M5 PoC UI | Prototype 4 หน้า, Stock Detail ข้อมูลจริง | F5-01, F5-02 |
-| M6 Full Build (เทอม 2) | ~50 หุ้น, backfill 2020, เว็บครบ, LLM/RAG เต็ม | F1-04, F2-06, F2-07, F4-*, F5-03..05, F6-02, F7-02 |
+| M6 Full Build (เทอม 2) | ~50 หุ้น, backfill 2020, เว็บครบ, LLM/RAG (PoC แล้วทำเต็ม) | F1-04, F2-06, F2-07, F4-*, F5-03..05, F6-01, F6-02, F7-01, F7-02 |
 | M7 Evaluation (เทอม 2) | ผ่านเป้าหมาย O1–O5 | F3-03, F5-06, F6-03, F7-03, QA-01..03 |

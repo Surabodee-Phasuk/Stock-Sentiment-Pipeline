@@ -72,7 +72,7 @@ PRD: [f6-llm-summary/PRD.md](f6-llm-summary/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F6-01](f6-llm-summary/issues/01-llm-summary-poc.md) | PoC: สรุป 5 ชิ้น ตรวจด้วยคน + ค่าใช้จ่ายต่อชิ้น + ADR เลือก LLM | M1+M2 | PoC (T1/2569) | todo | `exp/f6-01-llm-summary-poc` | — |
+| [F6-01](f6-llm-summary/issues/01-llm-summary-poc.md) | PoC: สรุป 5 ชิ้น ตรวจด้วยคน + ค่าใช้จ่ายต่อชิ้น + ADR เลือก LLM | M1+M2 | Full (T2/2570) | todo | `exp/f6-01-llm-summary-poc` | — |
 | [F6-02](f6-llm-summary/issues/02-llm-summary-service.md) | สรุปรายวันอัตโนมัติ + cache + แสดงใน Stock Detail | M1+M2 | Full (T2/2570) | todo | `feat/f6-02-llm-summary-service` | — |
 | [F6-03](f6-llm-summary/issues/03-llm-summary-eval-50.md) | ประเมิน 50 สรุป | M1+M2 | Full (T2/2570) | todo | `test/f6-03-llm-summary-eval-50` | — |
 
@@ -81,7 +81,7 @@ PRD: [f7-news-rag/PRD.md](f7-news-rag/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F7-01](f7-news-rag/issues/01-rag-poc.md) | PoC: ตอบ 10 คำถามพร้อมแหล่งอ้างอิง + ADR vector store | M1+M2 | PoC (T1/2569) | todo | `exp/f7-01-rag-poc` | — |
+| [F7-01](f7-news-rag/issues/01-rag-poc.md) | PoC: ตอบ 10 คำถามพร้อมแหล่งอ้างอิง + ADR vector store | M1+M2 | Full (T2/2570) | todo | `exp/f7-01-rag-poc` | — |
 | [F7-02](f7-news-rag/issues/02-ask-ai-page.md) | หน้า Ask AI + guardrail นอกขอบเขต | M1+M2 | Full (T2/2570) | todo | `feat/f7-02-ask-ai-page` | — |
 | [F7-03](f7-news-rag/issues/03-rag-eval.md) | ประเมิน 50–100 คำถาม เทียบ LLM ไม่มี RAG | M1+M2 | Full (T2/2570) | todo | `test/f7-03-rag-eval` | — |
 

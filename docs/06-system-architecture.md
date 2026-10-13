@@ -51,7 +51,7 @@ Stock-Sentiment-Pipeline/
 ├── batch/                  # Spark batch: ราคาปิด, aggregation รายวัน, reprocess
 ├── lakehouse/              # DDL ตาราง Iceberg, Athena queries, demo time travel
 ├── sentiment/              # FinBERT wrapper, gold set, evaluation scripts
-├── ai/                     # LLM summary + News RAG (เทอม 1 PoC, เทอม 2 เต็ม)
+├── ai/                     # LLM summary + News RAG (เทอม 2)
 ├── webapp/                 # เว็บแอป + API layer
 ├── tests/                  # integration / e2e / reliability tests
 └── docs/                   # เอกสารนี้
