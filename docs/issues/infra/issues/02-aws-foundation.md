@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.1, NFR-5, NFR-6  
 **Branch:** `chore/infra-02-aws-foundation`  
-**PR:** —
+**PR:** [#22](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/22)
 
 ## งาน
 
@@ -39,3 +39,4 @@
 
 ## Comments
 - 2026-10-10 (Claude, ขอโดย M1): resource ทั้งหมดสร้างด้วยมือผ่าน Console ที่ `ap-southeast-2` (Sydney) เพราะ Free plan บังคับ region นี้ คู่มือและค่าต่างๆ อยู่ใน `infra/aws/README.md` ที่ยังเหลือก่อนปิด: ถอด FullAccess แล้วใช้ `policy-dev.json` แทน, ทดสอบอีเมล budget, ตัดสินใจ scheduler และยืนยันว่าเปิด MFA ให้บัญชีหลักแล้ว
+- 2026-10-17 (Claude, ขอโดย M1): PR #22 merge เข้า `main` แล้วเมื่อ 2026-10-11 แต่ยังคง `in-progress` เพราะเหลืองานค้าง: ถอด FullAccess → `policy-dev.json`, ทดสอบอีเมล budget, ตัดสินใจ scheduler, ยืนยัน MFA บัญชีหลัก และวางผล `check.sh` ใน Evidence

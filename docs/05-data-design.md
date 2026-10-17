@@ -11,9 +11,11 @@
 - ไม่มีข้อมูลโซเชียลหรือราคาระหว่างวัน
 
 ## Kafka
-| Topic | Producer | Consumer | Key |
-|---|---|---|---|
-| `stock-news` | news collector | Spark Structured Streaming | `ticker` |
+| Topic | Producer | Consumer | Key | Partitions |
+|---|---|---|---|---|
+| `stock-news` | news collector | Spark Structured Streaming | `ticker` | 3 (เก็บ 7 วัน) |
+
+สร้าง topic ด้วย `kafka-init` ใน `infra/docker-compose.yml` เท่านั้น (ปิด auto-create topic ไว้)
 
 ราคาปิดไม่ผ่าน Kafka: Spark batch เขียนลง Iceberg ตรง
 
@@ -40,6 +42,11 @@
 ```
 
 ## Iceberg tables (Glue database `stock_sentiment`)
+Warehouse: `s3://stock-sentiment-lakehouse-surabodee/warehouse` ใน Spark อ้างถึงด้วย `glue.stock_sentiment.<table>`
+
+> **ยังต้องตัดสินใจก่อน F2-03:** ข่าวชิ้นเดียวอยู่ใน feed ของหลาย ticker (F1-01 เจอ 27/125) ถ้า MERGE `clean_news` ด้วย `news_id` อย่างเดียว จะเหลือ ticker เดียว
+
+
 | ชั้น | Table | Partition (ร่าง) | เขียนโดย |
 |---|---|---|---|
 | Raw | `raw_news` | `days(published_at)` | Spark streaming (append) |

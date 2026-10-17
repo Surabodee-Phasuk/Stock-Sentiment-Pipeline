@@ -10,8 +10,8 @@ PRD: [infra/PRD.md](infra/PRD.md)
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
 | [INFRA-01](infra/issues/01-project-structure.md) | โครงสร้าง repo, เอกสาร, ชื่อ branch และ workflow | M1+M2 | PoC (T1/2569) | done | `chore/infra-01-project-structure` | [#2](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/2) |
-| [INFRA-02](infra/issues/02-aws-foundation.md) | AWS: S3 bucket, Glue database, Athena workgroup, IAM, budget alert | M1 | PoC (T1/2569) | in-progress | `chore/infra-02-aws-foundation` | — |
-| [INFRA-03](infra/issues/03-local-kafka-spark.md) | Docker Compose: Kafka + Spark สำหรับพัฒนาในเครื่อง | M1 | PoC (T1/2569) | todo | `chore/infra-03-local-kafka-spark` | — |
+| [INFRA-02](infra/issues/02-aws-foundation.md) | AWS: S3 bucket, Glue database, Athena workgroup, IAM, budget alert | M1 | PoC (T1/2569) | in-progress | `chore/infra-02-aws-foundation` | [#22](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/22) |
+| [INFRA-03](infra/issues/03-local-kafka-spark.md) | Docker Compose: Kafka + Spark สำหรับพัฒนาในเครื่อง | M1 | PoC (T1/2569) | in-review | `chore/infra-03-local-kafka-spark` | — |
 | [INFRA-04](infra/issues/04-ci-pipeline.md) | GitHub Actions: lint + unit test ทุก PR | M2 | PoC (T1/2569) | todo | `chore/infra-04-ci-pipeline` | — |
 
 ## F1 — Ingestion — ข่าวและราคาปิด
@@ -19,7 +19,7 @@ PRD: [f1-ingestion/PRD.md](f1-ingestion/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | in-progress | `feat/f1-01-news-collector` | — |
+| [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | done | `feat/f1-01-news-collector` | [#4](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/4) |
 | [F1-02](f1-ingestion/issues/02-yahoo-daily-close.md) | Yahoo Finance daily close collector (10 หุ้น) | M1 | PoC (T1/2569) | todo | `feat/f1-02-yahoo-daily-close` | — |
 | [F1-03](f1-ingestion/issues/03-multi-source-news.md) | รวมหลายแหล่งข่าวและตัดซ้ำเบื้องต้นที่ collector | M1 | PoC (T1/2569) | todo | `feat/f1-03-multi-source-news` | — |
 | [F1-04](f1-ingestion/issues/04-backfill-2020.md) | Backfill ข่าวและราคาปิดย้อนหลังตั้งแต่ปี 2020 สำหรับ ~50 หุ้น | M1 | Full (T2/2570) | todo | `feat/f1-04-backfill-2020` | — |
@@ -72,7 +72,7 @@ PRD: [f6-llm-summary/PRD.md](f6-llm-summary/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F6-01](f6-llm-summary/issues/01-llm-summary-poc.md) | PoC: สรุป 5 ชิ้น ตรวจด้วยคน + ค่าใช้จ่ายต่อชิ้น + ADR เลือก LLM | M1+M2 | PoC (T1/2569) | todo | `exp/f6-01-llm-summary-poc` | — |
+| [F6-01](f6-llm-summary/issues/01-llm-summary-poc.md) | PoC: สรุป 5 ชิ้น ตรวจด้วยคน + ค่าใช้จ่ายต่อชิ้น + ADR เลือก LLM | M1+M2 | Full (T2/2570) | todo | `exp/f6-01-llm-summary-poc` | — |
 | [F6-02](f6-llm-summary/issues/02-llm-summary-service.md) | สรุปรายวันอัตโนมัติ + cache + แสดงใน Stock Detail | M1+M2 | Full (T2/2570) | todo | `feat/f6-02-llm-summary-service` | — |
 | [F6-03](f6-llm-summary/issues/03-llm-summary-eval-50.md) | ประเมิน 50 สรุป | M1+M2 | Full (T2/2570) | todo | `test/f6-03-llm-summary-eval-50` | — |
 
@@ -81,7 +81,7 @@ PRD: [f7-news-rag/PRD.md](f7-news-rag/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F7-01](f7-news-rag/issues/01-rag-poc.md) | PoC: ตอบ 10 คำถามพร้อมแหล่งอ้างอิง + ADR vector store | M1+M2 | PoC (T1/2569) | todo | `exp/f7-01-rag-poc` | — |
+| [F7-01](f7-news-rag/issues/01-rag-poc.md) | PoC: ตอบ 10 คำถามพร้อมแหล่งอ้างอิง + ADR vector store | M1+M2 | Full (T2/2570) | todo | `exp/f7-01-rag-poc` | — |
 | [F7-02](f7-news-rag/issues/02-ask-ai-page.md) | หน้า Ask AI + guardrail นอกขอบเขต | M1+M2 | Full (T2/2570) | todo | `feat/f7-02-ask-ai-page` | — |
 | [F7-03](f7-news-rag/issues/03-rag-eval.md) | ประเมิน 50–100 คำถาม เทียบ LLM ไม่มี RAG | M1+M2 | Full (T2/2570) | todo | `test/f7-03-rag-eval` | — |
 

@@ -16,7 +16,7 @@ uv venv .venv && uv pip install --python .venv -r ingestion/news/requirements.tx
 # ทดสอบโดยไม่ต้องมี Kafka: ดึงหนึ่งรอบแล้วพิมพ์ event ออกมา
 .venv/bin/python -m ingestion.news.collector --once --sink stdout
 
-# ใช้งานจริง: วนทุก 10 นาที ส่งเข้า Kafka (ต้องมี Kafka จาก INFRA-03)
+# ใช้งานจริง: วนทุก 10 นาที ส่งเข้า Kafka (เปิด Kafka ก่อนตาม infra/README.md)
 KAFKA_BOOTSTRAP_SERVERS=localhost:9092 .venv/bin/python -m ingestion.news.collector --interval-min 10
 
 .venv/bin/pytest ingestion/news
