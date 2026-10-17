@@ -38,12 +38,12 @@ docker compose -f infra/docker-compose.yml logs kafka-init   # ต้องเ�
 # ส่งข้อความ key:value หนึ่งบรรทัด
 echo 'AAPL:{"hello":"kafka"}' | docker compose -f infra/docker-compose.yml exec -T kafka \
   /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:19092 --topic stock-news \
-  --property parse.key=true --property key.separator=:
+  --reader-property parse.key=true --reader-property key.separator=:
 
 # อ่านกลับ
 docker compose -f infra/docker-compose.yml exec kafka \
   /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:19092 --topic stock-news \
-  --from-beginning --property print.key=true --max-messages 1
+  --from-beginning --formatter-property print.key=true --max-messages 1
 ```
 
 ### 2. News collector → Kafka (F1-01)
