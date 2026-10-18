@@ -2,7 +2,7 @@
 
 **Status:** todo  
 **Owner:** M1+M2  
-**Phase:** PoC (T1/2569)  
+**Phase:** Full (T2/2570)  
 **Refs:** FR-5.1, NFR-5  
 **Branch:** `exp/f6-01-llm-summary-poc`  
 **PR:** —
@@ -27,3 +27,5 @@
 _(ผลทดสอบ / query / ภาพ — เติมก่อนขอ review)_
 
 ## Comments
+
+- 2026-10-12 (M1): เลื่อน PoC นี้ไปเทอม 2 — เทอม 1 โฟกัส pipeline, Lakehouse และ FinBERT ยังไม่แตะ LLM

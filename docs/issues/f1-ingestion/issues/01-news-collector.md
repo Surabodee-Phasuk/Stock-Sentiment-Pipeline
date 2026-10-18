@@ -1,11 +1,11 @@
 # F1-01: News collector RSS / News API → Kafka (10 หุ้น)
 
-**Status:** in-progress  
+**Status:** done  
 **Owner:** M1  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-1.1, FR-1.3  
 **Branch:** `feat/f1-01-news-collector`  
-**PR:** —
+**PR:** [#4](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/4)
 
 ## งาน
 
@@ -39,3 +39,4 @@
 - 2026-10-05 (Claude, ขอโดย M1): ใช้ Yahoo Finance RSS เป็นแหล่งแรก (ไม่ต้องมี key) แหล่งอื่นอยู่ใน F1-03 ใส่ dependency ไว้ที่ `ingestion/news/requirements.txt` ชั่วคราวจนกว่า INFRA-04 จะมี `pyproject.toml` และเพิ่ม `ingestion/__init__.py` (นอก File scope) เพื่อให้ import `ingestion.news` ได้
 - 2026-10-05 (Claude, ขอโดย M1): **ต้องตัดสินใจก่อน F2-03:** ข่าวชิ้นเดียวอยู่ได้หลาย ticker (เจอ 14/169) ถ้า `clean_news` MERGE ด้วย `news_id` อย่างเดียวจะเหลือ ticker เดียว ควรใช้ key `(news_id, ticker)` หรือแยกตาราง mapping
 - 2026-10-06 (Claude, ขอโดย M1): เปลี่ยนรายชื่อหุ้นเป็น Magnificent 7 + AVGO, RKLB, SPCX หุ้นกลุ่มเดียวกันทำให้ข่าวซ้ำข้าม ticker เพิ่มเป็น 27/125 (เดิม 14/169) — ประเด็น MERGE key ด้านบนยิ่งสำคัญ
+- 2026-10-11 (Claude, ขอโดย M1): PR #4 merge เข้า `main` แล้ว (2026-10-10) เปลี่ยน Status เป็น done และใส่ลิงก์ PR ย้อนหลังใน branch ของ INFRA-03 ส่วนการทดสอบส่งเข้า Kafka จริงจะทำใน INFRA-03
