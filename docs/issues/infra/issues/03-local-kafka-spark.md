@@ -1,11 +1,11 @@
 # INFRA-03: Docker Compose: Kafka + Spark สำหรับพัฒนาในเครื่อง
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M1  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-1.1, FR-2.2  
 **Branch:** `chore/infra-03-local-kafka-spark`  
-**PR:** —
+**PR:** [#23](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/23)
 
 ## งาน
 
@@ -69,3 +69,4 @@ iceberg smoke test passed
   - ค้าง: รัน `docker compose up` + produce/consume (acceptance criteria), รัน smoke test ทั้งสอง, แล้วเติม Evidence
 - **2026-10-17 (Claude, ขอโดย M1):** sync `main` แล้ว (รวม INFRA-02 จาก PR #22) ยังไม่ได้รันทดสอบ — Docker daemon ในเครื่องยังไม่เปิด ค้างเหมือนเดิม: `docker compose up` + produce/consume, `smoke_kafka.py`, `smoke_iceberg.py` แล้วเติม Evidence
 - **2026-10-17 (Claude, ขอโดย M1):** รันทดสอบครบ ผ่านทุกขั้น (ดู Evidence) และเปลี่ยนคำสั่ง console producer/consumer ใน `infra/README.md` เป็น `--reader-property` / `--formatter-property` เพราะ `--property` ถูก deprecate ใน Kafka 4.x
+- **2026-10-20 (Claude, ขอโดย M1):** PR #23 merge เข้า `main` แล้ว ปิด issue

@@ -1,0 +1,100 @@
+{
+ "chart": {
+  "result": [
+   {
+    "meta": {
+     "currency": "USD",
+     "symbol": "RKLB",
+     "exchangeName": "NMS",
+     "instrumentType": "EQUITY",
+     "gmtoffset": -14400,
+     "timezone": "EDT",
+     "exchangeTimezoneName": "America/New_York",
+     "regularMarketTime": 1792440001,
+     "currentTradingPeriod": {
+      "pre": {
+       "timezone": "EDT",
+       "start": 1792483200,
+       "end": 1792503000,
+       "gmtoffset": -14400
+      },
+      "regular": {
+       "timezone": "EDT",
+       "start": 1792503000,
+       "end": 1792526400,
+       "gmtoffset": -14400
+      },
+      "post": {
+       "timezone": "EDT",
+       "start": 1792526400,
+       "end": 1792540800,
+       "gmtoffset": -14400
+      }
+     },
+     "dataGranularity": "1d",
+     "range": ""
+    },
+    "timestamp": [
+     1791898200,
+     1791984600,
+     1792071000,
+     1792157400,
+     1792416600
+    ],
+    "indicators": {
+     "quote": [
+      {
+       "close": [
+        64.22000122070312,
+        59.18000030517578,
+        55.25,
+        50.84000015258789,
+        51.36000061035156
+       ],
+       "open": [
+        62.1,
+        63.5,
+        58.9,
+        54.7,
+        51.0
+       ],
+       "high": [
+        65.0,
+        63.9,
+        59.3,
+        55.1,
+        52.4
+       ],
+       "low": [
+        61.8,
+        58.7,
+        54.2,
+        50.1,
+        49.9
+       ],
+       "volume": [
+        31000000,
+        28000000,
+        30500000,
+        33100000,
+        26900000
+       ]
+      }
+     ],
+     "adjclose": [
+      {
+       "adjclose": [
+        64.22000122070312,
+        59.18000030517578,
+        55.25,
+        50.84000015258789,
+        51.36000061035156
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "error": null
+ }
+}
