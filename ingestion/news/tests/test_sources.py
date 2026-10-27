@@ -5,9 +5,10 @@ from pathlib import Path
 
 import pytest
 
-from ingestion.news.sources import FetchError, YahooFinanceRss, parse_rss
+from ingestion.news.sources import FetchError, NasdaqRss, YahooFinanceRss, parse_rss
 
 FIXTURE = Path(__file__).parent / "fixtures" / "yahoo_rklb.xml"
+NASDAQ_FIXTURE = Path(__file__).parent / "fixtures" / "nasdaq_rklb.xml"
 NOW = datetime(2026, 10, 5, 15, 0, tzinfo=UTC)
 
 
@@ -99,3 +100,34 @@ def test_fetch_does_not_retry_client_errors():
     with pytest.raises(FetchError):
         source.fetch("NOPE")
     assert source.stats.requests == 1
+
+
+def test_nasdaq_fetch_builds_symbol_url_and_tags_source():
+    opener = FakeOpener([NASDAQ_FIXTURE.read_bytes()])
+    source = NasdaqRss(opener=opener, sleep=lambda _: None, clock=lambda: NOW)
+
+    events = source.fetch("RKLB")
+
+    assert opener.urls == ["https://www.nasdaq.com/feed/rssoutbound?symbol=RKLB"]
+    assert [e.source for e in events] == ["rss:nasdaq", "rss:nasdaq"]
+    assert events[0].summary == "Rocket Lab announced a new multi-launch agreement."
+    assert events[0].published_at == "2026-10-05T12:20:00Z"
+
+
+def test_same_article_from_two_sources_gets_same_news_id():
+    yahoo = YahooFinanceRss(
+        opener=FakeOpener([FIXTURE.read_bytes()]), clock=lambda: NOW
+    ).fetch("RKLB")
+    nasdaq = NasdaqRss(
+        opener=FakeOpener([NASDAQ_FIXTURE.read_bytes()]), clock=lambda: NOW
+    ).fetch("RKLB")
+
+    yahoo_fool = next(e for e in yahoo if "fool.com" in e.url)
+    nasdaq_fool = next(e for e in nasdaq if "fool.com" in e.url)
+
+    assert yahoo_fool.url != nasdaq_fool.url  # http/www/utm/.tsrc ต่างกันจริง
+    assert yahoo_fool.source != nasdaq_fool.source
+    assert yahoo_fool.news_id == nasdaq_fool.news_id
+    assert {e.news_id for e in yahoo} & {e.news_id for e in nasdaq} == {
+        yahoo_fool.news_id
+    }

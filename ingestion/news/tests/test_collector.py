@@ -198,3 +198,39 @@ def test_kafka_sink_uses_ticker_as_key(monkeypatch):
     assert topic == "stock-news"
     assert key == b"RKLB"
     assert value["ticker"] == "RKLB"
+
+
+def test_same_news_from_two_sources_is_sent_once_per_ticker():
+    yahoo = FakeSource({"AAPL": [_event("AAPL", "https://fool.com/a?.tsrc=rss")]})
+    yahoo.name = "rss:yahoo"
+    nasdaq = FakeSource({"AAPL": [_event("AAPL", "http://www.fool.com/a/?utm_x=1")]})
+    nasdaq.name = "rss:nasdaq"
+    sink = ListSink()
+    collector = NewsCollector([yahoo, nasdaq], sink, sleep=lambda _: None)
+
+    stats = collector.run_once(["AAPL"])
+
+    assert (stats.fetched, stats.sent, stats.skipped_seen) == (2, 1, 1)
+    assert len(sink.sent) == 1
+
+
+def test_one_source_failing_does_not_block_the_other():
+    yahoo = FakeSource({}, failing={"AAPL"})
+    yahoo.name = "rss:yahoo"
+    nasdaq = FakeSource({"AAPL": [_event("AAPL", "https://nasdaq.com/articles/a")]})
+    nasdaq.name = "rss:nasdaq"
+    sink = ListSink()
+    collector = NewsCollector([yahoo, nasdaq], sink, sleep=lambda _: None)
+
+    stats = collector.run_once(["AAPL"])
+
+    assert stats.sent == 1
+    assert stats.failed_tickers == ["rss:yahoo:AAPL"]
+
+
+def test_sources_option_defaults_to_all_and_rejects_unknown():
+    args = build_parser().parse_args([])
+    assert args.sources == ["yahoo", "nasdaq"]
+    assert build_parser().parse_args(["--sources", "nasdaq"]).sources == ["nasdaq"]
+    with pytest.raises(SystemExit):
+        build_parser().parse_args(["--sources", "bogus"])
