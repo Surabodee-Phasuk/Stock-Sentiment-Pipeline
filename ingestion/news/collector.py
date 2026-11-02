@@ -19,7 +19,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from ingestion.news.sinks import DEFAULT_TOPIC, KafkaSink, NewsSink, StdoutSink
-from ingestion.news.sources import FetchError, NewsSource, YahooFinanceRss
+from ingestion.news.sources import SOURCES, FetchError, NewsSource
 from ingestion.news.tickers import DEFAULT_TICKERS_PATH, load_tickers
 
 log = logging.getLogger("ingestion.news")
@@ -150,6 +150,16 @@ def _interval_minutes(value: str) -> float:
     return minutes
 
 
+def _source_names(value: str) -> list[str]:
+    names = list(dict.fromkeys(n.strip() for n in value.split(",") if n.strip()))
+    unknown = [n for n in names if n not in SOURCES]
+    if unknown or not names:
+        raise argparse.ArgumentTypeError(
+            f"unknown source {unknown or value!r}, choose from {','.join(SOURCES)}"
+        )
+    return names
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Collect stock news and publish to Kafka"
@@ -168,6 +178,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--delay", type=float, default=1.0, help="seconds between source requests"
     )
+    parser.add_argument(
+        "--sources",
+        type=_source_names,
+        default=list(SOURCES),
+        help=f"comma-separated news sources ({','.join(SOURCES)})",
+    )
     parser.add_argument("--log-level", default="INFO")
     return parser
 
@@ -185,19 +201,20 @@ def main(argv: Sequence[str] | None = None) -> int:
         if args.sink == "stdout"
         else KafkaSink(args.bootstrap_servers, args.topic)
     )
-    source = YahooFinanceRss()
-    collector = NewsCollector([source], sink, delay_between_requests=args.delay)
+    sources = [SOURCES[name]() for name in args.sources]
+    collector = NewsCollector(sources, sink, delay_between_requests=args.delay)
     log.info("collecting %d tickers: %s", len(tickers), ", ".join(tickers))
 
     if args.once:
         stats = collector.run_once(tickers)
         log.info(
-            "fetched=%d sent=%d failed=%s per_ticker=%s source_stats=%s",
+            "fetched=%d sent=%d skipped_seen=%d failed=%s per_ticker=%s source_stats=%s",
             stats.fetched,
             stats.sent,
+            stats.skipped_seen,
             stats.failed_tickers or "-",
             stats.per_ticker,
-            source.stats,
+            {s.name: s.stats for s in sources},
         )
         return 1 if stats.failed_tickers else 0
 
@@ -205,7 +222,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     for sig in (signal.SIGINT, signal.SIGTERM):
         signal.signal(sig, lambda *_: stop.set())
     run_forever(collector, tickers, args.interval_min * 60, stop)
-    log.info("stopped; source_stats=%s", source.stats)
+    log.info("stopped; source_stats=%s", {s.name: s.stats for s in sources})
     return 0
 
 

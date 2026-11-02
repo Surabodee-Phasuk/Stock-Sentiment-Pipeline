@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- รูปแบบตาม https://www.nasdaq.com/feed/rssoutbound; item ที่สองลิงก์ไปบทความเดียวกับ yahoo_rklb.xml (ต่างแค่ http/www/utm) เพื่อทดสอบ news_id ข้ามแหล่ง -->
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:nasdaq="http://nasdaq.com/reference/feeds/1.0" version="2.0" xml:base="https://www.nasdaq.com/feed/rssoutbound">
+ <channel>
+  <title>RKLB Feed</title>
+  <link>https://www.nasdaq.com/feed/rssoutbound</link>
+  <item>
+   <title>Rocket Lab Wins New Launch Contract</title>
+   <link>https://www.nasdaq.com/articles/rocket-lab-wins-new-launch-contract</link>
+   <description>
+        Rocket Lab announced a new multi-launch agreement.
+    </description>
+   <pubDate>Mon, 05 Oct 2026 12:20:00 +0000</pubDate>
+   <guid isPermaLink="true">https://www.nasdaq.com/articles/rocket-lab-wins-new-launch-contract?time=1791200400</guid>
+   <dc:creator>Zacks</dc:creator>
+   <nasdaq:tickers>RKLB</nasdaq:tickers>
+  </item>
+  <item>
+   <title>Is Rocket Lab Stock a Good Buy Right Now?</title>
+   <link>http://www.fool.com/investing/2026/10/05/is-rocket-lab-stock-a-good-buy?utm_source=nasdaq&amp;utm_medium=feed</link>
+   <description>Valuation looks stretched.</description>
+   <pubDate>Mon, 05 Oct 2026 13:41:00 +0000</pubDate>
+   <nasdaq:tickers>RKLB</nasdaq:tickers>
+  </item>
+ </channel>
+</rss>
