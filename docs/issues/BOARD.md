@@ -21,7 +21,7 @@ PRD: [f1-ingestion/PRD.md](f1-ingestion/PRD.md)
 |---|---|---|---|---|---|---|
 | [F1-01](f1-ingestion/issues/01-news-collector.md) | News collector RSS / News API → Kafka (10 หุ้น) | M1 | PoC (T1/2569) | done | `feat/f1-01-news-collector` | [#4](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/4) |
 | [F1-02](f1-ingestion/issues/02-yahoo-daily-close.md) | Yahoo Finance daily close collector (10 หุ้น) | M1 | PoC (T1/2569) | done | `feat/f1-02-yahoo-daily-close` | [#24](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/24) |
-| [F1-03](f1-ingestion/issues/03-multi-source-news.md) | รวมหลายแหล่งข่าวและตัดซ้ำเบื้องต้นที่ collector | M1 | PoC (T1/2569) | in-review | `feat/f1-03-multi-source-news` | — |
+| [F1-03](f1-ingestion/issues/03-multi-source-news.md) | รวมหลายแหล่งข่าวและตัดซ้ำเบื้องต้นที่ collector | M1 | PoC (T1/2569) | done | `feat/f1-03-multi-source-news` | [#25](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/25) |
 | [F1-04](f1-ingestion/issues/04-backfill-2020.md) | Backfill ข่าวและราคาปิดย้อนหลังตั้งแต่ปี 2020 สำหรับ ~50 หุ้น | M1 | Full (T2/2570) | todo | `feat/f1-04-backfill-2020` | — |
 
 ## F2 — Lakehouse — S3 + Iceberg
@@ -29,7 +29,7 @@ PRD: [f2-lakehouse/PRD.md](f2-lakehouse/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F2-01](f2-lakehouse/issues/01-iceberg-tables.md) | DDL ตาราง Iceberg ทั้งสามชั้นใน Glue | M1 | PoC (T1/2569) | todo | `feat/f2-01-iceberg-tables` | — |
+| [F2-01](f2-lakehouse/issues/01-iceberg-tables.md) | DDL ตาราง Iceberg ทั้งสามชั้นใน Glue | M1 | PoC (T1/2569) | in-review | `feat/f2-01-iceberg-tables` | — |
 | [F2-02](f2-lakehouse/issues/02-kafka-to-raw-streaming.md) | Spark Structured Streaming: Kafka → `raw_news` พร้อม checkpoint | M1 | PoC (T1/2569) | todo | `feat/f2-02-kafka-to-raw-streaming` | — |
 | [F2-03](f2-lakehouse/issues/03-dedup-to-cleaned.md) | ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE | M1 | PoC (T1/2569) | todo | `feat/f2-03-dedup-to-cleaned` | — |
 | [F2-04](f2-lakehouse/issues/04-price-batch-load.md) | Spark batch: ราคาปิด → `raw_daily_price` / `daily_price` | M2 | PoC (T1/2569) | todo | `feat/f2-04-price-batch-load` | — |
