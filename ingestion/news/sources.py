@@ -1,7 +1,7 @@
 """แหล่งข่าว: แต่ละ source ดึงข่าวของ ticker หนึ่งตัวและคืน `NewsEvent`.
 
-PoC เริ่มที่ Yahoo Finance RSS (ไม่ต้องใช้ API key, มี feed แยกต่อ ticker)
-แหล่งอื่นและการตัดซ้ำข้ามแหล่งอยู่ใน F1-03
+แหล่งที่มี: Yahoo Finance RSS (F1-01) และ Nasdaq RSS (F1-03) ไม่ต้องใช้ API key, มี feed แยกต่อ ticker
+ข่าวเดียวกันจากหลายแหล่งได้ `news_id` เดียวกันเมื่อ URL ที่ normalize แล้วตรงกัน (ดู `event.make_news_id`)
 """
 
 from __future__ import annotations
@@ -91,11 +91,11 @@ def parse_rss(
     return events
 
 
-class YahooFinanceRss:
-    """Yahoo Finance headline RSS ต่อ ticker."""
+class TickerRssSource:
+    """RSS 2.0 ที่มี feed แยกต่อ ticker; subclass กำหนดแค่ `name` กับ `url_template`."""
 
-    name = "rss:yahoo"
-    url_template = "https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
+    name: str
+    url_template: str
 
     def __init__(
         self,
@@ -153,6 +153,26 @@ class YahooFinanceRss:
             log.warning("fetch %s failed (%s), retry in %.1fs", url, error, delay)
             self._sleep(delay)
         raise AssertionError("unreachable")
+
+
+class YahooFinanceRss(TickerRssSource):
+    """Yahoo Finance headline RSS ต่อ ticker."""
+
+    name = "rss:yahoo"
+    url_template = "https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
+
+
+class NasdaqRss(TickerRssSource):
+    """Nasdaq RSS ต่อ ticker (RKLB ไม่มีข่าว, SPCX มีน้อย: ให้ Yahoo ครอบคลุม)."""
+
+    name = "rss:nasdaq"
+    url_template = "https://www.nasdaq.com/feed/rssoutbound?symbol={ticker}"
+
+
+SOURCES: dict[str, type[TickerRssSource]] = {
+    "yahoo": YahooFinanceRss,
+    "nasdaq": NasdaqRss,
+}
 
 
 def _http_get(request: urllib.request.Request, timeout: float) -> bytes:

@@ -5,7 +5,7 @@ News collector (F1-01): ดึงข่าวของทุก ticker ใน [`
 | ไฟล์ | หน้าที่ |
 |---|---|
 | `event.py` | `NewsEvent`, normalize URL, `news_id` = sha256(URL ที่ normalize) |
-| `sources.py` | แหล่งข่าว (PoC: Yahoo Finance RSS ต่อ ticker) + retry/backoff |
+| `sources.py` | แหล่งข่าว RSS ต่อ ticker: Yahoo Finance (`yahoo`), Nasdaq (`nasdaq`) + retry/backoff |
 | `sinks.py` | ส่งเข้า Kafka หรือเขียน JSON Lines ออก stdout |
 | `collector.py` | วนดึงทุก ticker ทุกรอบ, ไม่ส่งข่าวเดิมซ้ำในโปรเซสเดียวกัน, CLI |
 
@@ -22,9 +22,13 @@ KAFKA_BOOTSTRAP_SERVERS=localhost:9092 .venv/bin/python -m ingestion.news.collec
 .venv/bin/pytest ingestion/news
 ```
 
-ตัวเลือก: `--interval-min` (5–15), `--delay` (วินาทีระหว่าง request, ค่าเริ่ม 1), `--topic`, `--tickers-file`, `--log-level`
+ตัวเลือก: `--sources` (ค่าเริ่ม `yahoo,nasdaq`), `--interval-min` (5–15), `--delay` (วินาทีระหว่าง request, ค่าเริ่ม 1), `--topic`, `--tickers-file`, `--log-level`
 
 ## ข้อควรรู้
 - การตัดซ้ำที่นี่เป็นแค่ cache ในหน่วยความจำ ถ้า restart จะส่งข่าวเดิมซ้ำได้ การตัดซ้ำจริงอยู่ที่ `clean_news` (F2-03)
 - ข่าวชิ้นเดียวอาจอยู่ใน feed ของหลาย ticker จึงส่ง event แยกต่อ ticker โดยใช้ `news_id` เดียวกัน
 - `url` เก็บ URL ต้นทางตามที่ feed ให้มา ส่วน `news_id` คิดจาก URL ที่ตัด tracking params แล้ว
+- (F1-03) แต่ละแหล่งถูกดึงแยกกัน แหล่งหนึ่งล้ม (`failed=rss:nasdaq:AAPL`) อีกแหล่งยังส่งต่อ ช่วยลดผลจาก rate limit (FR-1.5)
+- (F1-03) ข่าวเดียวกันจากหลายแหล่งได้ `news_id` เดียวกันเมื่อ URL หลัง normalize ตรงกัน แต่ Yahoo ลิงก์ไปเว็บต้นทาง (fool.com ฯลฯ) ส่วน Nasdaq ลิงก์ไป `nasdaq.com/articles/...` จึงซ้ำกันจริงไม่บ่อย (รัน 2026-10-25: 311 event, ซ้ำข้ามแหล่ง 0)
+- Nasdaq ไม่มีข่าว RKLB และมีน้อยสำหรับ SPCX ส่วน Yahoo ครอบคลุมทั้งคู่
+- ไม่ใช้ Seeking Alpha (ทุก item ลิงก์ไปหน้า symbol เดียวกัน `news_id` จะชนกัน) และ Google News (ลิงก์เป็น redirect)
