@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.2, NFR-1, NFR-2  
 **Branch:** `feat/f2-02-kafka-to-raw-streaming`  
-**PR:** —
+**PR:** [#27](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/27)
 
 ## งาน
 
