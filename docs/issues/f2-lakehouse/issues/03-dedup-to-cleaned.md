@@ -9,7 +9,7 @@
 
 ## งาน
 
-- [ ] MERGE on `news_id`
+- [ ] MERGE on `news_id, ticker` (ADR-0007)
 - [ ] validation: field ว่าง, timestamp ผิดปกติ, ticker นอก config
 
 ## Acceptance criteria

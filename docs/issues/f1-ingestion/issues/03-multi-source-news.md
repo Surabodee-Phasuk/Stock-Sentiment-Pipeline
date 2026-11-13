@@ -1,11 +1,11 @@
 # F1-03: รวมหลายแหล่งข่าวและตัดซ้ำเบื้องต้นที่ collector
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M1  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-1.5  
 **Branch:** `feat/f1-03-multi-source-news`  
-**PR:** —
+**PR:** [#25](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/25)
 
 ## งาน
 
@@ -36,3 +36,4 @@ source_stats={'rss:yahoo': requests=10 failures=0 {200: 10}, 'rss:nasdaq': reque
 ## Comments
 
 - 2026-10-25 (Claude, ขอโดย M1): เลือก Nasdaq RSS เป็นแหล่งที่สอง (RSS 2.0 ใช้ `parse_rss` เดิมได้) ตัด Seeking Alpha (link เป็นหน้า symbol เดียวกันทุก item ทำให้ news_id ชน) และ Google News (link เป็น redirect) แยกคลาสฐาน `TickerRssSource` ให้เพิ่มแหล่งใหม่ได้ด้วย `name` + `url_template`
+- 2026-11-06 (Claude, ขอโดย M1): PR #25 merge เข้า `main` แล้วเมื่อ 2026-11-02 ปิด issue
