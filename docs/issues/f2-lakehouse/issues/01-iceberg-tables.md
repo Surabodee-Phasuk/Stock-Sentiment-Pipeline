@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.1  
 **Branch:** `feat/f2-01-iceberg-tables`  
-**PR:** —
+**PR:** [#26](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/26)
 
 ## งาน
 

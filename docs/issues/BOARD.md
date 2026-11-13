@@ -29,7 +29,7 @@ PRD: [f2-lakehouse/PRD.md](f2-lakehouse/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F2-01](f2-lakehouse/issues/01-iceberg-tables.md) | DDL ตาราง Iceberg ทั้งสามชั้นใน Glue | M1 | PoC (T1/2569) | in-review | `feat/f2-01-iceberg-tables` | — |
+| [F2-01](f2-lakehouse/issues/01-iceberg-tables.md) | DDL ตาราง Iceberg ทั้งสามชั้นใน Glue | M1 | PoC (T1/2569) | in-review | `feat/f2-01-iceberg-tables` | [#26](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/26) |
 | [F2-02](f2-lakehouse/issues/02-kafka-to-raw-streaming.md) | Spark Structured Streaming: Kafka → `raw_news` พร้อม checkpoint | M1 | PoC (T1/2569) | todo | `feat/f2-02-kafka-to-raw-streaming` | — |
 | [F2-03](f2-lakehouse/issues/03-dedup-to-cleaned.md) | ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE | M1 | PoC (T1/2569) | todo | `feat/f2-03-dedup-to-cleaned` | — |
 | [F2-04](f2-lakehouse/issues/04-price-batch-load.md) | Spark batch: ราคาปิด → `raw_daily_price` / `daily_price` | M2 | PoC (T1/2569) | todo | `feat/f2-04-price-batch-load` | — |
