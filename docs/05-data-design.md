@@ -44,25 +44,75 @@
 ## Iceberg tables (Glue database `stock_sentiment`)
 Warehouse: `s3://stock-sentiment-lakehouse-surabodee/warehouse` ใน Spark อ้างถึงด้วย `glue.stock_sentiment.<table>`
 
-> **ยังต้องตัดสินใจก่อน F2-03:** ข่าวชิ้นเดียวอยู่ใน feed ของหลาย ticker (F1-01 เจอ 27/125) ถ้า MERGE `clean_news` ด้วย `news_id` อย่างเดียว จะเหลือ ticker เดียว
-
+DDL จริงอยู่ที่ `lakehouse/ddl/` สร้างด้วย `lakehouse/ddl/create_tables.py` (F2-01) ทุกตารางเป็น Iceberg format v2, Parquet + zstd, เวลาเป็น UTC
 
 | ชั้น | Table | Partition (ร่าง) | เขียนโดย |
 |---|---|---|---|
 | Raw | `raw_news` | `days(published_at)` | Spark streaming (append) |
 | Raw | `raw_daily_price` | `years(trade_date)` | Spark batch (append) |
-| Cleaned | `clean_news` | `days(published_at)` | Spark streaming (MERGE on `news_id`) |
+| Cleaned | `clean_news` | `days(published_at)` | Spark streaming (MERGE on `news_id, ticker`, [ADR-0007](adr/0007-clean-news-key-news-id-ticker.md)) |
 | Cleaned | `news_sentiment` | `days(published_at)` | Spark streaming / reprocess job |
 | Cleaned | `daily_price` | `years(trade_date)` | Spark batch (MERGE on `ticker, trade_date`) |
 | Aggregated | `sentiment_daily` | `years(trade_date)` | Spark batch |
 
 Partition spec ล็อกหลัง benchmark (issue F2-07)
 
+### `raw_news`
+event ทุกตัวจาก Kafka ตามที่รับมา append อย่างเดียว ไม่ตัดซ้ำ (F2-02)
+
+| column | type | หมายเหตุ |
+|---|---|---|
+| news_id, ticker, headline, summary, source, url | string | ตาม News event |
+| published_at, ingested_at | timestamp | ตาม News event |
+| kafka_partition | int | ตำแหน่งใน Kafka ใช้ตามรอยกลับ |
+| kafka_offset | bigint | |
+| kafka_timestamp | timestamp | |
+| raw_value | string | JSON ต้นฉบับ reprocess ได้แม้ schema event เปลี่ยน |
+| loaded_at | timestamp | เวลาที่ Spark เขียน ใช้วัด latency |
+
+### `clean_news`
+หนึ่งแถวต่อ **`(news_id, ticker)`** หลังตัดซ้ำและ validate (F2-03, ADR-0007)
+
+| column | type | หมายเหตุ |
+|---|---|---|
+| news_id | string | key |
+| ticker | string | key |
+| headline, summary, source, url | string | `source` = แหล่งแรกที่เจอ |
+| published_at, ingested_at | timestamp | `ingested_at` = ครั้งแรกที่เจอ |
+| cleaned_at | timestamp | เวลาที่ MERGE |
+
+### `raw_daily_price`
+ทุกแถวจากไฟล์ของ F1-02 append อย่างเดียว (F2-04)
+
+| column | type |
+|---|---|
+| ticker | string |
+| trade_date | date |
+| close | double |
+| source | string |
+| ingested_at | timestamp |
+| loaded_at | timestamp |
+
+### `daily_price`
+หนึ่งแถวต่อ **`(ticker, trade_date)`** (F2-04)
+
+| column | type |
+|---|---|
+| ticker | string |
+| trade_date | date |
+| close | double |
+| source | string |
+| ingested_at | timestamp |
+| updated_at | timestamp |
+
 ### `news_sentiment`
+หนึ่งแถวต่อ **`(news_id, ticker, model_version)`** (F3-01, F3-04)
+
 | column | type |
 |---|---|
 | news_id | string |
 | ticker | string |
+| published_at | timestamp |
 | sentiment | string |
 | sentiment_score | double |
 | model_name | string |
@@ -70,6 +120,8 @@ Partition spec ล็อกหลัง benchmark (issue F2-07)
 | processed_at | timestamp |
 
 ### `sentiment_daily`
+หนึ่งแถวต่อ **`(ticker, trade_date, model_version)`** (F4-01)
+
 | column | type |
 |---|---|
 | ticker | string |
@@ -81,3 +133,4 @@ Partition spec ล็อกหลัง benchmark (issue F2-07)
 | close | double |
 | close_change_pct | double |
 | model_version | string |
+| computed_at | timestamp |
