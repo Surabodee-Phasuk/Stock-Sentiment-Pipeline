@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.3, NFR-4  
 **Branch:** `feat/f2-03-dedup-to-cleaned`  
-**PR:** —
+**PR:** [#28](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/28)
 
 ## งาน
 

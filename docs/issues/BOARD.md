@@ -31,7 +31,7 @@ PRD: [f2-lakehouse/PRD.md](f2-lakehouse/PRD.md)
 |---|---|---|---|---|---|---|
 | [F2-01](f2-lakehouse/issues/01-iceberg-tables.md) | DDL ตาราง Iceberg ทั้งสามชั้นใน Glue | M1 | PoC (T1/2569) | done | `feat/f2-01-iceberg-tables` | [#26](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/26) |
 | [F2-02](f2-lakehouse/issues/02-kafka-to-raw-streaming.md) | Spark Structured Streaming: Kafka → `raw_news` พร้อม checkpoint | M1 | PoC (T1/2569) | done | `feat/f2-02-kafka-to-raw-streaming` | [#27](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/27) |
-| [F2-03](f2-lakehouse/issues/03-dedup-to-cleaned.md) | ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE | M1 | PoC (T1/2569) | in-review | `feat/f2-03-dedup-to-cleaned` | — |
+| [F2-03](f2-lakehouse/issues/03-dedup-to-cleaned.md) | ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE | M1 | PoC (T1/2569) | in-review | `feat/f2-03-dedup-to-cleaned` | [#28](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/28) |
 | [F2-04](f2-lakehouse/issues/04-price-batch-load.md) | Spark batch: ราคาปิด → `raw_daily_price` / `daily_price` | M2 | PoC (T1/2569) | todo | `feat/f2-04-price-batch-load` | — |
 | [F2-05](f2-lakehouse/issues/05-time-travel-schema-evolution.md) | สาธิต time travel และ schema evolution | M1 | PoC (T1/2569) | todo | `exp/f2-05-time-travel-schema-evolution` | — |
 | [F2-06](f2-lakehouse/issues/06-scale-50-tickers.md) | ขยาย pipeline เป็น ~50 หุ้นและข้อมูลตั้งแต่ 2020 | M1 | Full (T2/2570) | todo | `feat/f2-06-scale-50-tickers` | — |
