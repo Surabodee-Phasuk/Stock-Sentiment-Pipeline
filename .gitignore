@@ -12,6 +12,8 @@ __pycache__/
 
 # spark / local data
 spark-warehouse/
+metastore_db/
+derby.log
 checkpoints/
 *.parquet
 data/

@@ -1,6 +1,6 @@
 # F2-01: DDL ตาราง Iceberg ทั้งสามชั้นใน Glue
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M1  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.1  
@@ -61,3 +61,4 @@ sentiment_daily  ICEBERG
 
 - 2026-10-27 (Claude, ขอโดย M1): เขียน DDL 6 ตาราง + สคริปต์สร้างตาราง + unit test (`--dry-run` ไม่ต้องใช้ Spark) เติมคอลัมน์ของ `raw_news`, `clean_news`, `raw_daily_price`, `daily_price` ใน docs/05 และบันทึกคีย์ `clean_news` = `(news_id, ticker)` ใน ADR-0007 เพิ่ม `published_at` ใน `news_sentiment` (ใช้ partition) และ `computed_at` ใน `sentiment_daily` ค้าง: รันสร้างตารางจริงบน Glue แล้วเช็กใน Athena (acceptance criteria) แล้วเติม Evidence
 - 2026-11-06 (Claude, ขอโดย M1): สร้างตารางจริงแล้ว ผ่านเกณฑ์ ข้อควรรู้: Athena รัน `SHOW CREATE TABLE` กับตารางเหล่านี้ไม่ได้ (`table has unsupported properties`) แต่อ่านตารางได้ปกติ จึงเช็กชนิดตารางจาก Glue แทน
+- 2026-11-13 (Claude, ขอโดย M1): PR #26 merge เข้า `main` แล้ว ปิด issue
