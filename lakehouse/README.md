@@ -34,3 +34,18 @@ docker compose -f infra/docker-compose.yml exec spark \
 - แก้ไฟล์ DDL แล้วรันใหม่ **ไม่**เปลี่ยนตารางที่มีอยู่ ถ้าจะเพิ่มคอลัมน์ให้ใช้ `ALTER TABLE ... ADD COLUMN` (schema evolution, F2-05) แล้วแก้ DDL กับ docs/05 ให้ตรงกัน
 - Iceberg ไม่บังคับคีย์ (ไม่มี primary key) คีย์ในตารางข้างบนคือคีย์ที่งาน MERGE ใช้ เขียนไว้ใน `COMMENT` ของแต่ละตาราง
 - partition spec ยังเป็นร่าง ล็อกหลัง benchmark (F2-07)
+
+## สาธิต time travel และ schema evolution (F2-05)
+```bash
+docker compose -f infra/docker-compose.yml exec spark /opt/spark/bin/spark-submit lakehouse/demo/time_travel_schema_evolution.py
+```
+| ส่วน | ทำอะไร | ตารางที่ใช้ |
+|---|---|---|
+| A | ย้อนดู `raw_news` ณ snapshot แรก (`VERSION AS OF`, `TIMESTAMP AS OF`) เทียบกับปัจจุบัน | `raw_news` จริง อ่านอย่างเดียว |
+| B1–B3 | insert ข่าว 30 + 10 แล้วลบข่าว TSLA | `zz_f205_demo` |
+| B4 | ย้อนดูจำนวนข่าวทุกเวอร์ชัน | `zz_f205_demo` |
+| B5 | เพิ่มคอลัมน์ `sentiment_hint` และเปลี่ยนชื่อ `headline` → `title` แล้วเช็กว่าไม่มีไฟล์ข้อมูลถูกเขียนใหม่ | `zz_f205_demo` |
+| B6 | rollback กลับไปเวอร์ชันก่อนลบ | `zz_f205_demo` |
+
+- สคริปต์ลบ `zz_f205_demo` ตอนจบ ใส่ `--keep` เพื่อเก็บไว้เปิดใน Athena ด้วย [`demo/f2_05_athena.sql`](demo/f2_05_athena.sql)
+- ไม่แตะตารางจริงนอกจากอ่าน `raw_news`
