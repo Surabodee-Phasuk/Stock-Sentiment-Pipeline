@@ -7,6 +7,8 @@
 ingestion = ["PyYAML>=6.0", "confluent-kafka>=2.5"]
 test = ["pytest>=8", "PyYAML>=6.0"]
 lint = ["ruff==0.16.10"]
+# F3: FinBERT ในเครื่อง (ใน Spark ใช้ image infra/spark/Dockerfile.ml)
+sentiment = ["torch>=2.4", "transformers>=4.44"]
 dev = [{ include-group = "test" }, { include-group = "lint" }]
 
 [tool.ruff]

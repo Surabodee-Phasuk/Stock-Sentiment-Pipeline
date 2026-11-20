@@ -75,6 +75,31 @@ services:
       - ${AWS_DIR:-${HOME}/.aws}:/opt/aws:ro
       - ivy-cache:/opt/ivy
 
+  # F3-01 / F3-04: เหมือน `spark` แต่มี torch + transformers ไว้รัน FinBERT
+  # ไม่เริ่มพร้อม `up -d` (profile ml) เรียกใช้ด้วย `--profile ml run --rm spark-ml ...`
+  spark-ml:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile.ml
+    image: stock-sentiment/spark-ml:4.0.4
+    profiles: ["ml"]
+    user: root
+    working_dir: /workspace
+    environment:
+      AWS_PROFILE: ${AWS_PROFILE:-default}
+      AWS_REGION: ${AWS_REGION:-ap-southeast-2}
+      AWS_CONFIG_FILE: /opt/aws/config
+      AWS_SHARED_CREDENTIALS_FILE: /opt/aws/credentials
+      HF_HOME: /opt/hf-cache
+    volumes:
+      - ..:/workspace
+      - ./spark/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf:ro
+      - ${AWS_DIR:-${HOME}/.aws}:/opt/aws:ro
+      - ivy-cache:/opt/ivy
+      - hf-cache:/opt/hf-cache
+
 volumes:
   # cache jar ของ Iceberg / Kafka connector ไม่ต้องโหลดใหม่ทุกครั้งที่สร้าง container
   ivy-cache:
+  # โมเดล FinBERT จาก Hugging Face (F3-01) โหลดครั้งเดียว
+  hf-cache:

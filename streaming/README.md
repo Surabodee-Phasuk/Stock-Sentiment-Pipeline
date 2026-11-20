@@ -51,3 +51,27 @@ docker compose -f infra/docker-compose.yml exec spark /opt/spark/bin/spark-submi
 - เช็ก duplicate rate ใน Athena ด้วย [`lakehouse/queries/f2_03_duplicate_rate.sql`](../lakehouse/queries/f2_03_duplicate_rate.sql)
 
 ดูกฎการทำงานที่ [docs/agents.md](../docs/agents.md)
+
+## `raw_news` → FinBERT → `news_sentiment` (F3-01)
+`news_sentiment_job.py` อ่าน `raw_news` แบบ streaming ตรวจและตัดซ้ำด้วยกฎเดียวกับ F2-03 แล้วให้ FinBERT จำแนกข่าวที่ยังไม่มีผลของ `model_version` นี้ จากนั้น MERGE ลง `news_sentiment` หนึ่งแถวต่อ `(news_id, ticker, model_version)`
+
+ต้องใช้ service `spark-ml` (image ที่มี torch + transformers) ไม่ใช่ `spark`
+
+```bash
+# ครั้งแรก build image (หลายนาที) — ครั้งต่อไปใช้ cache
+docker compose -f infra/docker-compose.yml --profile ml build spark-ml
+
+# ประมวลผลข่าวใน raw ที่ยังไม่เคยอ่านแล้วจบ (บรรทัดท้ายสรุปจำนวนตามป้าย)
+docker compose -f infra/docker-compose.yml --profile ml run --rm spark-ml \
+  /opt/spark/bin/spark-submit streaming/news_sentiment_job.py --once
+
+# รันต่อเนื่องทุก 60 วินาที คู่กับ raw_news_stream.py
+docker compose -f infra/docker-compose.yml --profile ml run --rm spark-ml \
+  /opt/spark/bin/spark-submit streaming/news_sentiment_job.py
+```
+
+### ข้อควรรู้
+- ครั้งแรกโหลดโมเดล `ProsusAI/finbert` (~440 MB) จาก Hugging Face เก็บไว้ใน volume `hf-cache`
+- FinBERT รันบน driver ทีละชุด (ข่าว ~300 ชิ้นต่อรอบใน PoC) ถ้าข่าวมากขึ้นมากค่อยย้ายไปรันใน executor (pandas UDF)
+- เปลี่ยนโมเดลหรือวิธีสร้าง input → ใช้ `--model-version` ใหม่ ผลเดิมยังอยู่ และ reprocess ข่าวเก่าด้วย F3-04
+- checkpoint อยู่ที่ `s3a://stock-sentiment-lakehouse-surabodee/checkpoints/news_sentiment`
