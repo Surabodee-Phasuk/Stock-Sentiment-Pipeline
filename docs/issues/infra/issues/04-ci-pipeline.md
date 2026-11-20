@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** —  
 **Branch:** `chore/infra-04-ci-pipeline`  
-**PR:** —
+**PR:** [#30](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/30)  
 
 ## งาน
 
