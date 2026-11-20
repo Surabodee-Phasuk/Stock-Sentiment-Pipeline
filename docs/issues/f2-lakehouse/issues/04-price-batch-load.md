@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.4  
 **Branch:** `feat/f2-04-price-batch-load`  
-**PR:** —
+**PR:** [#31](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/31)  
 
 ## งาน
 
