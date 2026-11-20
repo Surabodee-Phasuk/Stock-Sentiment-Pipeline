@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-3.1  
 **Branch:** `feat/f3-01-finbert-streaming`  
-**PR:** —
+**PR:** [#32](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/32)  
 
 ## งาน
 

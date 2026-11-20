@@ -42,7 +42,7 @@ PRD: [f3-sentiment/PRD.md](f3-sentiment/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F3-01](f3-sentiment/issues/01-finbert-streaming.md) | FinBERT ใน Spark Structured Streaming → `news_sentiment` | M2 | PoC (T1/2569) | todo | `feat/f3-01-finbert-streaming` | — |
+| [F3-01](f3-sentiment/issues/01-finbert-streaming.md) | FinBERT ใน Spark Structured Streaming → `news_sentiment` | M2 | PoC (T1/2569) | in-review | `feat/f3-01-finbert-streaming` | [#32](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/32) |
 | [F3-02](f3-sentiment/issues/02-finbert-poc-benchmark.md) | PoC: F1 บน 100 ข่าว และ throughput | M2 | PoC (T1/2569) | todo | `exp/f3-02-finbert-poc-benchmark` | — |
 | [F3-03](f3-sentiment/issues/03-goldset-300-eval.md) | Gold set 300 ข่าว: ติดป้ายแยกกัน, Cohen's kappa, Macro-F1 | M1+M2 | Full (T2/2570) | todo | `test/f3-03-goldset-300-eval` | — |
 | [F3-04](f3-sentiment/issues/04-reprocess-from-raw.md) | Reprocess sentiment ทั้งหมดจาก Raw เมื่อเปลี่ยน `model_version` | M2 | PoC (T1/2569) | todo | `feat/f3-04-reprocess-from-raw` | — |
