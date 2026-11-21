@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.6  
 **Branch:** `feat/f3-04-reprocess-from-raw`  
-**PR:** —
+**PR:** [#33](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/33)  
 
 ## งาน
 
