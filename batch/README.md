@@ -32,3 +32,12 @@ docker compose -f infra/docker-compose.yml exec spark /opt/spark/bin/spark-submi
 - log อาจขึ้น `WARN ... FileNotFoundException ... daily_close_*.jsonl` เมื่อใช้ `*` ใน path เป็นแค่คำเตือนของ Spark ไม่ใช่ error
 
 ดูกฎการทำงานที่ [docs/agents.md](../docs/agents.md)
+
+## Reprocess sentiment จาก Raw (F3-04)
+`reprocess/reprocess_sentiment.py` อ่าน `raw_news` ทั้งหมด (หรือช่วงวันที่ `--since` / `--until`) แล้วให้ FinBERT จำแนกใหม่ภายใต้ `--model-version` ที่กำหนด ไม่ดึงข่าวจากแหล่งใหม่ ผลของ version เดิมยังอยู่ (คีย์ `(news_id, ticker, model_version)`)
+
+```bash
+docker compose -f infra/docker-compose.yml --profile ml run --rm spark-ml \
+  /opt/spark/bin/spark-submit batch/reprocess/reprocess_sentiment.py --model-version finbert-v2
+```
+บรรทัดท้ายเทียบจำนวนแต่ละป้ายของทุก version รันซ้ำได้ ข่าวที่มีผลของ version นั้นแล้วจะถูกข้าม (`skipped_existing`)
