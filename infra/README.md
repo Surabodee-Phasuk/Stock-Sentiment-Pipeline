@@ -14,6 +14,7 @@ Docker Compose (Kafka, Spark สำหรับพัฒนาในเครื
 | `spark/spark-defaults.conf` | jar ของ Iceberg / Kafka connector และ Glue catalog ชื่อ `glue` |
 | `spark/smoke_iceberg.py` | ทดสอบ Spark เขียน/อ่าน Iceberg บน S3 ผ่าน Glue |
 | `spark/smoke_kafka.py` | ทดสอบ Spark อ่าน topic `stock-news` |
+| `spark/Dockerfile.ml` | image `spark-ml` = Spark เดิม + torch (CPU) + transformers สำหรับ FinBERT (F3-01, F3-04) เรียกด้วย `--profile ml` |
 
 ## Local Kafka + Spark (INFRA-03)
 
