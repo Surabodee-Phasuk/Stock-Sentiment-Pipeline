@@ -10,6 +10,9 @@ FinBERT wrapper, gold set (`goldset/`) และสคริปต์ประ�
 | ไฟล์ | หน้าที่ |
 |---|---|
 | `finbert.py` | `FinBertClassifier`: โหลด `ProsusAI/finbert` (pretrained, ADR-0004) จำแนกเป็นชุด คืน `sentiment` + `score` |
+| `eval/sample_goldset.py` | สุ่มข่าวแบบกระจายตามหุ้นเป็น CSV ให้คนติดป้าย (F3-02) |
+| `eval/evaluate.py` | Accuracy, Precision / Recall / F1 ต่อป้าย, Macro-F1, confusion matrix และ throughput (F3-02) |
+| `goldset/` | ข่าวที่ติดป้ายแล้ว ดู [goldset/README.md](goldset/README.md) |
 | `pipeline.py` | ขั้นตอนร่วมของ streaming (F3-01) และ reprocess (F3-04): ตรวจ/ตัดซ้ำ → ตัดข่าวที่มีผลแล้ว → FinBERT → MERGE |
 
 ## ผลลัพธ์ที่เขียนลง `news_sentiment`
