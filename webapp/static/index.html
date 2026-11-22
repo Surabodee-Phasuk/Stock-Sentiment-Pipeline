@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Watchlist · Stock News Sentiment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+  <main class="wrap narrow">
+    <div class="topbar">
+      <div class="grow"><h1>My Watchlist</h1><div class="sub" id="count">…</div></div>
+      <a class="btn btn-outline" href="/search">+ Add More</a>
+    </div>
+    <div id="cards" aria-live="polite">
+      <div class="card skeleton"></div>
+      <div class="card skeleton" style="margin-top:10px"></div>
+    </div>
+    <p class="disclaimer" id="disclaimer"></p>
+  </main>
+  <script src="/static/js/common.js"></script>
+  <script>
+    SS.nav("home");
+    document.getElementById("disclaimer").textContent = SS.DISCLAIMER + " · ราคาเป็นข้อมูลตัวอย่าง";
+    const cards = document.getElementById("cards");
+
+    Promise.all([SS.mock(), SS.tickers()])
+      .then(([data, list]) => {
+        const info = Object.fromEntries(list.map((t) => [t.ticker, t]));
+        const watch = SS.getWatchlist().filter((t) => data.stocks[t] && info[t]);
+        document.getElementById("count").textContent = `${watch.length} stocks selected`;
+        cards.innerHTML = watch.length
+          ? watch
+              .map((t) => {
+                const s = data.stocks[t];
+                return `<a class="card stock-card" href="/stock/${t}">
+                  ${SS.logo(t)}
+                  <div class="grow"><div class="ticker">${t}</div><div class="name ellipsis">${SS.esc(info[t].name)}</div></div>
+                  ${SS.pill(SS.dominant(s.today))}
+                  <span class="chev" aria-hidden="true">›</span>
+                </a>`;
+              })
+              .join("")
+          : `<div class="card empty">ยังไม่มีหุ้นใน Watchlist<br><br><a class="btn" href="/search">Search stocks</a></div>`;
+      })
+      .catch(() => {
+        cards.innerHTML = `<div class="card empty">โหลดข้อมูลไม่สำเร็จ<br><br><button onclick="location.reload()">ลองใหม่</button></div>`;
+      });
+  </script>
+</body>
+</html>

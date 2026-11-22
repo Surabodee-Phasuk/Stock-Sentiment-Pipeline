@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask AI · Stock News Sentiment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+  <main class="wrap narrow">
+    <div class="topbar">
+      <div class="grow"><h1>Ask AI</h1><div class="sub">ถามเรื่องข่าวของหุ้นในระบบ ตอบจากข่าวที่เก็บไว้พร้อมแหล่งที่มา</div></div>
+      <span class="sample" title="ระบบจริงใช้ LLM + News RAG ในเทอม 2 (F7)">Prototype</span>
+    </div>
+    <form id="f" class="card">
+      <label class="search">
+        <input id="q" type="text" placeholder="เช่น ช่วงนี้ข่าว NVDA เป็นยังไงบ้าง" required aria-label="คำถาม">
+      </label>
+      <div class="chips" id="examples"></div>
+      <button class="btn-block" style="margin-top:8px">Ask</button>
+    </form>
+    <div id="answer" aria-live="polite" style="margin-top:12px"></div>
+    <p class="disclaimer">คำตอบมาจากข่าวที่ระบบเก็บไว้ อาจไม่ครบถ้วน ไม่ใช่คำแนะนำการลงทุน และระบบจะไม่ตอบว่าควรซื้อหรือขาย</p>
+  </main>
+  <script src="/static/js/common.js"></script>
+  <script>
+    SS.nav("ask");
+    const examples = ["ช่วงนี้ข่าว NVDA เป็นยังไงบ้าง", "TSLA มีข่าวร้ายอะไร", "ควรซื้อ AAPL ไหม", "พรุ่งนี้ฝนตกไหม"];
+    const ex = document.getElementById("examples");
+    const q = document.getElementById("q");
+    const out = document.getElementById("answer");
+    ex.innerHTML = examples.map((e) => `<button type="button" class="chip">${e}</button>`).join("");
+    ex.addEventListener("click", (e) => {
+      if (e.target.classList.contains("chip")) { q.value = e.target.textContent; ask(); }
+    });
+    document.getElementById("f").addEventListener("submit", (e) => { e.preventDefault(); ask(); });
+
+    // จำลอง guardrail ตาม docs/07: ticker ไม่อยู่ในระบบ / ขอคำแนะนำซื้อขาย / นอกเรื่อง → ปฏิเสธ
+    async function ask() {
+      out.innerHTML = `<div class="card skeleton" style="min-height:120px"></div>`;
+      const [data, list] = await Promise.all([SS.mock(), SS.tickers()]);
+      const text = q.value.trim();
+      const t = list.map((x) => x.ticker).find((x) => new RegExp(`\\b${x}\\b`, "i").test(text));
+      let html;
+      if (/ซื้อ|ขาย|buy|sell|ควรลงทุน/i.test(text)) {
+        html = `<p><span class="pill neutral">Declined</span></p><p>ระบบไม่ให้คำแนะนำซื้อหรือขาย ลองถามว่า “ข่าวของ ${t ?? "หุ้น"} ช่วงนี้เป็นอย่างไร” แทน</p>`;
+      } else if (!t) {
+        html = `<p><span class="pill neutral">Out of scope</span></p><p>ตอบได้เฉพาะข่าวของหุ้นในระบบ: ${list.map((x) => x.ticker).join(", ")}</p>`;
+      } else {
+        const s = data.stocks[t];
+        const pick = (l) => s.news.filter((n) => n.sentiment === l).slice(0, 2);
+        const cited = [...pick("positive"), ...pick("negative")];
+        html = `<div class="row" style="margin-bottom:8px">${SS.logo(t)}<b>${t}</b>${SS.pill(SS.dominant(s.today))}</div>
+          <p style="margin:0 0 8px">ข่าวล่าสุด ${s.today.news} ข่าว: Positive ${s.today.positive} · Neutral ${s.today.neutral} · Negative ${s.today.negative}
+          ประเด็นที่เด่นคือ ${cited.map((n, i) => `${SS.esc(n.headline)} <sup>[${i + 1}]</sup>`).join(" และ ")}</p>
+          <ol class="small muted" style="padding-left:18px">${cited.map((n) => `<li><a href="${SS.esc(n.url)}" target="_blank" rel="noopener">${SS.esc(n.headline)}</a> — ${SS.esc(n.source)}, ${SS.fmtDateTime(n.published_at)}</li>`).join("")}</ol>
+          <p class="small faint" style="margin:0">ตัวอย่างคำตอบประกอบจากข่าวจริงในข้อมูลตัวอย่าง ระบบจริงใช้ LLM + News RAG (F7)</p>`;
+      }
+      out.innerHTML = `<div class="card"><p class="small faint" style="margin-top:0">Q: ${SS.esc(text)}</p>${html}</div>`;
+    }
+  </script>
+</body>
+</html>

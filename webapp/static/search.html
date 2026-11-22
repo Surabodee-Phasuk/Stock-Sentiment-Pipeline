@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search · Stock News Sentiment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+  <main class="wrap narrow">
+    <div class="topbar"><h1>Search</h1></div>
+    <div class="card">
+      <label class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="q" type="search" placeholder="Search ticker or company…" autocomplete="off" aria-label="Search ticker or company">
+      </label>
+      <div class="chips" id="chips" role="group" aria-label="Sector"></div>
+      <ul class="list" id="results" aria-live="polite"></ul>
+      <button class="btn-block" id="add" style="margin-top:12px">Add to Watchlist →</button>
+    </div>
+  </main>
+  <script src="/static/js/common.js"></script>
+  <script>
+    SS.nav("search");
+    const q = document.getElementById("q");
+    const chipsEl = document.getElementById("chips");
+    const results = document.getElementById("results");
+    const addBtn = document.getElementById("add");
+    let all = [];
+    let sector = "";
+    const selected = new Set(SS.getWatchlist());
+
+    function renderChips() {
+      const sectors = ["", ...new Set(all.map((t) => t.sector))];
+      chipsEl.innerHTML = sectors
+        .map((s) => `<button type="button" class="chip" data-s="${SS.esc(s)}" aria-pressed="${s === sector}">${SS.esc(s || "All")}</button>`)
+        .join("");
+    }
+
+    function render() {
+      const term = q.value.trim().toLowerCase();
+      const hits = all.filter(
+        (t) =>
+          (!term || t.ticker.toLowerCase().includes(term) || t.name.toLowerCase().includes(term)) &&
+          (!sector || t.sector === sector)
+      );
+      results.innerHTML = hits.length
+        ? hits
+            .map(
+              (t) => `<li>
+                <input class="check" type="checkbox" id="c-${t.ticker}" data-t="${t.ticker}" ${selected.has(t.ticker) ? "checked" : ""}>
+                ${SS.logo(t.ticker)}
+                <label class="grow" for="c-${t.ticker}" style="cursor:pointer">
+                  <div class="ticker">${t.ticker}</div>
+                  <div class="name ellipsis">${SS.esc(t.name)} · ${SS.esc(t.sector)}</div>
+                </label>
+                <a class="chev" href="/stock/${t.ticker}" aria-label="ดูรายละเอียด ${t.ticker}">›</a>
+              </li>`
+            )
+            .join("")
+        : `<li class="empty" style="display:block">No stocks match “${SS.esc(q.value)}”</li>`;
+      updateButton();
+    }
+
+    function updateButton() {
+      const current = new Set(SS.getWatchlist());
+      const same = selected.size === current.size && [...selected].every((t) => current.has(t));
+      addBtn.disabled = selected.size === 0;
+      addBtn.textContent = same
+        ? `Go to Watchlist (${selected.size}) →`
+        : `Add ${selected.size} stocks to Watchlist →`;
+    }
+
+    chipsEl.addEventListener("click", (e) => {
+      const b = e.target.closest(".chip");
+      if (!b) return;
+      sector = b.dataset.s;
+      renderChips();
+      render();
+    });
+    results.addEventListener("change", (e) => {
+      const t = e.target.dataset.t;
+      if (!t) return;
+      e.target.checked ? selected.add(t) : selected.delete(t);
+      updateButton();
+    });
+    addBtn.addEventListener("click", () => {
+      SS.setWatchlist([...selected]);
+      location.href = "/";
+    });
+    q.addEventListener("input", render);
+
+    SS.tickers()
+      .then((list) => {
+        all = list;
+        renderChips();
+        render();
+      })
+      .catch(() => (results.innerHTML = `<li class="empty" style="display:block">โหลดรายชื่อหุ้นไม่สำเร็จ</li>`));
+  </script>
+</body>
+</html>
