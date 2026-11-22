@@ -1,0 +1,54 @@
+news_id,ticker,gold,finbert,score,headline
+d1e0cd407b75ef6dd2cb350fdf0b367bdf07ddecc06eb9b1819e5b96689622a0,AMZN,neutral,positive,0.856545,"SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW"
+040379688a521d14382b889d6f2cab4e0a898c9926bf31f68ef76a044d1a1ad5,AVGO,neutral,negative,-0.942035,Cisco Drops 7% Post Earnings: Should You Buy the Stock on the Dip?
+40f37ca3cd2f2c102ab9af0f95408a2f052e26e05aa56da1c95a98e01426aa20,META,negative,neutral,0.433406,Turkey’s monopolies watchdog takes on all comers
+383e087242efe6729fff7b478b4f93c0d9741e1f505ac51379aa763775dbc778,MSFT,neutral,positive,0.929556,Nebius Lifts 2026 CapEx View to $27B: Can Funding Keep Pace?
+35b291723b85d1280f7b869f33803f6a51e5444d0a0d1c2f2a123a73e781fd65,NVDA,neutral,positive,0.865021,1 Unstoppable Stock to Buy Before It Joins NVDA and AAPL in the $1 Trillion Club
+446b0cc758feccd075499b17797019c563d99c52a60ee6df72e09cc4bc3e375c,RKLB,positive,neutral,0.007938,Jim Cramer Says Rocket Lab Has ‘Gotten Too Cheap’ Just After Its Electron Rocket Hit 100 Launches Faster Than Any Other Commercial Rocket
+15174fb71eb4ca90e97dc4fcc69a1a90955642e02be18ae40ef30b589d135607,SPCX,positive,negative,-0.607843,How many millionaires did Anthropic’s blockbuster IPO just create?
+34bf310b7cebf9db76d39462e8919927f0bbee158a950717c4d256f74bd92027,AAPL,positive,neutral,0.274974,CrowdStrike (CRWD) Brings Apple Device Automation Into Falcon Foundry Through A New Tie Up
+c711112a898f0a96bc9bfe6c3638c5a6bcf52c9024b463e8287ec9068293ed22,AMZN,neutral,positive,0.894238,3 Dirt Cheap Artificial Intelligence (AI) Stocks to Load Up on Before 2027
+8fab5fdd2bce5e9774ae019cb74853d896ad379865210e6cbfdf850254c1a507,AVGO,neutral,negative,-0.916892,Should One Overlooked Number Scare You About AMD Stock?
+832d041d280ca00ab0d85cbe1186224da1e9f967ad3f38b774c3b6642cc81998,META,negative,neutral,0.096628,Meta Platforms 'Reevaluating' 2030 Net Zero Goal as AI Buildout Strains Clean Energy Supply
+8e4eb56dc9c34867af579e68a08e0b39f1a6a662eea711abea8003606a3e7770,RKLB,neutral,negative,-0.937115,Musk: SpaceX Has a “Monopoly” in Space. That’s Bad News for Amazon’s Leo. But Also Bad for SpaceX
+0c8538f87f6109dabdd608208c10236adbd3f4a2e644556078b3531e837192b4,SPCX,neutral,positive,0.753448,"Anthropic’s IPO nets Goldman Sachs and Morgan Stanley $113 million apiece in fees, eclipsing their SpaceX paydays"
+3aa2d6cc14cb9f0f25af612a40715f181cee64588c6e74d6ba30698110038e05,AMZN,positive,negative,-0.840763,NYC Lawmakers Weigh Overhaul of Amazon Delivery Worker Bill
+b1ccac1d6b5942931cefb22e300f5fc9a90efea6b589b4b984fa622279ab29f0,AVGO,neutral,negative,-0.772649,AMD Bets $8.2B on Physical AI: Could Robotics Be Its Next Growth Frontier?
+c80e8caf0548584a5c9112f1dd810c1a232ee436bb26d0c6ce87437f44832a8c,GOOGL,positive,neutral,-0.019663,Anthropic IPO: 2 Top Stocks That Already Own Nearly 30% of It
+0b0207e0a1c03714899382b0d8fd5bdb6afcd44f2e23fcbfd878ea2ab5c0a3f2,AAPL,positive,neutral,0.03256,Warren Buffett Buys: 3 Forever Stocks the Billionaire Investor Has Invested In
+9914d09f12777b00cca4501457f12cf13aae2cf91a03ccca648fae7cdfad5fa5,AVGO,positive,neutral,0.114637,The Stocks That Win From Anthropic's IPO
+58183b6d17cb0c929d529d82b928a7c4f1fe6199b4e146b26adc5fb8f16652cc,GOOGL,positive,neutral,0.229077,Anthropic IPO value surges in stock market debut
+270334c5e6510f2a239a29f2393defdf691a585237e5a440b53ff0c96c825857,META,neutral,negative,-0.960704,AMD Stock Drops After Short Report Says It Isn’t an Nvidia Replacement
+86f0f70b3dbbb031578c60d23282f67ec43d96a75a29fe7bcd2b4d1b99d5d3d3,MSFT,negative,neutral,0.031023,Bridgewater Warns of AI Security Risk as Anthropic Shares Rise in Debut
+4a6600fbdce113bc073660fa303ec883bd4738481905bb1a9e1ad1077edbf464,NVDA,neutral,positive,0.807708,$500 Invested in GE Aerospace (GE) Stock Today Could Be Worth This Much in 3 Years
+119c3209ada39ce459f47738e0f806aaaf400aafe1b7264efc9fc57bdd146dc8,RKLB,positive,negative,-0.838102,Rocket Lab Has 2 Big Opportunities Ahead. Either One Could Change the Stock’s Trajectory
+892b3116a8ad46bf5fbd12ee785218668b2a2a94c44efdcaba77d9c5eeaa88af,TSLA,negative,neutral,0.088087,Tesla Robo-Taxi Expands to Dallas. It Isn’t Enough.
+d3bd1f54c91f49844eb556ea25a0a0ba7bcc6a79f066b3ae3d022a1ba916c309,AAPL,positive,neutral,0.129812,Apple May Try to Challenge Meta for Personal Agent Supremacy
+fda615417c74da75bda91f9e9650d206e0343065697df40ea79243d3033ee0e9,AVGO,neutral,negative,-0.891392,$1 Million In Nvidia Five Years Ago: What Is It Worth Now?
+b36f8dd4f98ca5c3a7d806232ad3dd6771656d3587b520bc5c7d7d20281c7008,GOOGL,neutral,negative,-0.939885,"Q3 Earnings Strong, Q4 Estimates Slip: What the Latest Revisions Mean for 2027"
+5e6bf70c0135925fced9e9f0bf2ef8d103f64b9e877130bc84cb848e2a334fc1,META,neutral,positive,0.629751,"Meta Platforms is Cheap at 18.78X P/E: Buy, Sell or Hold the Stock?"
+b56da9841a0834fef94a408521d0650d885ec8219a09a13c0db544b2faace0e3,RKLB,negative,positive,0.907777,Rocket Lab (RKLB) Stock Could Be Overvalued On Record Backlog Growth
+a1126f422a4eca4488ad9080349ab3346412f12c56c10b2fe36184b8a522ca08,TSLA,positive,neutral,0.037226,Tesla Expands Cybercab To Dallas In First Move Outside Austin
+8bc88060854c30ad347eec64a04ff8fd17dddbd9b952c179b3a4fa69af629089,AAPL,positive,neutral,0.304614,"Apple Became a Top Buffett Holding for a Reason. I'd Buy It With $1,000 Now."
+f930d0ec364b4474455c2c8437299df1ee6484d5909f17b58a8b98a5da1d7d83,AMZN,negative,positive,0.93107,"Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes"
+d53d0ccfc938a9e35cc2d2c36e67a02fb7358fe27d93f310b248f4bf06d89367,AVGO,neutral,positive,0.592502,Is Broadcom (AVGO) Stock Stretched Or Still Reasonable On Cash Flow?
+a659c21c6ab9b689b107889647a22bd29cb25d4e86b246ee019a1baa57ef2f6b,GOOGL,positive,neutral,0.024806,2 Huge Beneficiaries of Anthropic's IPO
+37c11027d1c2dcc8477cd3b1b5dd70f66d595a1f3929a1abdcb8329bc88f6781,META,negative,positive,0.89621,"Anthropic Just Finished Its First Day as a Public Company. Five of the Six Biggest Tech IPOs Since Facebook Were Underwater Six Months After Theirs, and Elon Musk’s SpaceX Is Following the Script"
+6eb61559029685f5d53ec19588d290644998b371b835605b796bc0e613c3cbff,MSFT,positive,neutral,0.195381,Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus
+eca8e6707af41c7b8596f041be8b61b955cd6d10480df0d5aa53f0bec66cfe6c,RKLB,neutral,negative,-0.953551,"AST SpaceMobile Stock Has Fallen Far Enough, Analyst Says. He Sees Nearly 90% Upside."
+8ac0ad7bfedd0e642562d931a8fa875393f9c89b53ad95d59342fae60bc3b32c,SPCX,neutral,positive,0.928541,Apollo Global Management Targets Over 20% Earnings Growth in 2027 as Credit Expands
+c5c04c980a08cdc1578ea0c3a89e2a4b55f8396fa1a64d2eabd7ce3c6f66b57e,AAPL,neutral,positive,0.871334,1 Unstoppable Stock to Buy Before It Joins NVDA and AAPL in the $1 Trillion Club
+c26d19d612c54e27453dad7850054a0ef5a387b5ead2896b0fe3656218ff7acf,AMZN,neutral,negative,-0.94563,"The Zacks Analyst Blog Highlights Oracle, Microsoft, Amazon and Alphabet"
+600e586ae948040741b43a9284b4cff1d0a258b333d40271868df6b3d40caf64,MSFT,positive,neutral,0.164004,"AI Hacking Is “a Fantastic Bonanza” for CrowdStrike and Palo Alto, per Paul Kedrosky"
+7e3632061a78d288d0ec00ed73e700df080de304d1b0d3b80fbaf2a246f66180,SPCX,neutral,negative,-0.876798,"Chartstopper: October 23, 2026"
+7a8c75dc70635eb76aa2dd6e1ef84ba67691bb0de41ddf9e6c8ddc7b2449e9f6,TSLA,positive,neutral,0.097933,Musk Says Optimus Will Do the Dishes “Within 12-18 Months.” Here’s Where Tesla’s Robot Stands
+371ce9d9b97888c3ee9fd0ee10ae152fc14e64842df3693cc476c76d7ec21bbb,AAPL,neutral,positive,0.68037,Spotify's 9.3% ARPU Rise Signals Stronger Premium Monetization
+9d3d6e28ad9449e9f4377bfcb1825c11879377919afa7fcd85ca35b3ade7e3a3,AMZN,negative,neutral,-0.006333,Dan Loeb’s Third Point Exits Its Entire Stake in Amazon Stock. Where It Invested Instead.
+364278a835dbf5a7bfec30db8d65067128281319000a4df56ac15547f37d4224,GOOGL,neutral,positive,0.931839,Can Amazon's Ad Revenue Growth Continue to Underpin the Stock's Value?
+3053fa0aca79b012b4c0ae039d27d97f4d543131a25468bc6120b258562adfc3,META,neutral,positive,0.884979,3 Unstoppable AI Stocks to Buy Hand Over Fist Now That the Midterms Are Over
+c5e26d81f73c0ccd04548071e9492f782e1c2c21ec299ef7333c72d6abe5b84d,AVGO,positive,neutral,0.08565,This Beaten-Down Semiconductor Stock Could Soar in 2027
+c1a20d918e4453178bef2507c23423d34138001e9351715feb190d787b659d84,META,negative,positive,0.751443,Apple Stock Polishes Breakout As Nvidia-Led AI Boom Gets Wake-Up Call
+9311e118162b5ddbcfff226256856120472ab3a922c4cbe8bdabd49734f4c4fb,RKLB,positive,neutral,0.09108,Top 3 Growth Stocks To Watch In November 2026
+22691b21499a493a60b05320575239013a72707274741bbbcdf22f4bad5294b9,GOOGL,neutral,negative,-0.939885,"Q3 Earnings Strong, Q4 Estimates Slip: What the Latest Revisions Mean for 2027"
+8a9be27bad3b2776432131fc7b3c08d1f9748bbaa6a5f7c51d1e1bb67ef9395e,MSFT,positive,negative,-0.49206,IBM (IBM) Stock May Be 27% Below Fair Value On Quantum Platform News
+796fd9e24f0109c5d534bb87602da03e593b8ce59846af0ed8c88f243955aa30,TSLA,positive,neutral,0.002421,Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal
