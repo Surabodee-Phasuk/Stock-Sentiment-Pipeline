@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-3.1  
 **Branch:** `exp/f3-02-finbert-poc-benchmark`  
-**PR:** —
+**PR:** [#34](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/34)  
 
 ## งาน
 
