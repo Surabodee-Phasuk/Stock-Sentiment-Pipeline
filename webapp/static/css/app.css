@@ -148,7 +148,6 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 .news-item time { color: var(--muted); font-size: 12px; width: 44px; flex: none; padding-top: 1px; font-variant-numeric: tabular-nums; }
 .news-item .dot { margin-top: 6px; }
 .news-item .head { font-weight: 600; font-size: 13px; color: var(--ink); }
-.chart-box { position: relative; height: 240px; }
 
 .empty { text-align: center; padding: 28px 16px; color: var(--muted); }
 .disclaimer { font-size: 12px; color: var(--faint); text-align: center; margin: 20px 0 8px; }

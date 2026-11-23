@@ -58,3 +58,13 @@ def test_mock_data_covers_all_tickers_with_valid_labels():
             "negative",
         }
         assert all(-1 <= d["avg_score"] <= 1 for d in s["daily"])
+
+
+def test_mock_news_has_thai_headlines():
+    """หน้าเว็บเป็นภาษาไทย: ทุกข่าวตัวอย่างต้องมีหัวข้อที่แปลแล้ว และยังเก็บต้นฉบับไว้."""
+    data = json.loads(Path(STATIC / "mock" / "stocks.json").read_text("utf-8"))
+
+    for s in data["stocks"].values():
+        for n in s["news"]:
+            assert n["headline"]
+            assert any("\u0e00" <= ch <= "\u0e7f" for ch in n["headline_th"])

@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Search · Stock News Sentiment</title>
+  <title>ค้นหาหุ้น · Stock News Sentiment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/app.css">
 </head>
 <body>
   <main class="wrap narrow">
-    <div class="topbar"><h1>Search</h1></div>
+    <div class="topbar"><h1>ค้นหาหุ้น</h1></div>
     <div class="card">
       <label class="search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-        <input id="q" type="search" placeholder="Search ticker or company…" autocomplete="off" aria-label="Search ticker or company">
+        <input id="q" type="search" placeholder="ค้นหาด้วยชื่อย่อหุ้นหรือชื่อบริษัท…" autocomplete="off" aria-label="ค้นหาด้วยชื่อย่อหุ้นหรือชื่อบริษัท">
       </label>
-      <div class="chips" id="chips" role="group" aria-label="Sector"></div>
+      <div class="chips" id="chips" role="group" aria-label="กลุ่มอุตสาหกรรม"></div>
       <ul class="list" id="results" aria-live="polite"></ul>
-      <button class="btn-block" id="add" style="margin-top:12px">Add to Watchlist →</button>
+      <button class="btn-block" id="add" style="margin-top:12px">เพิ่มเข้ารายการติดตาม →</button>
     </div>
   </main>
   <script src="/static/js/common.js"></script>
@@ -35,7 +35,7 @@
     function renderChips() {
       const sectors = ["", ...new Set(all.map((t) => t.sector))];
       chipsEl.innerHTML = sectors
-        .map((s) => `<button type="button" class="chip" data-s="${SS.esc(s)}" aria-pressed="${s === sector}">${SS.esc(s || "All")}</button>`)
+        .map((s) => `<button type="button" class="chip" data-s="${SS.esc(s)}" aria-pressed="${s === sector}">${SS.esc(s ? SS.sector(s) : "ทั้งหมด")}</button>`)
         .join("");
     }
 
@@ -54,13 +54,13 @@
                 ${SS.logo(t.ticker)}
                 <label class="grow" for="c-${t.ticker}" style="cursor:pointer">
                   <div class="ticker">${t.ticker}</div>
-                  <div class="name ellipsis">${SS.esc(t.name)} · ${SS.esc(t.sector)}</div>
+                  <div class="name ellipsis">${SS.esc(t.name)} · ${SS.esc(SS.sector(t.sector))}</div>
                 </label>
                 <a class="chev" href="/stock/${t.ticker}" aria-label="ดูรายละเอียด ${t.ticker}">›</a>
               </li>`
             )
             .join("")
-        : `<li class="empty" style="display:block">No stocks match “${SS.esc(q.value)}”</li>`;
+        : `<li class="empty" style="display:block">ไม่พบหุ้นที่ตรงกับ “${SS.esc(q.value)}”</li>`;
       updateButton();
     }
 
@@ -69,8 +69,8 @@
       const same = selected.size === current.size && [...selected].every((t) => current.has(t));
       addBtn.disabled = selected.size === 0;
       addBtn.textContent = same
-        ? `Go to Watchlist (${selected.size}) →`
-        : `Add ${selected.size} stocks to Watchlist →`;
+        ? `ไปที่รายการติดตาม (${selected.size}) →`
+        : `บันทึก ${selected.size} หุ้นเข้ารายการติดตาม →`;
     }
 
     chipsEl.addEventListener("click", (e) => {

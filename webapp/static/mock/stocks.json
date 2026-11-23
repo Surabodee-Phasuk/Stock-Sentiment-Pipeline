@@ -1,5 +1,5 @@
 {
- "generated_from": "ข่าวจริงจาก collector 20 พ.ย. 2569 + ป้าย FinBERT จริง; ราคาและกราฟรายวันเป็นข้อมูลสุ่ม",
+ "generated_from": "ข่าวจริงจาก collector 20 พ.ย. 2569 + ป้าย FinBERT จริง; ราคาและกราฟรายวันเป็นข้อมูลสุ่ม; headline_th แปลด้วย AI (Claude) สำหรับ prototype",
  "stocks": {
   "AAPL": {
    "ticker": "AAPL",
@@ -287,6 +287,7 @@
    "news": [
     {
      "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
      "published_at": "2026-11-20T07:16:11Z",
@@ -295,6 +296,7 @@
     },
     {
      "headline": "Wenge AI Adds Google and Apple Sign-In Options for ScienceOra International Users",
+     "headline_th": "Wenge AI เพิ่มการเข้าสู่ระบบด้วย Google และ Apple สำหรับผู้ใช้ ScienceOra ในต่างประเทศ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/wenge-ai-adds-google-apple-063000704.html?.tsrc=rss",
      "published_at": "2026-11-20T06:30:00Z",
@@ -303,6 +305,7 @@
     },
     {
      "headline": "CrowdStrike (CRWD) Brings Apple Device Automation Into Falcon Foundry Through A New Tie Up",
+     "headline_th": "CrowdStrike (CRWD) จับมือพันธมิตรรายใหม่ นำระบบจัดการอุปกรณ์ Apple อัตโนมัติเข้าสู่ Falcon Foundry",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/articles/crowdstrike-crwd-brings-apple-device-051725940.html?.tsrc=rss",
      "published_at": "2026-11-20T05:17:25Z",
@@ -311,6 +314,7 @@
     },
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -319,6 +323,7 @@
     },
     {
      "headline": "What Apple Doubters Got Wrong",
+     "headline_th": "คนที่ไม่เชื่อมั่นใน Apple มองพลาดเรื่องอะไร",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-doubters-got-wrong-042903639.html?.tsrc=rss",
      "published_at": "2026-11-20T04:29:03Z",
@@ -327,6 +332,7 @@
     },
     {
      "headline": "Pixalate Launches 4D Invalid Traffic (IVT) Blocking on Amazon Web Services (AWS) RTB Fabric; Industry’s First Infrastructure-, Seller-, Publisher-, & Device-Level Pre-Bid Blocking Modules for Programmatic CTV & Mobile Apps",
+     "headline_th": "Pixalate เปิดตัวระบบบล็อกทราฟฟิกปลอม (IVT) แบบ 4D บน AWS RTB Fabric เป็นโมดูลบล็อกก่อนประมูลโฆษณาระดับโครงสร้างพื้นฐาน ผู้ขาย ผู้เผยแพร่ และอุปกรณ์รายแรกของวงการ สำหรับโฆษณา CTV และแอปมือถือ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/media-advertising/articles/pixalate-launches-4d-invalid-traffic-034000682.html?.tsrc=rss",
      "published_at": "2026-11-20T03:40:00Z",
@@ -335,6 +341,7 @@
     },
     {
      "headline": "Apple (AAPL) Stock Could Be 33% Overvalued On Fresh Service Outage Concerns",
+     "headline_th": "หุ้น Apple (AAPL) อาจแพงเกินจริง 33% จากความกังวลเรื่องบริการล่มรอบใหม่",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-could-33-031750121.html?.tsrc=rss",
      "published_at": "2026-11-20T03:17:50Z",
@@ -343,6 +350,7 @@
     },
     {
      "headline": "History Says This Brilliant ETF Could Help You Turn $500 Per Month Into $784,100 While Barely Lifting a Finger.",
+     "headline_th": "ประวัติศาสตร์ชี้ ETF ตัวนี้อาจเปลี่ยนเงินเดือนละ 500 ดอลลาร์เป็น 784,100 ดอลลาร์โดยแทบไม่ต้องลงแรง",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/19/history-says-this-brilliant-etf-could-help-you-turn-usd500-per-month-into-usd784-100-while-barely-lifting-a-finger/?.tsrc=rss",
      "published_at": "2026-11-20T01:48:02Z",
@@ -351,6 +359,7 @@
     },
     {
      "headline": "1 Unstoppable Stock to Buy Before It Joins NVDA and AAPL in the $1 Trillion Club",
+     "headline_th": "1 หุ้นที่หยุดไม่อยู่ น่าซื้อก่อนเข้าร่วมกลุ่มมูลค่า 1 ล้านล้านดอลลาร์กับ NVDA และ AAPL",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/19/1-unstoppable-stock-to-buy-before-it-joins-hot-tickers-in-the-1-3-trillion-club/?.tsrc=rss",
      "published_at": "2026-11-20T00:52:02Z",
@@ -359,6 +368,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -367,6 +377,7 @@
     },
     {
      "headline": "Apple May Try to Challenge Meta for Personal Agent Supremacy",
+     "headline_th": "Apple อาจท้าชิงความเป็นเจ้าตลาดผู้ช่วย AI ส่วนตัวกับ Meta",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/m/218adf20-fceb-3955-ab5b-5c4bc9cf9107/apple-may-try-to-challenge.html?.tsrc=rss",
      "published_at": "2026-11-19T23:51:00Z",
@@ -375,6 +386,7 @@
     },
     {
      "headline": "S&P 500, Nasdaq, Dow End Lower As Anthropic Trading Debut Fails To Provide Adequate Confidence — ANT, META, AAPL, GME In Focus",
+     "headline_th": "S&P 500, Nasdaq และ Dow ปิดลบ หลังการซื้อขายวันแรกของ Anthropic สร้างความมั่นใจได้ไม่พอ จับตา ANT, META, AAPL และ GME",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-end-lower-as-anthropic-trading-debut-fails-to-provide-adequate-confidence/cNbio2mR90v?.tsrc=rss",
      "published_at": "2026-11-19T23:01:05Z",
@@ -670,6 +682,7 @@
    "news": [
     {
      "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
      "published_at": "2026-11-20T07:16:11Z",
@@ -678,6 +691,7 @@
     },
     {
      "headline": "What Does Mastercard (MA) Joining The AI Transparency Initiative Mean For Investors?",
+     "headline_th": "Mastercard (MA) เข้าร่วมโครงการความโปร่งใสด้าน AI มีความหมายอย่างไรต่อนักลงทุน",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/does-mastercard-ma-joining-ai-052240359.html?.tsrc=rss",
      "published_at": "2026-11-20T05:22:40Z",
@@ -686,6 +700,7 @@
     },
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -694,6 +709,7 @@
     },
     {
      "headline": "Microsoft CEO Nadella faces uncomfortable reality after outage",
+     "headline_th": "นาเดลลา ซีอีโอ Microsoft เผชิญความจริงที่น่าอึดอัดหลังระบบล่ม",
      "source": "Yahoo",
      "url": "https://www.thestreet.com/technology/microsoft-ceo-nadella-faces-uncomfortable-reality-after-outage?.tsrc=rss",
      "published_at": "2026-11-20T03:47:00Z",
@@ -702,6 +718,7 @@
     },
     {
      "headline": "Akamai Technologies (AKAM) Expands Mobile Enterprise Browser Security",
+     "headline_th": "Akamai Technologies (AKAM) ขยายความปลอดภัยของเบราว์เซอร์องค์กรบนมือถือ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/articles/akamai-technologies-akam-expands-mobile-031634349.html?.tsrc=rss",
      "published_at": "2026-11-20T03:16:34Z",
@@ -710,6 +727,7 @@
     },
     {
      "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
      "published_at": "2026-11-20T02:23:55Z",
@@ -718,6 +736,7 @@
     },
     {
      "headline": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+     "headline_th": "ความต้องการศูนย์ข้อมูล AI ที่ Nvidia หนุนหลัง ทำให้หุ้น Schneider Electric เป็นที่จับตา",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
      "published_at": "2026-11-20T02:14:20Z",
@@ -726,6 +745,7 @@
     },
     {
      "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-20T00:58:20Z",
@@ -734,6 +754,7 @@
     },
     {
      "headline": "IBM (IBM) Stock May Be 27% Below Fair Value On Quantum Platform News",
+     "headline_th": "หุ้น IBM อาจต่ำกว่ามูลค่าที่เหมาะสม 27% จากข่าวแพลตฟอร์มควอนตัม",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/ibm-ibm-stock-may-27-002028644.html?.tsrc=rss",
      "published_at": "2026-11-20T00:20:28Z",
@@ -742,6 +763,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -750,6 +772,7 @@
     },
     {
      "headline": "Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes",
+     "headline_th": "นักวิเคราะห์ที่มอง Anthropic บวกที่สุดชี้ อัตรากำไร \"น่าจะดีกว่าผู้ให้บริการคลาวด์รายใหญ่\" และต้องทำอะไรบ้างจึงจะไปถึง",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/anthropics-margins-will-be-probably-better-than-a-hyperscaler-says-its-most-bullish-analyst-heres-what-that-takes?ref=yahoofinance&tlnk=yf-261119-7x5g2cff&.tsrc=rss",
      "published_at": "2026-11-20T00:05:16Z",
@@ -758,6 +781,7 @@
     },
     {
      "headline": "AI Hacking Is “a Fantastic Bonanza” for CrowdStrike and Palo Alto, per Paul Kedrosky",
+     "headline_th": "พอล เคดรอสกี ชี้ การแฮ็กด้วย AI คือ \"ขุมทรัพย์ก้อนโต\" ของ CrowdStrike และ Palo Alto",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/ai-hacking-is-a-fantastic-bonanza-for-crowdstrike-and-palo-alto-per-paul-kedrosky?ref=yahoofinance&tlnk=yf-261119-xq2rf628&.tsrc=rss",
      "published_at": "2026-11-19T22:37:57Z",
@@ -1053,6 +1077,7 @@
    "news": [
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T07:38:05Z",
@@ -1061,6 +1086,7 @@
     },
     {
      "headline": "Wenge AI Adds Google and Apple Sign-In Options for ScienceOra International Users",
+     "headline_th": "Wenge AI เพิ่มการเข้าสู่ระบบด้วย Google และ Apple สำหรับผู้ใช้ ScienceOra ในต่างประเทศ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/wenge-ai-adds-google-apple-063000704.html?.tsrc=rss",
      "published_at": "2026-11-20T06:30:00Z",
@@ -1069,6 +1095,7 @@
     },
     {
      "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
      "published_at": "2026-11-20T02:23:55Z",
@@ -1077,6 +1104,7 @@
     },
     {
      "headline": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+     "headline_th": "ความต้องการศูนย์ข้อมูล AI ที่ Nvidia หนุนหลัง ทำให้หุ้น Schneider Electric เป็นที่จับตา",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
      "published_at": "2026-11-20T02:14:20Z",
@@ -1085,6 +1113,7 @@
     },
     {
      "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-20T00:58:20Z",
@@ -1093,6 +1122,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -1101,6 +1131,7 @@
     },
     {
      "headline": "Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes",
+     "headline_th": "นักวิเคราะห์ที่มอง Anthropic บวกที่สุดชี้ อัตรากำไร \"น่าจะดีกว่าผู้ให้บริการคลาวด์รายใหญ่\" และต้องทำอะไรบ้างจึงจะไปถึง",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/anthropics-margins-will-be-probably-better-than-a-hyperscaler-says-its-most-bullish-analyst-heres-what-that-takes?ref=yahoofinance&tlnk=yf-261119-7x5g2cff&.tsrc=rss",
      "published_at": "2026-11-20T00:05:16Z",
@@ -1109,6 +1140,7 @@
     },
     {
      "headline": "Anthropic Just Went Public at $1.5 Trillion. VOO Won’t Own a Share Until Late 2027 at the Earliest",
+     "headline_th": "Anthropic เพิ่งเข้าตลาดด้วยมูลค่า 1.5 ล้านล้านดอลลาร์ แต่ VOO จะยังไม่ถือหุ้นแม้แต่หุ้นเดียวจนถึงปลายปี 2027 เป็นอย่างเร็ว",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/etf/2026/11/19/anthropic-just-went-public-at-1-5-trillion-voo-wont-own-a-share-until-late-2027-at-the-earliest/?.tsrc=rss",
      "published_at": "2026-11-19T23:52:41Z",
@@ -1117,6 +1149,7 @@
     },
     {
      "headline": "Anthropic’s Record IPO Is Good News for Hut 8. Here’s the Number That Matters",
+     "headline_th": "IPO ครั้งประวัติการณ์ของ Anthropic เป็นข่าวดีของ Hut 8 นี่คือตัวเลขที่สำคัญ",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/anthropics-record-ipo-is-good-news-for-hut-8-heres-the-number-that-matters?ref=yahoofinance&tlnk=yf-261119-h84r624c&.tsrc=rss",
      "published_at": "2026-11-19T23:05:25Z",
@@ -1125,6 +1158,7 @@
     },
     {
      "headline": "Stock Market Today, Nov. 19: Stock Market Today, Nov. 19: Alphabet Shares Fall as Anthropic Nasdaq Debut Puts Fresh Value on Google's Stake",
+     "headline_th": "ตลาดหุ้นวันนี้ 19 พ.ย.: หุ้น Alphabet ร่วง หลังการเปิดตัวของ Anthropic ใน Nasdaq ทำให้ต้องประเมินมูลค่าหุ้นที่ Google ถืออยู่ใหม่",
      "source": "Yahoo",
      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-google-s-stake/?.tsrc=rss",
      "published_at": "2026-11-19T23:05:02Z",
@@ -1133,6 +1167,7 @@
     },
     {
      "headline": "Anthropic IPO value surges in stock market debut",
+     "headline_th": "มูลค่า IPO ของ Anthropic พุ่งขึ้นในวันเปิดตัวในตลาดหุ้น",
      "source": "Yahoo",
      "url": "https://www.cnn.com/2026/11/19/business/video/anthropic-ipo-value-surges-in-stock-market-debut-lead-jake-tapper?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
      "published_at": "2026-11-19T22:54:27Z",
@@ -1141,6 +1176,7 @@
     },
     {
      "headline": "Morgan Stanley’s Vintage Values 2027: 5 Stocks Analysts See Climbing Further",
+     "headline_th": "Vintage Values 2027 ของ Morgan Stanley: 5 หุ้นที่นักวิเคราะห์มองว่าจะขึ้นต่อ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-vintage-values-2027-223235273.html?.tsrc=rss",
      "published_at": "2026-11-19T22:32:35Z",
@@ -1436,6 +1472,7 @@
    "news": [
     {
      "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
      "published_at": "2026-11-20T07:16:11Z",
@@ -1444,6 +1481,7 @@
     },
     {
      "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
      "published_at": "2026-11-20T06:58:31Z",
@@ -1452,6 +1490,7 @@
     },
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -1460,6 +1499,7 @@
     },
     {
      "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
      "published_at": "2026-11-20T02:23:55Z",
@@ -1468,6 +1508,7 @@
     },
     {
      "headline": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+     "headline_th": "ความต้องการศูนย์ข้อมูล AI ที่ Nvidia หนุนหลัง ทำให้หุ้น Schneider Electric เป็นที่จับตา",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
      "published_at": "2026-11-20T02:14:20Z",
@@ -1476,6 +1517,7 @@
     },
     {
      "headline": "Peter Thiel Now Has as Much Money in an Argentine Oil Stock as in Amazon. It’s Down 23% Since September 30",
+     "headline_th": "ปีเตอร์ ธีล มีเงินในหุ้นน้ำมันอาร์เจนตินาเท่ากับที่มีใน Amazon แล้ว หุ้นตัวนี้ร่วง 23% นับจาก 30 ก.ย.",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/peter-thiel-now-has-as-much-money-in-an-argentine-oil-stock-as-in-amazon-its-down-23-since-september-30/?.tsrc=rss",
      "published_at": "2026-11-20T01:17:06Z",
@@ -1484,6 +1526,7 @@
     },
     {
      "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-20T00:58:20Z",
@@ -1492,6 +1535,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -1500,6 +1544,7 @@
     },
     {
      "headline": "Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes",
+     "headline_th": "นักวิเคราะห์ที่มอง Anthropic บวกที่สุดชี้ อัตรากำไร \"น่าจะดีกว่าผู้ให้บริการคลาวด์รายใหญ่\" และต้องทำอะไรบ้างจึงจะไปถึง",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/anthropics-margins-will-be-probably-better-than-a-hyperscaler-says-its-most-bullish-analyst-heres-what-that-takes?ref=yahoofinance&tlnk=yf-261119-7x5g2cff&.tsrc=rss",
      "published_at": "2026-11-20T00:05:16Z",
@@ -1508,6 +1553,7 @@
     },
     {
      "headline": "Anthropic Just Went Public at $1.5 Trillion. VOO Won’t Own a Share Until Late 2027 at the Earliest",
+     "headline_th": "Anthropic เพิ่งเข้าตลาดด้วยมูลค่า 1.5 ล้านล้านดอลลาร์ แต่ VOO จะยังไม่ถือหุ้นแม้แต่หุ้นเดียวจนถึงปลายปี 2027 เป็นอย่างเร็ว",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/etf/2026/11/19/anthropic-just-went-public-at-1-5-trillion-voo-wont-own-a-share-until-late-2027-at-the-earliest/?.tsrc=rss",
      "published_at": "2026-11-19T23:52:41Z",
@@ -1516,6 +1562,7 @@
     },
     {
      "headline": "NYC lawmakers weigh compromise on Amazon delivery worker bill, Bloomberg reports",
+     "headline_th": "Bloomberg รายงาน สมาชิกสภานิวยอร์กพิจารณาข้อประนีประนอมเรื่องร่างกฎหมายคนส่งของ Amazon",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/economy/policy/articles/nyc-lawmakers-weigh-compromise-amazon-234713116.html?.tsrc=rss",
      "published_at": "2026-11-19T23:47:13Z",
@@ -1524,6 +1571,7 @@
     },
     {
      "headline": "Jeff Bezos says 2 policies drive up housing costs, and it's 'not hard to figure out'",
+     "headline_th": "เจฟฟ์ เบโซส ชี้ 2 นโยบายดันค่าที่อยู่อาศัยให้แพงขึ้น และ \"ไม่ยากที่จะเข้าใจ\"",
      "source": "Yahoo",
      "url": "https://www.thestreet.com/real-estate/jeff-bezos-says-2-policies-drive-up-housing-costs-subsidize-demand-constrain-supply?.tsrc=rss",
      "published_at": "2026-11-19T23:07:00Z",
@@ -1819,6 +1867,7 @@
    "news": [
     {
      "headline": "$500 Invested in GE Aerospace (GE) Stock Today Could Be Worth This Much in 3 Years",
+     "headline_th": "เงิน 500 ดอลลาร์ที่ลงทุนในหุ้น GE Aerospace (GE) วันนี้ อาจมีมูลค่าเท่านี้ในอีก 3 ปี",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/20/500-invested-in-ge-aerospace-ge-stock-today-could/?.tsrc=rss",
      "published_at": "2026-11-20T07:25:00Z",
@@ -1827,6 +1876,7 @@
     },
     {
      "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
      "published_at": "2026-11-20T07:16:11Z",
@@ -1835,6 +1885,7 @@
     },
     {
      "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
      "published_at": "2026-11-20T06:58:31Z",
@@ -1843,6 +1894,7 @@
     },
     {
      "headline": "This Unstoppable ETF Is Up by Double Digits in 2026. Here's Where I Think It's Headed in 2027.",
+     "headline_th": "ETF ที่หยุดไม่อยู่ตัวนี้บวกเป็นเลขสองหลักในปี 2026 และนี่คือทิศทางที่ผมมองไว้สำหรับปี 2027",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/20/this-unstoppable-etf-is-up-double-digits-in-2026-here-s-where-i-think-it-s-headed-in-2027/?.tsrc=rss",
      "published_at": "2026-11-20T06:30:02Z",
@@ -1851,6 +1903,7 @@
     },
     {
      "headline": "Elon Musk’s Dream Meets Wall Street Reality: SpaceX Lenders Don’t Want Nvidia Chips Leaving Earth",
+     "headline_th": "ความฝันของอีลอน มัสก์ เจอความจริงของวอลล์สตรีท: ผู้ให้กู้ของ SpaceX ไม่อยากให้ชิป Nvidia ออกนอกโลก",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-dream-meets-wall-062433324.html?.tsrc=rss",
      "published_at": "2026-11-20T06:24:33Z",
@@ -1859,6 +1912,7 @@
     },
     {
      "headline": "CRWV, IREN, NBIS Stocks Extend Neocloud Selloff As Anthropic IPO Rally Fades - Michael Burry Takes A Victory Lap",
+     "headline_th": "หุ้น CRWV, IREN และ NBIS ถูกเทขายต่อในกลุ่ม neocloud หลังแรงบวกจาก IPO ของ Anthropic แผ่วลง ด้านไมเคิล เบอร์รี ออกมาฉลองชัย",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/crwv-iren-nbis-stocks-extend-neocloud-selloff-as-anthropic-ipo-rally-fades-michael-burry-takes-a-victory-lap/cNbSEj6R9KJ?.tsrc=rss",
      "published_at": "2026-11-20T06:21:09Z",
@@ -1867,6 +1921,7 @@
     },
     {
      "headline": "AI Token Prices Are Tumbling. Is It a Red Flag for Anthropic Stock?",
+     "headline_th": "ราคาโทเคน AI กำลังดิ่งลง เป็นสัญญาณเตือนสำหรับหุ้น Anthropic หรือไม่",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/20/ai-token-prices-are-tumbling-is-it-a-red-flag-for-anthropic-stock/?.tsrc=rss",
      "published_at": "2026-11-20T05:50:02Z",
@@ -1875,6 +1930,7 @@
     },
     {
      "headline": "Stocks, gold and silver fall after blockbuster Anthropic IPO",
+     "headline_th": "หุ้น ทองคำ และเงินร่วงลง หลัง IPO ครั้งใหญ่ของ Anthropic",
      "source": "Yahoo",
      "url": "https://www.euronews.com/2026/11/20/stocks-gold-and-silver-fall-after-blockbuster-anthropic-ipo?.tsrc=rss",
      "published_at": "2026-11-20T05:48:38Z",
@@ -1883,6 +1939,7 @@
     },
     {
      "headline": "Cathie Wood’s ARK Invest Loads Up $90M In Anthropic Shares, Dumps Nvidia As China Chip Sale Woes Deepen",
+     "headline_th": "ARK Invest ของแคธี วูด ซื้อหุ้น Anthropic 90 ล้านดอลลาร์ และเทขาย Nvidia ขณะปัญหาการขายชิปในจีนรุนแรงขึ้น",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/cathie-wood-s-ark-invest-loads-up-anthropic-shares-dumps-nvidia-as-china-chip-sale-woes-deepen/cNbS5zBR9KI?.tsrc=rss",
      "published_at": "2026-11-20T05:22:06Z",
@@ -1891,6 +1948,7 @@
     },
     {
      "headline": "‘Bright Red Flags’: Nvidia Subpoenaed By California, Attorney General Also Probing Jensen Huang’s ‘Actions’",
+     "headline_th": "\"สัญญาณอันตรายชัดเจน\": แคลิฟอร์เนียออกหมายเรียก Nvidia อัยการสูงสุดสอบ \"การกระทำ\" ของเจนเซน หวง ด้วย",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/bright-red-flags-nvidia-subpoenaed-045550463.html?.tsrc=rss",
      "published_at": "2026-11-20T04:55:50Z",
@@ -1899,6 +1957,7 @@
     },
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -1907,6 +1966,7 @@
     },
     {
      "headline": "AI sell-off: These sectors held firm as tech slumped in Oct, Nov",
+     "headline_th": "แรงเทขายหุ้น AI: กลุ่มที่ยังยืนได้ขณะที่หุ้นเทคทรุดในเดือน ต.ค. และ พ.ย.",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-sell-off-sectors-held-044523371.html?.tsrc=rss",
      "published_at": "2026-11-20T04:45:23Z",
@@ -2202,6 +2262,7 @@
    "news": [
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -2210,6 +2271,7 @@
     },
     {
      "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-20T00:58:20Z",
@@ -2218,6 +2280,7 @@
     },
     {
      "headline": "Meta Platforms 'Reevaluating' 2030 Net Zero Goal as AI Buildout Strains Clean Energy Supply",
+     "headline_th": "Meta Platforms \"ทบทวน\" เป้าหมาย Net Zero ปี 2030 เพราะการขยาย AI กดดันปริมาณพลังงานสะอาด",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/energy/articles/meta-platforms-apos-reevaluating-apos-004314275.html?.tsrc=rss",
      "published_at": "2026-11-20T00:43:14Z",
@@ -2226,6 +2289,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -2234,6 +2298,7 @@
     },
     {
      "headline": "Apple May Try to Challenge Meta for Personal Agent Supremacy",
+     "headline_th": "Apple อาจท้าชิงความเป็นเจ้าตลาดผู้ช่วย AI ส่วนตัวกับ Meta",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/m/218adf20-fceb-3955-ab5b-5c4bc9cf9107/apple-may-try-to-challenge.html?.tsrc=rss",
      "published_at": "2026-11-19T23:51:00Z",
@@ -2242,6 +2307,7 @@
     },
     {
      "headline": "S&P 500, Nasdaq, Dow End Lower As Anthropic Trading Debut Fails To Provide Adequate Confidence — ANT, META, AAPL, GME In Focus",
+     "headline_th": "S&P 500, Nasdaq และ Dow ปิดลบ หลังการซื้อขายวันแรกของ Anthropic สร้างความมั่นใจได้ไม่พอ จับตา ANT, META, AAPL และ GME",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-end-lower-as-anthropic-trading-debut-fails-to-provide-adequate-confidence/cNbio2mR90v?.tsrc=rss",
      "published_at": "2026-11-19T23:01:05Z",
@@ -2250,6 +2316,7 @@
     },
     {
      "headline": "A $6.6 Billion Fund Dumps These 2 Stocks",
+     "headline_th": "กองทุนมูลค่า 6.6 พันล้านดอลลาร์เทขาย 2 หุ้นนี้",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/a-6-6-billion-fund-dumps-these-2-stocks?ref=yahoofinance&tlnk=yf-261119-6frhj2xf&.tsrc=rss",
      "published_at": "2026-11-19T22:37:54Z",
@@ -2258,6 +2325,7 @@
     },
     {
      "headline": "Stock Market Today, Nov. 19: Alphabet Shares Fall as Anthropic Nasdaq Debut Puts Fresh Value on Google's Stake",
+     "headline_th": "ตลาดหุ้นวันนี้ 19 พ.ย.: หุ้น Alphabet ร่วง หลังการเปิดตัวของ Anthropic ใน Nasdaq ทำให้ต้องประเมินมูลค่าหุ้นที่ Google ถืออยู่ใหม่",
      "source": "Yahoo",
      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-googles-stake/?.tsrc=rss",
      "published_at": "2026-11-19T22:18:30Z",
@@ -2266,6 +2334,7 @@
     },
     {
      "headline": "Anthropic Just Finished Its First Day as a Public Company. Five of the Six Biggest Tech IPOs Since Facebook Were Underwater Six Months After Theirs, and Elon Musk’s SpaceX Is Following the Script",
+     "headline_th": "Anthropic เพิ่งจบวันแรกในฐานะบริษัทมหาชน โดย 5 ใน 6 IPO เทคที่ใหญ่ที่สุดนับจาก Facebook ราคาต่ำกว่าจองหลังเข้าตลาด 6 เดือน และ SpaceX ของอีลอน มัสก์ ก็กำลังเดินตามรอยเดิม",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/anthropic-just-finished-its-first-day-as-a-public-company-five-of-the-six-biggest-tech-ipos-since-facebook-were-underwater-six-months-after-theirs-and-elon-musks-spacex-is-following-the-script/?.tsrc=rss",
      "published_at": "2026-11-19T22:13:02Z",
@@ -2274,6 +2343,7 @@
     },
     {
      "headline": "META Plans To Reportedly Charge $300 For Muse Charm Gadget In Hope To Revive Hardware Business",
+     "headline_th": "มีรายงานว่า META เตรียมขายอุปกรณ์ Muse Charm ราคา 300 ดอลลาร์ หวังฟื้นธุรกิจฮาร์ดแวร์",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/meta-plans-to-reportedly-charge-300-for-muse-charm-gadget-in-hope-to-revive-hardware-business/cNbinkUR90H?.tsrc=rss",
      "published_at": "2026-11-19T22:03:31Z",
@@ -2282,6 +2352,7 @@
     },
     {
      "headline": "The 25 Biggest US IPOs of All Time",
+     "headline_th": "25 IPO ที่ใหญ่ที่สุดตลอดกาลของสหรัฐฯ",
      "source": "Yahoo",
      "url": "https://www.kiplinger.com/slideshow/investing/t052-s001-the-25-biggest-ipos-in-u-s-history/index.html?.tsrc=rss",
      "published_at": "2026-11-19T21:38:58Z",
@@ -2290,6 +2361,7 @@
     },
     {
      "headline": "Intuit Beats Fiscal Q1 Goals, Gives Soft Outlook, Sells Mailchimp",
+     "headline_th": "Intuit ทำได้ดีกว่าเป้าไตรมาส 1 ตามปีบัญชี แต่คาดการณ์อ่อนลง และขาย Mailchimp",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/m/0223735b-3b14-3a4f-8c8a-91bc4681cda6/intuit-beats-fiscal-q1-goals%2C.html?.tsrc=rss",
      "published_at": "2026-11-19T21:21:37Z",
@@ -2585,6 +2657,7 @@
    "news": [
     {
      "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
      "published_at": "2026-11-20T07:16:11Z",
@@ -2593,6 +2666,7 @@
     },
     {
      "headline": "Could Tesla Become The Next Lumentum? Gary Black Warns A SpaceX Stock Deal Could Send TSLA Down 25%",
+     "headline_th": "Tesla จะเป็น Lumentum รายต่อไปหรือไม่ แกรี แบล็ก เตือนดีลหุ้นกับ SpaceX อาจทำให้ TSLA ร่วง 25%",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/could-tesla-become-next-lumentum-gary-black-spacex-stock-deal-send-tsla-down/cNbSEW5R9K7?.tsrc=rss",
      "published_at": "2026-11-20T06:15:59Z",
@@ -2601,6 +2675,7 @@
     },
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -2609,6 +2684,7 @@
     },
     {
      "headline": "What Tesla (TSLA)'s Shanghai Expansion Means For Shareholders",
+     "headline_th": "การขยายโรงงานเซี่ยงไฮ้ของ Tesla (TSLA) มีความหมายอย่างไรต่อผู้ถือหุ้น",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-shanghai-expansion-means-043058154.html?.tsrc=rss",
      "published_at": "2026-11-20T04:30:58Z",
@@ -2617,6 +2693,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -2625,6 +2702,7 @@
     },
     {
      "headline": "Is Tech in a Bear Market? 20 Tech Stocks Fall Up to 76% From Highs",
+     "headline_th": "หุ้นเทคเข้าสู่ตลาดหมีแล้วหรือยัง 20 หุ้นเทคร่วงสูงสุด 76% จากจุดสูงสุด",
      "source": "Yahoo",
      "url": "https://beincrypto.com/tech-stocks-bear-market-record-highs/?.tsrc=rss",
      "published_at": "2026-11-19T22:40:39Z",
@@ -2633,6 +2711,7 @@
     },
     {
      "headline": "Musk Says Optimus Will Do the Dishes “Within 12-18 Months.” Here’s Where Tesla’s Robot Stands",
+     "headline_th": "มัสก์บอก Optimus จะล้างจานได้ \"ภายใน 12-18 เดือน\" หุ่นยนต์ของ Tesla ตอนนี้อยู่จุดไหน",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/musk-says-optimus-will-do-the-dishes-within-12-18-months-heres-where-teslas-robot-stands?ref=yahoofinance&tlnk=yf-261119-6gjh8j3r&.tsrc=rss",
      "published_at": "2026-11-19T22:37:52Z",
@@ -2641,6 +2720,7 @@
     },
     {
      "headline": "Tesla Robo-Taxi Expands to Dallas. It Isn’t Enough.",
+     "headline_th": "Robo-Taxi ของ Tesla ขยายไปดัลลัส แต่ยังไม่พอ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/m/bb73f711-c5b1-3f23-8b24-3dd6a248b942/tesla-robo-taxi-expands-to.html?.tsrc=rss",
      "published_at": "2026-11-19T21:07:00Z",
@@ -2649,6 +2729,7 @@
     },
     {
      "headline": "Michael Burry Adds To Tesla Rival BYD At Five-Year Lows",
+     "headline_th": "ไมเคิล เบอร์รี ซื้อหุ้น BYD คู่แข่งของ Tesla เพิ่ม ที่ราคาต่ำสุดในรอบ 5 ปี",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-adds-to-tesla-rival-byd-at-five-year-lows/cNbiNbKR90M?.tsrc=rss",
      "published_at": "2026-11-19T21:06:31Z",
@@ -2657,6 +2738,7 @@
     },
     {
      "headline": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal",
+     "headline_th": "ทรัมป์เพิ่งเปิดเผยการซื้อหุ้น Tesla และ SpaceX การขยับพอร์ตครั้งนี้บอกอะไร",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/19/trump-just-disclosed-tesla-and-spacex-stock-purchases-here-s-what-his-portfolio-moves-reveal/?.tsrc=rss",
      "published_at": "2026-11-19T20:29:31Z",
@@ -2665,6 +2747,7 @@
     },
     {
      "headline": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal",
+     "headline_th": "ทรัมป์เพิ่งเปิดเผยการซื้อหุ้น Tesla และ SpaceX การขยับพอร์ตครั้งนี้บอกอะไร",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/trump-just-disclosed-tesla-and-spacex-stock-purchases-heres-what-his-portfolio-moves",
      "published_at": "2026-11-19T20:29:31Z",
@@ -2673,6 +2756,7 @@
     },
     {
      "headline": "Inside Brad Gerstner’s Portfolio: Every Move He Made in the Third Quarter",
+     "headline_th": "เจาะพอร์ตแบรด เกิร์สต์เนอร์: ทุกการเคลื่อนไหวในไตรมาสที่ 3",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/inside-brad-gerstners-portfolio-every-move-he-made-in-the-third-quarter?ref=yahoofinance&tlnk=yf-261119-8874cxx4&.tsrc=rss",
      "published_at": "2026-11-19T20:05:22Z",
@@ -2968,6 +3052,7 @@
    "news": [
     {
      "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
      "published_at": "2026-11-20T04:55:15Z",
@@ -2976,6 +3061,7 @@
     },
     {
      "headline": "Is Broadcom (AVGO) Stock Stretched Or Still Reasonable On Cash Flow?",
+     "headline_th": "หุ้น Broadcom (AVGO) แพงเกินไป หรือยังสมเหตุสมผลเมื่อดูจากกระแสเงินสด",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-avgo-stock-stretched-still-031317832.html?.tsrc=rss",
      "published_at": "2026-11-20T03:13:17Z",
@@ -2984,6 +3070,7 @@
     },
     {
      "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-20T00:58:20Z",
@@ -2992,6 +3079,7 @@
     },
     {
      "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
      "published_at": "2026-11-20T00:14:30Z",
@@ -3000,6 +3088,7 @@
     },
     {
      "headline": "This Beaten-Down Semiconductor Stock Could Soar in 2027",
+     "headline_th": "หุ้นเซมิคอนดักเตอร์ที่ราคาทรุดหนักตัวนี้อาจพุ่งขึ้นในปี 2027",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/19/this-beaten-down-semiconductor-stock-could-soar-in-2027/?.tsrc=rss",
      "published_at": "2026-11-19T22:45:02Z",
@@ -3008,6 +3097,7 @@
     },
     {
      "headline": "This Beaten-Down Semiconductor Stock Could Soar in 2027",
+     "headline_th": "หุ้นเซมิคอนดักเตอร์ที่ราคาทรุดหนักตัวนี้อาจพุ่งขึ้นในปี 2027",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/beaten-down-semiconductor-stock-could-soar-2027",
      "published_at": "2026-11-19T22:45:02Z",
@@ -3016,6 +3106,7 @@
     },
     {
      "headline": "Stock Market Today, Nov. 19: Nvidia Slides as Investors Weigh CEO Transition Fallout Despite Strong Q3 Results",
+     "headline_th": "ตลาดหุ้นวันนี้ 19 พ.ย.: Nvidia ร่วง นักลงทุนชั่งน้ำหนักผลกระทบจากการเปลี่ยนซีอีโอ แม้ผลประกอบการไตรมาส 3 แข็งแกร่ง",
      "source": "Yahoo",
      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-nvidia-slides-as-investors-weigh-ceo-transition-fallout-despite-strong-q3-results/?.tsrc=rss",
      "published_at": "2026-11-19T22:20:25Z",
@@ -3024,6 +3115,7 @@
     },
     {
      "headline": "Why Broadcom Inc. (AVGO) Dipped More Than Broader Market Today",
+     "headline_th": "ทำไมวันนี้หุ้น Broadcom (AVGO) ร่วงมากกว่าตลาดโดยรวม",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-inc-avgo-dipped-214502356.html?.tsrc=rss",
      "published_at": "2026-11-19T21:45:02Z",
@@ -3032,6 +3124,7 @@
     },
     {
      "headline": "Why Broadcom Inc. (AVGO) Dipped More Than Broader Market Today",
+     "headline_th": "ทำไมวันนี้หุ้น Broadcom (AVGO) ร่วงมากกว่าตลาดโดยรวม",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/why-broadcom-inc-avgo-dipped-more-broader-market-today",
      "published_at": "2026-11-19T21:45:02Z",
@@ -3040,6 +3133,7 @@
     },
     {
      "headline": "Globant (GLOB) Q3 Earnings and Revenues Top Estimates",
+     "headline_th": "กำไรและรายได้ไตรมาส 3 ของ Globant (GLOB) สูงกว่าคาด",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/globant-glob-q3-earnings-revenues-213002053.html?.tsrc=rss",
      "published_at": "2026-11-19T21:30:02Z",
@@ -3048,6 +3142,7 @@
     },
     {
      "headline": "Globant (GLOB) Q3 Earnings and Revenues Top Estimates",
+     "headline_th": "กำไรและรายได้ไตรมาส 3 ของ Globant (GLOB) สูงกว่าคาด",
      "source": "Nasdaq",
      "url": "https://www.nasdaq.com/articles/globant-glob-q3-earnings-and-revenues-top-estimates",
      "published_at": "2026-11-19T21:30:02Z",
@@ -3056,6 +3151,7 @@
     },
     {
      "headline": "Marvell Stock Halved Again. What Does Its Cash Say?",
+     "headline_th": "หุ้น Marvell ร่วงลงครึ่งหนึ่งอีกครั้ง เงินสดของบริษัทบอกอะไร",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/mrvl/articles/626972/own-marvell-its-cash-says-2022-not-2006/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-19T20:25:57Z",
@@ -3351,6 +3447,7 @@
    "news": [
     {
      "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
      "published_at": "2026-11-20T06:58:31Z",
@@ -3359,6 +3456,7 @@
     },
     {
      "headline": "Rocket Lab (RKLB) Stock Could Be Overvalued On Record Backlog Growth",
+     "headline_th": "หุ้น Rocket Lab (RKLB) อาจแพงเกินจริง จากงานในมือที่โตเป็นประวัติการณ์",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-rklb-stock-could-181656006.html?.tsrc=rss",
      "published_at": "2026-11-19T18:16:56Z",
@@ -3367,6 +3465,7 @@
     },
     {
      "headline": "AST SpaceMobile Is Down 37% in a Month. Can B. Riley’s Upgrade Get ASTS Stock Back to $48?",
+     "headline_th": "AST SpaceMobile ร่วง 37% ในหนึ่งเดือน การปรับเพิ่มคำแนะนำของ B. Riley จะพาหุ้น ASTS กลับไป 48 ดอลลาร์ได้หรือไม่",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/ast-spacemobile-is-down-37-in-a-month-can-b-rileys-upgrade-get-asts-stock-back-to-48/?.tsrc=rss",
      "published_at": "2026-11-19T17:03:43Z",
@@ -3375,6 +3474,7 @@
     },
     {
      "headline": "Jim Cramer Says Rocket Lab Has ‘Gotten Too Cheap’ Just After Its Electron Rocket Hit 100 Launches Faster Than Any Other Commercial Rocket",
+     "headline_th": "จิม แครเมอร์ บอก Rocket Lab \"ถูกเกินไปแล้ว\" หลังจรวด Electron ปล่อยครบ 100 ครั้งเร็วกว่าจรวดเชิงพาณิชย์ลำอื่น",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/jim-cramer-says-rocket-lab-has-gotten-too-cheap-just-after-its-electron-rocket-hit-100-launches-faster-than-any-other-commercial-rocket/?.tsrc=rss",
      "published_at": "2026-11-19T16:34:34Z",
@@ -3383,6 +3483,7 @@
     },
     {
      "headline": "Rocket Lab Has 2 Big Opportunities Ahead. Either One Could Change the Stock’s Trajectory",
+     "headline_th": "Rocket Lab มี 2 โอกาสใหญ่รออยู่ข้างหน้า โอกาสใดก็อาจเปลี่ยนทิศทางหุ้นได้",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/rocket-lab-has-2-big-opportunities-ahead-either-one-could-change-the-stocks-trajectory/?.tsrc=rss",
      "published_at": "2026-11-19T16:34:26Z",
@@ -3391,6 +3492,7 @@
     },
     {
      "headline": "Rocket Lab Sold Out Neutron Through the 2030s Before It Ever Flew. Here’s Why the Stock Fell After Earnings Anyway.",
+     "headline_th": "Rocket Lab ขายคิว Neutron หมดยาวถึงทศวรรษ 2030 ทั้งที่ยังไม่เคยบิน ทำไมหุ้นยังร่วงหลังประกาศผลประกอบการ",
      "source": "Yahoo",
      "url": "https://www.fool.com/investing/2026/11/19/rocket-lab-sold-out-neutron-through-the-2030s-before-it-ever-flew-heres-why-the-stock-fell-after-earnings-anyway/?.tsrc=rss",
      "published_at": "2026-11-19T15:05:02Z",
@@ -3399,6 +3501,7 @@
     },
     {
      "headline": "Musk: SpaceX Has a “Monopoly” in Space. That’s Bad News for Amazon’s Leo. But Also Bad for SpaceX",
+     "headline_th": "มัสก์: SpaceX \"ผูกขาด\" ในอวกาศ เป็นข่าวร้ายของ Leo ของ Amazon แต่ก็เป็นข่าวร้ายของ SpaceX ด้วย",
      "source": "Yahoo",
      "url": "https://www.tikr.com/blog/musk-spacex-has-a-monopoly-in-space-thats-bad-news-for-amazons-leo-but-also-bad-for-spacex?ref=yahoofinance&tlnk=yf-261119-53r8796f&.tsrc=rss",
      "published_at": "2026-11-19T14:50:42Z",
@@ -3407,6 +3510,7 @@
     },
     {
      "headline": "AST SpaceMobile Stock Has Fallen Far Enough, Analyst Says. He Sees Nearly 90% Upside.",
+     "headline_th": "นักวิเคราะห์ชี้หุ้น AST SpaceMobile ร่วงมามากพอแล้ว มองมีโอกาสขึ้นเกือบ 90%",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/m/1a1ffc90-3418-3fac-8814-7cad6248258e/ast-spacemobile-stock-has.html?.tsrc=rss",
      "published_at": "2026-11-19T14:41:00Z",
@@ -3415,6 +3519,7 @@
     },
     {
      "headline": "How Much Downside Is Left In Rocket Lab Stock?",
+     "headline_th": "หุ้น Rocket Lab ยังลงได้อีกแค่ไหน",
      "source": "Yahoo",
      "url": "https://www.trefis.com/stock/rklb/articles/626676/how-much-downside-is-left-in-rocket-lab-stock/2026-11-19?.tsrc=rss",
      "published_at": "2026-11-19T14:18:24Z",
@@ -3423,6 +3528,7 @@
     },
     {
      "headline": "Redwire Climbs 4% on $15 Million AscendArc Solar Deal and Oppenheimer Initiation; AST SpaceMobile Jumps 8%, Rocket Lab Gains 3%",
+     "headline_th": "Redwire ขึ้น 4% จากดีลโซลาร์ AscendArc 15 ล้านดอลลาร์ และ Oppenheimer เริ่มออกบทวิเคราะห์ ส่วน AST SpaceMobile พุ่ง 8% และ Rocket Lab บวก 3%",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/redwire-climbs-4-on-15-million-ascendarc-solar-deal-and-oppenheimer-initiation-ast-spacemobile-jumps-8-rocket-lab-gains-3/?.tsrc=rss",
      "published_at": "2026-11-19T14:10:26Z",
@@ -3431,6 +3537,7 @@
     },
     {
      "headline": "4 Stocks Analysts and Hedge Funds Surprisingly Prefer Over Tesla",
+     "headline_th": "4 หุ้นที่นักวิเคราะห์และเฮดจ์ฟันด์ชอบมากกว่า Tesla อย่างน่าประหลาดใจ",
      "source": "Yahoo",
      "url": "https://247wallst.com/investing/2026/11/19/4-stocks-analysts-and-hedge-funds-surprisingly-prefer-over-tesla/?.tsrc=rss",
      "published_at": "2026-11-19T12:39:06Z",
@@ -3439,6 +3546,7 @@
     },
     {
      "headline": "RKLB Stock Rises Overnight: Jim Cramer Likes SpaceX But Calls Rocket Lab ‘Too Cheap’ — Electron Tops Falcon 9 In 100 Launches",
+     "headline_th": "หุ้น RKLB ขึ้นนอกเวลาทำการ: จิม แครเมอร์ ชอบ SpaceX แต่บอกว่า Rocket Lab \"ถูกเกินไป\" ขณะที่ Electron แซง Falcon 9 เรื่องปล่อยครบ 100 ครั้ง",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-jim-cramer-likes-spacex-rocketlab-cheap-electron-falcon-9-100-launches/cNbiGliR9iN?.tsrc=rss",
      "published_at": "2026-11-19T07:04:47Z",
@@ -3734,6 +3842,7 @@
    "news": [
     {
      "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
      "published_at": "2026-11-20T06:58:31Z",
@@ -3742,6 +3851,7 @@
     },
     {
      "headline": "Elon Musk’s Dream Meets Wall Street Reality: SpaceX Lenders Don’t Want Nvidia Chips Leaving Earth",
+     "headline_th": "ความฝันของอีลอน มัสก์ เจอความจริงของวอลล์สตรีท: ผู้ให้กู้ของ SpaceX ไม่อยากให้ชิป Nvidia ออกนอกโลก",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-dream-meets-wall-062433324.html?.tsrc=rss",
      "published_at": "2026-11-20T06:24:33Z",
@@ -3750,6 +3860,7 @@
     },
     {
      "headline": "Could Tesla Become The Next Lumentum? Gary Black Warns A SpaceX Stock Deal Could Send TSLA Down 25%",
+     "headline_th": "Tesla จะเป็น Lumentum รายต่อไปหรือไม่ แกรี แบล็ก เตือนดีลหุ้นกับ SpaceX อาจทำให้ TSLA ร่วง 25%",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/could-tesla-become-next-lumentum-gary-black-spacex-stock-deal-send-tsla-down/cNbSEW5R9K7?.tsrc=rss",
      "published_at": "2026-11-20T06:15:59Z",
@@ -3758,6 +3869,7 @@
     },
     {
      "headline": "‘I Don’t Hate Data Centers’: Gina Hinojosa Willing to Talk to SpaceX CEO Elon Musk, but Will Make Sure Texans Are ‘Thriving’",
+     "headline_th": "\"ฉันไม่ได้เกลียดศูนย์ข้อมูล\": จีนา ฮิโนโฮซา พร้อมคุยกับอีลอน มัสก์ ซีอีโอ SpaceX แต่จะดูแลให้ชาวเท็กซัส \"รุ่งเรือง\"",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/economy/policy/articles/don-t-hate-data-centers-043014215.html?.tsrc=rss",
      "published_at": "2026-11-20T04:30:14Z",
@@ -3766,6 +3878,7 @@
     },
     {
      "headline": "Elon Musk Says Grok Can ‘Do Your Accounting’ as SpaceXSI Adds Five Full-Time AI Bots, Cutting Invoice Processing From 24 Hours to Minutes",
+     "headline_th": "อีลอน มัสก์ บอก Grok \"ทำบัญชีให้คุณได้\" ขณะ SpaceXSI เพิ่มบอต AI ทำงานเต็มเวลา 5 ตัว ลดเวลาจัดการใบแจ้งหนี้จาก 24 ชั่วโมงเหลือไม่กี่นาที",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-grok-accounting-043007297.html?.tsrc=rss",
      "published_at": "2026-11-20T04:30:07Z",
@@ -3774,6 +3887,7 @@
     },
     {
      "headline": "Apollo Global Management Targets Over 20% Earnings Growth in 2027 as Credit Expands",
+     "headline_th": "Apollo Global Management ตั้งเป้ากำไรโตเกิน 20% ในปี 2027 จากธุรกิจสินเชื่อที่ขยายตัว",
      "source": "Yahoo",
      "url": "https://www.marketbeat.com/instant-alerts/event-apollo-global-management-targets-over-20-earnings-growth-in-2027-as-credit-expands-2026-11-19/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
      "published_at": "2026-11-20T04:12:11Z",
@@ -3782,6 +3896,7 @@
     },
     {
      "headline": "SpaceX lenders seek safeguards against Musk sending AI chips into space - FT",
+     "headline_th": "FT รายงาน ผู้ให้กู้ของ SpaceX ต้องการหลักประกัน ป้องกันมัสก์ส่งชิป AI ขึ้นอวกาศ",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/ai/articles/spacex-lenders-seek-safeguards-against-031830082.html?.tsrc=rss",
      "published_at": "2026-11-20T03:18:30Z",
@@ -3790,6 +3905,7 @@
     },
     {
      "headline": "Tom Lee Says Anthropic Debut Selloff Feels Like ‘Max Pain’: Will Tech Rebound?",
+     "headline_th": "ทอม ลี บอกแรงเทขายหลัง Anthropic เปิดตัวให้ความรู้สึกเหมือน \"จุดเจ็บปวดที่สุด\" หุ้นเทคจะฟื้นไหม",
      "source": "Yahoo",
      "url": "https://beincrypto.com/tom-lee-anthropic-ipo-max-pain/?.tsrc=rss",
      "published_at": "2026-11-20T03:05:00Z",
@@ -3798,6 +3914,7 @@
     },
     {
      "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
      "source": "Yahoo",
      "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
      "published_at": "2026-11-20T02:23:55Z",
@@ -3806,6 +3923,7 @@
     },
     {
      "headline": "How many millionaires did Anthropic’s blockbuster IPO just create?",
+     "headline_th": "IPO ครั้งใหญ่ของ Anthropic สร้างเศรษฐีเงินล้านขึ้นมากี่คน",
      "source": "Yahoo",
      "url": "https://www.cnn.com/2026/11/19/business/video/ebof-harry-enten-anthropic-ipo?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
      "published_at": "2026-11-20T01:48:29Z",
@@ -3814,6 +3932,7 @@
     },
     {
      "headline": "SpaceX's Data Center Vote Should Be Delayed, Arizona AG Tells Cochise County",
+     "headline_th": "อัยการสูงสุดแอริโซนาบอกเทศมณฑลโคชีสว่าควรเลื่อนการลงมติเรื่องศูนย์ข้อมูลของ SpaceX",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/technology/articles/spacex-apos-data-center-vote-003116969.html?.tsrc=rss",
      "published_at": "2026-11-20T00:31:16Z",
@@ -3822,6 +3941,7 @@
     },
     {
      "headline": "Anthropic’s IPO nets Goldman Sachs and Morgan Stanley $113 million apiece in fees, eclipsing their SpaceX paydays",
+     "headline_th": "IPO ของ Anthropic ทำให้ Goldman Sachs และ Morgan Stanley ได้ค่าธรรมเนียมรายละ 113 ล้านดอลลาร์ มากกว่าที่ได้จาก SpaceX",
      "source": "Yahoo",
      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-nets-goldman-sachs-233822497.html?.tsrc=rss",
      "published_at": "2026-11-19T23:38:22Z",

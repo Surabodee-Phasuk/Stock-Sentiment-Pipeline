@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Watchlist · Stock News Sentiment</title>
+  <title>หุ้นที่ติดตาม · Stock News Sentiment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/app.css">
@@ -11,8 +11,8 @@
 <body>
   <main class="wrap narrow">
     <div class="topbar">
-      <div class="grow"><h1>My Watchlist</h1><div class="sub" id="count">…</div></div>
-      <a class="btn btn-outline" href="/search">+ Add More</a>
+      <div class="grow"><h1>หุ้นที่ติดตาม</h1><div class="sub" id="count">…</div></div>
+      <a class="btn btn-outline" href="/search">+ เพิ่มหุ้น</a>
     </div>
     <div id="cards" aria-live="polite">
       <div class="card skeleton"></div>
@@ -30,7 +30,7 @@
       .then(([data, list]) => {
         const info = Object.fromEntries(list.map((t) => [t.ticker, t]));
         const watch = SS.getWatchlist().filter((t) => data.stocks[t] && info[t]);
-        document.getElementById("count").textContent = `${watch.length} stocks selected`;
+        document.getElementById("count").textContent = `เลือกไว้ ${watch.length} หุ้น`;
         cards.innerHTML = watch.length
           ? watch
               .map((t) => {
@@ -43,7 +43,7 @@
                 </a>`;
               })
               .join("")
-          : `<div class="card empty">ยังไม่มีหุ้นใน Watchlist<br><br><a class="btn" href="/search">Search stocks</a></div>`;
+          : `<div class="card empty">ยังไม่มีหุ้นที่ติดตาม<br><br><a class="btn" href="/search">ค้นหาหุ้น</a></div>`;
       })
       .catch(() => {
         cards.innerHTML = `<div class="card empty">โหลดข้อมูลไม่สำเร็จ<br><br><button onclick="location.reload()">ลองใหม่</button></div>`;

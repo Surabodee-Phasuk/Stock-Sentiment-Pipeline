@@ -3,7 +3,12 @@
 
 const SS = (() => {
   const LABELS = ["positive", "neutral", "negative"];
-  const LABEL_EN = { positive: "Positive", neutral: "Neutral", negative: "Negative" };
+  const LABEL_TH = { positive: "เชิงบวก", neutral: "เป็นกลาง", negative: "เชิงลบ" };
+  const SECTOR_TH = {
+    Technology: "เทคโนโลยี", "Communication Services": "บริการสื่อสาร",
+    "Consumer Discretionary": "สินค้าฟุ่มเฟือย", Semiconductors: "เซมิคอนดักเตอร์",
+    Automotive: "ยานยนต์", Aerospace: "อวกาศและการบิน",
+  };
   const WATCH_KEY = "ss.watchlist";
   const DEFAULT_WATCH = ["RKLB", "NVDA", "TSLA"];
   // สีพื้นโลโก้ตัวอักษร (ไม่ใช่โลโก้จริงของบริษัท)
@@ -23,7 +28,7 @@ const SS = (() => {
     ask: '<path d="M4 5h16v11H8l-4 4z"/><path d="M9 10h6"/>',
   };
   function nav(active) {
-    const items = [["/", "Home", "home"], ["/search", "Search", "search"], ["/ask", "Ask AI", "ask"]];
+    const items = [["/", "หน้าแรก", "home"], ["/search", "ค้นหา", "search"], ["/ask", "ถาม AI", "ask"]];
     const el = document.createElement("nav");
     el.className = "bottom";
     el.setAttribute("aria-label", "เมนูหลัก");
@@ -71,7 +76,10 @@ const SS = (() => {
   }
   const pct = (n, total) => (total ? Math.round((n / total) * 100) : 0);
 
-  const pill = (label) => `<span class="pill ${label}">${LABEL_EN[label]}</span>`;
+  const pill = (label) => `<span class="pill ${label}">${LABEL_TH[label]}</span>`;
+  const sector = (s) => SECTOR_TH[s] ?? s;
+  // แสดงหัวข้อข่าวภาษาไทย ถ้ายังไม่มีคำแปลใช้ต้นฉบับ (ข่าวต้นทางและ FinBERT เป็นภาษาอังกฤษ)
+  const headline = (n) => n.headline_th || n.headline;
   function logo(ticker, big) {
     const color = LOGO[ticker] || "#475569";
     return `<span class="logo${big ? " lg" : ""}" style="background:${color}" aria-hidden="true">${esc(
@@ -79,13 +87,13 @@ const SS = (() => {
     )}</span>`;
   }
 
-  const timeFmt = new Intl.DateTimeFormat("en-GB", {
+  const timeFmt = new Intl.DateTimeFormat("th-TH", {
     hour: "2-digit", minute: "2-digit", timeZone: "Asia/Bangkok",
   });
-  const dateTimeFmt = new Intl.DateTimeFormat("en-GB", {
+  const dateTimeFmt = new Intl.DateTimeFormat("th-TH", {
     day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Bangkok",
   });
-  const dateFmt = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+  const dateFmt = new Intl.DateTimeFormat("th-TH", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
   const fmtClock = (iso) => (iso ? timeFmt.format(new Date(iso)) : "—");
   const fmtDateTime = (iso) => (iso ? dateTimeFmt.format(new Date(iso)) : "—");
   const fmtDate = (d) => (d ? dateFmt.format(new Date(d + "T00:00:00Z")) : "—");
@@ -116,7 +124,7 @@ const SS = (() => {
   const DISCLAIMER = "ข้อมูลนี้สรุปทิศทางความรู้สึกของข่าวเท่านั้น ไม่ใช่คำแนะนำการลงทุน";
 
   return {
-    LABELS, LABEL_EN, esc, nav, getWatchlist, setWatchlist, toggleWatch, dominant, pct,
+    LABELS, LABEL_TH, sector, headline, esc, nav, getWatchlist, setWatchlist, toggleWatch, dominant, pct,
     pill, logo, fmtClock, fmtDateTime, fmtDate, fmtPrice, change, getJSON, tickers, mock,
     DISCLAIMER,
   };
