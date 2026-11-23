@@ -5,7 +5,7 @@
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-4.1–FR-4.4  
 **Branch:** `feat/f5-01-ui-prototype`  
-**PR:** —
+**PR:** [#35](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/35)
 
 ## งาน
 
@@ -34,7 +34,7 @@
 
 - หน้าตาตามดีไซน์ของทีม (พื้นขาว สีหลักน้ำเงิน) ชุดสี sentiment อยู่ใน ADR-0008 และ `webapp/static/css/app.css` ใช้คู่กับคำ Positive / Neutral / Negative เสมอ
 - ทุกหน้าที่แสดง sentiment / คำตอบ AI มีข้อความ "ไม่ใช่คำแนะนำการลงทุน" (FR-4.5)
-- ข้อมูลตัวอย่าง `static/mock/stocks.json`: ข่าวจริงหนึ่งรอบ (20 พ.ย. 2569) + ป้าย FinBERT จริง ราคาเป็นค่าสุ่ม ระบุว่าเป็นข้อมูลตัวอย่างในหน้า
+- ข้อมูลตัวอย่าง `static/mock/stocks.json`: ข่าวจริงหนึ่งรอบ (20 พ.ย. 2569) + ป้าย FinBERT จริง ราคาและกราฟรายวันเป็นค่าสุ่ม มีป้าย "ข้อมูลตัวอย่าง" ที่กล่องราคาและกราฟในหน้า Stock Detail และข้อความกำกับในหน้า Home
 - `pytest webapp`: 7 passed (4 หน้า render, `/api/tickers`, disclaimer, mock ครบ 10 หุ้น)
 - ภาพหน้าจอทั้ง 4 หน้าแนบใน PR
 

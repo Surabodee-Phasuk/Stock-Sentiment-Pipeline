@@ -15,7 +15,7 @@ async function loadStock(t) {
     err.status = 404;
     throw err;
   }
-  return { ...data.stocks[t], data_source: "Sample data" };
+  return { ...data.stocks[t], data_source: "Sample data", price_is_sample: true };
 }
 
 function donut(c) {
@@ -102,6 +102,8 @@ function render(s, info) {
   const c = s.today;
   const label = SS.dominant(c);
   const total = c.positive + c.neutral + c.negative;
+  // ราคาและกราฟรายวันใน mock เป็นค่าสุ่ม ต้องมีป้ายกำกับเสมอ
+  const sampleTag = s.price_is_sample ? `<span class="sample">ข้อมูลตัวอย่าง</span>` : "";
   document.title = `${s.ticker} · Stock News Sentiment`;
   document.getElementById("head").innerHTML = `
     <a class="back" href="/" aria-label="กลับ">←</a>
@@ -128,7 +130,9 @@ function render(s, info) {
         }
       </div>
       <div class="card">
-        <p class="card-title" style="margin-bottom:2px">Latest Price</p>
+        <div class="row" style="margin-bottom:2px">
+          <p class="card-title" style="margin:0">Latest Price</p>${sampleTag}
+        </div>
         <div class="small faint">as of ${SS.fmtDate(s.trade_date)}</div>
         <div class="price-big" style="margin:6px 0 2px">$${SS.fmtPrice(s.close)}</div>
         <div class="small" style="font-weight:600">${SS.change(s.close, s.prev_close)} <span class="faint" style="font-weight:400">Today</span></div>
@@ -159,7 +163,9 @@ function render(s, info) {
       }
     </section>
     <section class="card">
-      <p class="card-title">Sentiment vs Close · last ${s.daily.length} trading days</p>
+      <div class="row" style="margin-bottom:12px">
+        <p class="card-title" style="margin:0">Sentiment vs Close · last ${s.daily.length} trading days</p>${sampleTag}
+      </div>
       <div class="chart-box"><canvas id="chart" aria-label="Daily sentiment vs closing price"></canvas></div>
     </section>
     <section class="card">
