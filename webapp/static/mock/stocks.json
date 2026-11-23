@@ -1,0 +1,3955 @@
+{
+ "generated_from": "ข่าวจริงจาก collector 20 พ.ย. 2569 + ป้าย FinBERT จริง; ราคาและกราฟรายวันเป็นข้อมูลสุ่ม; headline_th แปลด้วย AI (Claude) สำหรับ prototype",
+ "stocks": {
+  "AAPL": {
+   "ticker": "AAPL",
+   "close": 219.69,
+   "prev_close": 220.96,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 34,
+    "positive": 14,
+    "neutral": 14,
+    "negative": 6
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 228.76,
+     "news": 11,
+     "positive": 6,
+     "neutral": 5,
+     "negative": 0,
+     "avg_score": 0.469
+    },
+    {
+     "date": "2026-10-12",
+     "close": 231.07,
+     "news": 13,
+     "positive": 9,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.562
+    },
+    {
+     "date": "2026-10-13",
+     "close": 233.38,
+     "news": 9,
+     "positive": 0,
+     "neutral": 6,
+     "negative": 3,
+     "avg_score": -0.312
+    },
+    {
+     "date": "2026-10-14",
+     "close": 235.8,
+     "news": 5,
+     "positive": 4,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.647
+    },
+    {
+     "date": "2026-10-15",
+     "close": 233.31,
+     "news": 11,
+     "positive": 10,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.688
+    },
+    {
+     "date": "2026-10-16",
+     "close": 231.1,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.806
+    },
+    {
+     "date": "2026-10-19",
+     "close": 230.17,
+     "news": 12,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 7,
+     "avg_score": -0.249
+    },
+    {
+     "date": "2026-10-20",
+     "close": 227.17,
+     "news": 12,
+     "positive": 7,
+     "neutral": 3,
+     "negative": 2,
+     "avg_score": 0.313
+    },
+    {
+     "date": "2026-10-21",
+     "close": 228.96,
+     "news": 5,
+     "positive": 5,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.758
+    },
+    {
+     "date": "2026-10-22",
+     "close": 227.69,
+     "news": 8,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.611
+    },
+    {
+     "date": "2026-10-23",
+     "close": 232.47,
+     "news": 4,
+     "positive": 0,
+     "neutral": 0,
+     "negative": 4,
+     "avg_score": -0.808
+    },
+    {
+     "date": "2026-10-26",
+     "close": 232.81,
+     "news": 10,
+     "positive": 6,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.526
+    },
+    {
+     "date": "2026-10-27",
+     "close": 230.64,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.784
+    },
+    {
+     "date": "2026-10-28",
+     "close": 228.01,
+     "news": 10,
+     "positive": 1,
+     "neutral": 8,
+     "negative": 1,
+     "avg_score": 0.044
+    },
+    {
+     "date": "2026-10-29",
+     "close": 232.13,
+     "news": 10,
+     "positive": 10,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.756
+    },
+    {
+     "date": "2026-10-30",
+     "close": 230.55,
+     "news": 13,
+     "positive": 13,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.778
+    },
+    {
+     "date": "2026-11-02",
+     "close": 225.06,
+     "news": 9,
+     "positive": 5,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.489
+    },
+    {
+     "date": "2026-11-03",
+     "close": 221.87,
+     "news": 10,
+     "positive": 0,
+     "neutral": 7,
+     "negative": 3,
+     "avg_score": -0.213
+    },
+    {
+     "date": "2026-11-04",
+     "close": 226.41,
+     "news": 5,
+     "positive": 5,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.79
+    },
+    {
+     "date": "2026-11-05",
+     "close": 230.78,
+     "news": 5,
+     "positive": 3,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.325
+    },
+    {
+     "date": "2026-11-06",
+     "close": 228.58,
+     "news": 5,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.138
+    },
+    {
+     "date": "2026-11-09",
+     "close": 225.46,
+     "news": 9,
+     "positive": 3,
+     "neutral": 5,
+     "negative": 1,
+     "avg_score": 0.136
+    },
+    {
+     "date": "2026-11-10",
+     "close": 227.63,
+     "news": 5,
+     "positive": 1,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": -0.049
+    },
+    {
+     "date": "2026-11-11",
+     "close": 229.13,
+     "news": 7,
+     "positive": 0,
+     "neutral": 5,
+     "negative": 2,
+     "avg_score": -0.237
+    },
+    {
+     "date": "2026-11-12",
+     "close": 227.07,
+     "news": 8,
+     "positive": 5,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.419
+    },
+    {
+     "date": "2026-11-13",
+     "close": 221.66,
+     "news": 13,
+     "positive": 11,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.673
+    },
+    {
+     "date": "2026-11-16",
+     "close": 221.34,
+     "news": 13,
+     "positive": 12,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.667
+    },
+    {
+     "date": "2026-11-17",
+     "close": 217.97,
+     "news": 9,
+     "positive": 0,
+     "neutral": 6,
+     "negative": 3,
+     "avg_score": -0.31
+    },
+    {
+     "date": "2026-11-18",
+     "close": 220.96,
+     "news": 6,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.228
+    },
+    {
+     "date": "2026-11-19",
+     "close": 219.69,
+     "news": 12,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 8,
+     "avg_score": -0.44
+    }
+   ],
+   "news": [
+    {
+     "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
+     "published_at": "2026-11-20T07:16:11Z",
+     "sentiment": "negative",
+     "score": -0.96
+    },
+    {
+     "headline": "Wenge AI Adds Google and Apple Sign-In Options for ScienceOra International Users",
+     "headline_th": "Wenge AI เพิ่มการเข้าสู่ระบบด้วย Google และ Apple สำหรับผู้ใช้ ScienceOra ในต่างประเทศ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/wenge-ai-adds-google-apple-063000704.html?.tsrc=rss",
+     "published_at": "2026-11-20T06:30:00Z",
+     "sentiment": "positive",
+     "score": 0.897
+    },
+    {
+     "headline": "CrowdStrike (CRWD) Brings Apple Device Automation Into Falcon Foundry Through A New Tie Up",
+     "headline_th": "CrowdStrike (CRWD) จับมือพันธมิตรรายใหม่ นำระบบจัดการอุปกรณ์ Apple อัตโนมัติเข้าสู่ Falcon Foundry",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/articles/crowdstrike-crwd-brings-apple-device-051725940.html?.tsrc=rss",
+     "published_at": "2026-11-20T05:17:25Z",
+     "sentiment": "neutral",
+     "score": 0.275
+    },
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "What Apple Doubters Got Wrong",
+     "headline_th": "คนที่ไม่เชื่อมั่นใน Apple มองพลาดเรื่องอะไร",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/apple-doubters-got-wrong-042903639.html?.tsrc=rss",
+     "published_at": "2026-11-20T04:29:03Z",
+     "sentiment": "positive",
+     "score": 0.896
+    },
+    {
+     "headline": "Pixalate Launches 4D Invalid Traffic (IVT) Blocking on Amazon Web Services (AWS) RTB Fabric; Industry’s First Infrastructure-, Seller-, Publisher-, & Device-Level Pre-Bid Blocking Modules for Programmatic CTV & Mobile Apps",
+     "headline_th": "Pixalate เปิดตัวระบบบล็อกทราฟฟิกปลอม (IVT) แบบ 4D บน AWS RTB Fabric เป็นโมดูลบล็อกก่อนประมูลโฆษณาระดับโครงสร้างพื้นฐาน ผู้ขาย ผู้เผยแพร่ และอุปกรณ์รายแรกของวงการ สำหรับโฆษณา CTV และแอปมือถือ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/media-advertising/articles/pixalate-launches-4d-invalid-traffic-034000682.html?.tsrc=rss",
+     "published_at": "2026-11-20T03:40:00Z",
+     "sentiment": "neutral",
+     "score": 0.013
+    },
+    {
+     "headline": "Apple (AAPL) Stock Could Be 33% Overvalued On Fresh Service Outage Concerns",
+     "headline_th": "หุ้น Apple (AAPL) อาจแพงเกินจริง 33% จากความกังวลเรื่องบริการล่มรอบใหม่",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-could-33-031750121.html?.tsrc=rss",
+     "published_at": "2026-11-20T03:17:50Z",
+     "sentiment": "neutral",
+     "score": 0.341
+    },
+    {
+     "headline": "History Says This Brilliant ETF Could Help You Turn $500 Per Month Into $784,100 While Barely Lifting a Finger.",
+     "headline_th": "ประวัติศาสตร์ชี้ ETF ตัวนี้อาจเปลี่ยนเงินเดือนละ 500 ดอลลาร์เป็น 784,100 ดอลลาร์โดยแทบไม่ต้องลงแรง",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/19/history-says-this-brilliant-etf-could-help-you-turn-usd500-per-month-into-usd784-100-while-barely-lifting-a-finger/?.tsrc=rss",
+     "published_at": "2026-11-20T01:48:02Z",
+     "sentiment": "neutral",
+     "score": 0.081
+    },
+    {
+     "headline": "1 Unstoppable Stock to Buy Before It Joins NVDA and AAPL in the $1 Trillion Club",
+     "headline_th": "1 หุ้นที่หยุดไม่อยู่ น่าซื้อก่อนเข้าร่วมกลุ่มมูลค่า 1 ล้านล้านดอลลาร์กับ NVDA และ AAPL",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/19/1-unstoppable-stock-to-buy-before-it-joins-hot-tickers-in-the-1-3-trillion-club/?.tsrc=rss",
+     "published_at": "2026-11-20T00:52:02Z",
+     "sentiment": "positive",
+     "score": 0.871
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "Apple May Try to Challenge Meta for Personal Agent Supremacy",
+     "headline_th": "Apple อาจท้าชิงความเป็นเจ้าตลาดผู้ช่วย AI ส่วนตัวกับ Meta",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/m/218adf20-fceb-3955-ab5b-5c4bc9cf9107/apple-may-try-to-challenge.html?.tsrc=rss",
+     "published_at": "2026-11-19T23:51:00Z",
+     "sentiment": "neutral",
+     "score": 0.13
+    },
+    {
+     "headline": "S&P 500, Nasdaq, Dow End Lower As Anthropic Trading Debut Fails To Provide Adequate Confidence — ANT, META, AAPL, GME In Focus",
+     "headline_th": "S&P 500, Nasdaq และ Dow ปิดลบ หลังการซื้อขายวันแรกของ Anthropic สร้างความมั่นใจได้ไม่พอ จับตา ANT, META, AAPL และ GME",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-end-lower-as-anthropic-trading-debut-fails-to-provide-adequate-confidence/cNbio2mR90v?.tsrc=rss",
+     "published_at": "2026-11-19T23:01:05Z",
+     "sentiment": "negative",
+     "score": -0.676
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "MSFT": {
+   "ticker": "MSFT",
+   "close": 389.7,
+   "prev_close": 383.84,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 32,
+    "positive": 12,
+    "neutral": 11,
+    "negative": 9
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 400.4,
+     "news": 4,
+     "positive": 1,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.225
+    },
+    {
+     "date": "2026-10-12",
+     "close": 402.56,
+     "news": 14,
+     "positive": 4,
+     "neutral": 3,
+     "negative": 7,
+     "avg_score": -0.139
+    },
+    {
+     "date": "2026-10-13",
+     "close": 403.79,
+     "news": 11,
+     "positive": 5,
+     "neutral": 5,
+     "negative": 1,
+     "avg_score": 0.31
+    },
+    {
+     "date": "2026-10-14",
+     "close": 405.53,
+     "news": 3,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.553
+    },
+    {
+     "date": "2026-10-15",
+     "close": 405.44,
+     "news": 5,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.163
+    },
+    {
+     "date": "2026-10-16",
+     "close": 412.81,
+     "news": 11,
+     "positive": 5,
+     "neutral": 1,
+     "negative": 5,
+     "avg_score": -0.028
+    },
+    {
+     "date": "2026-10-19",
+     "close": 421.33,
+     "news": 6,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.832
+    },
+    {
+     "date": "2026-10-20",
+     "close": 401.41,
+     "news": 14,
+     "positive": 12,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.656
+    },
+    {
+     "date": "2026-10-21",
+     "close": 390.11,
+     "news": 3,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.243
+    },
+    {
+     "date": "2026-10-22",
+     "close": 391.02,
+     "news": 14,
+     "positive": 9,
+     "neutral": 3,
+     "negative": 2,
+     "avg_score": 0.395
+    },
+    {
+     "date": "2026-10-23",
+     "close": 410.73,
+     "news": 8,
+     "positive": 1,
+     "neutral": 4,
+     "negative": 3,
+     "avg_score": -0.24
+    },
+    {
+     "date": "2026-10-26",
+     "close": 402.66,
+     "news": 10,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 5,
+     "avg_score": -0.19
+    },
+    {
+     "date": "2026-10-27",
+     "close": 392.0,
+     "news": 3,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.83
+    },
+    {
+     "date": "2026-10-28",
+     "close": 381.74,
+     "news": 4,
+     "positive": 0,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": -0.572
+    },
+    {
+     "date": "2026-10-29",
+     "close": 382.13,
+     "news": 5,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.143
+    },
+    {
+     "date": "2026-10-30",
+     "close": 374.67,
+     "news": 14,
+     "positive": 6,
+     "neutral": 1,
+     "negative": 7,
+     "avg_score": -0.067
+    },
+    {
+     "date": "2026-11-02",
+     "close": 385.27,
+     "news": 5,
+     "positive": 1,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.125
+    },
+    {
+     "date": "2026-11-03",
+     "close": 382.0,
+     "news": 10,
+     "positive": 10,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.811
+    },
+    {
+     "date": "2026-11-04",
+     "close": 375.96,
+     "news": 8,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 4,
+     "avg_score": -0.195
+    },
+    {
+     "date": "2026-11-05",
+     "close": 371.99,
+     "news": 3,
+     "positive": 0,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.003
+    },
+    {
+     "date": "2026-11-06",
+     "close": 378.89,
+     "news": 6,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.753
+    },
+    {
+     "date": "2026-11-09",
+     "close": 376.32,
+     "news": 6,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 4,
+     "avg_score": -0.293
+    },
+    {
+     "date": "2026-11-10",
+     "close": 372.2,
+     "news": 9,
+     "positive": 2,
+     "neutral": 7,
+     "negative": 0,
+     "avg_score": 0.219
+    },
+    {
+     "date": "2026-11-11",
+     "close": 369.89,
+     "news": 8,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.633
+    },
+    {
+     "date": "2026-11-12",
+     "close": 372.81,
+     "news": 5,
+     "positive": 4,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.677
+    },
+    {
+     "date": "2026-11-13",
+     "close": 370.72,
+     "news": 5,
+     "positive": 4,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.668
+    },
+    {
+     "date": "2026-11-16",
+     "close": 373.26,
+     "news": 12,
+     "positive": 11,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.739
+    },
+    {
+     "date": "2026-11-17",
+     "close": 376.63,
+     "news": 8,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.828
+    },
+    {
+     "date": "2026-11-18",
+     "close": 383.84,
+     "news": 6,
+     "positive": 1,
+     "neutral": 3,
+     "negative": 2,
+     "avg_score": -0.179
+    },
+    {
+     "date": "2026-11-19",
+     "close": 389.7,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.806
+    }
+   ],
+   "news": [
+    {
+     "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
+     "published_at": "2026-11-20T07:16:11Z",
+     "sentiment": "negative",
+     "score": -0.96
+    },
+    {
+     "headline": "What Does Mastercard (MA) Joining The AI Transparency Initiative Mean For Investors?",
+     "headline_th": "Mastercard (MA) เข้าร่วมโครงการความโปร่งใสด้าน AI มีความหมายอย่างไรต่อนักลงทุน",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/does-mastercard-ma-joining-ai-052240359.html?.tsrc=rss",
+     "published_at": "2026-11-20T05:22:40Z",
+     "sentiment": "neutral",
+     "score": 0.346
+    },
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "Microsoft CEO Nadella faces uncomfortable reality after outage",
+     "headline_th": "นาเดลลา ซีอีโอ Microsoft เผชิญความจริงที่น่าอึดอัดหลังระบบล่ม",
+     "source": "Yahoo",
+     "url": "https://www.thestreet.com/technology/microsoft-ceo-nadella-faces-uncomfortable-reality-after-outage?.tsrc=rss",
+     "published_at": "2026-11-20T03:47:00Z",
+     "sentiment": "negative",
+     "score": -0.949
+    },
+    {
+     "headline": "Akamai Technologies (AKAM) Expands Mobile Enterprise Browser Security",
+     "headline_th": "Akamai Technologies (AKAM) ขยายความปลอดภัยของเบราว์เซอร์องค์กรบนมือถือ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/articles/akamai-technologies-akam-expands-mobile-031634349.html?.tsrc=rss",
+     "published_at": "2026-11-20T03:16:34Z",
+     "sentiment": "positive",
+     "score": 0.69
+    },
+    {
+     "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
+     "published_at": "2026-11-20T02:23:55Z",
+     "sentiment": "positive",
+     "score": 0.866
+    },
+    {
+     "headline": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+     "headline_th": "ความต้องการศูนย์ข้อมูล AI ที่ Nvidia หนุนหลัง ทำให้หุ้น Schneider Electric เป็นที่จับตา",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
+     "published_at": "2026-11-20T02:14:20Z",
+     "sentiment": "neutral",
+     "score": 0.195
+    },
+    {
+     "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-20T00:58:20Z",
+     "sentiment": "neutral",
+     "score": -0.035
+    },
+    {
+     "headline": "IBM (IBM) Stock May Be 27% Below Fair Value On Quantum Platform News",
+     "headline_th": "หุ้น IBM อาจต่ำกว่ามูลค่าที่เหมาะสม 27% จากข่าวแพลตฟอร์มควอนตัม",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/ibm-ibm-stock-may-27-002028644.html?.tsrc=rss",
+     "published_at": "2026-11-20T00:20:28Z",
+     "sentiment": "negative",
+     "score": -0.492
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes",
+     "headline_th": "นักวิเคราะห์ที่มอง Anthropic บวกที่สุดชี้ อัตรากำไร \"น่าจะดีกว่าผู้ให้บริการคลาวด์รายใหญ่\" และต้องทำอะไรบ้างจึงจะไปถึง",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/anthropics-margins-will-be-probably-better-than-a-hyperscaler-says-its-most-bullish-analyst-heres-what-that-takes?ref=yahoofinance&tlnk=yf-261119-7x5g2cff&.tsrc=rss",
+     "published_at": "2026-11-20T00:05:16Z",
+     "sentiment": "positive",
+     "score": 0.931
+    },
+    {
+     "headline": "AI Hacking Is “a Fantastic Bonanza” for CrowdStrike and Palo Alto, per Paul Kedrosky",
+     "headline_th": "พอล เคดรอสกี ชี้ การแฮ็กด้วย AI คือ \"ขุมทรัพย์ก้อนโต\" ของ CrowdStrike และ Palo Alto",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/ai-hacking-is-a-fantastic-bonanza-for-crowdstrike-and-palo-alto-per-paul-kedrosky?ref=yahoofinance&tlnk=yf-261119-xq2rf628&.tsrc=rss",
+     "published_at": "2026-11-19T22:37:57Z",
+     "sentiment": "neutral",
+     "score": 0.164
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "GOOGL": {
+   "ticker": "GOOGL",
+   "close": 177.74,
+   "prev_close": 177.91,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 34,
+    "positive": 10,
+    "neutral": 11,
+    "negative": 13
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 167.61,
+     "news": 7,
+     "positive": 3,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": -0.036
+    },
+    {
+     "date": "2026-10-12",
+     "close": 170.13,
+     "news": 4,
+     "positive": 1,
+     "neutral": 0,
+     "negative": 3,
+     "avg_score": -0.443
+    },
+    {
+     "date": "2026-10-13",
+     "close": 172.59,
+     "news": 13,
+     "positive": 4,
+     "neutral": 8,
+     "negative": 1,
+     "avg_score": 0.224
+    },
+    {
+     "date": "2026-10-14",
+     "close": 175.55,
+     "news": 13,
+     "positive": 5,
+     "neutral": 6,
+     "negative": 2,
+     "avg_score": 0.16
+    },
+    {
+     "date": "2026-10-15",
+     "close": 179.86,
+     "news": 5,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.505
+    },
+    {
+     "date": "2026-10-16",
+     "close": 185.63,
+     "news": 5,
+     "positive": 5,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.766
+    },
+    {
+     "date": "2026-10-19",
+     "close": 189.69,
+     "news": 9,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.606
+    },
+    {
+     "date": "2026-10-20",
+     "close": 190.88,
+     "news": 14,
+     "positive": 5,
+     "neutral": 9,
+     "negative": 0,
+     "avg_score": 0.27
+    },
+    {
+     "date": "2026-10-21",
+     "close": 193.91,
+     "news": 10,
+     "positive": 7,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.548
+    },
+    {
+     "date": "2026-10-22",
+     "close": 191.2,
+     "news": 4,
+     "positive": 0,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": -0.153
+    },
+    {
+     "date": "2026-10-23",
+     "close": 191.07,
+     "news": 4,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": -0.423
+    },
+    {
+     "date": "2026-10-26",
+     "close": 193.07,
+     "news": 5,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.192
+    },
+    {
+     "date": "2026-10-27",
+     "close": 192.04,
+     "news": 7,
+     "positive": 6,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.689
+    },
+    {
+     "date": "2026-10-28",
+     "close": 188.21,
+     "news": 8,
+     "positive": 1,
+     "neutral": 3,
+     "negative": 4,
+     "avg_score": -0.344
+    },
+    {
+     "date": "2026-10-29",
+     "close": 188.03,
+     "news": 14,
+     "positive": 2,
+     "neutral": 6,
+     "negative": 6,
+     "avg_score": -0.189
+    },
+    {
+     "date": "2026-10-30",
+     "close": 188.14,
+     "news": 4,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.411
+    },
+    {
+     "date": "2026-11-02",
+     "close": 188.95,
+     "news": 6,
+     "positive": 0,
+     "neutral": 4,
+     "negative": 2,
+     "avg_score": -0.23
+    },
+    {
+     "date": "2026-11-03",
+     "close": 186.17,
+     "news": 11,
+     "positive": 6,
+     "neutral": 3,
+     "negative": 2,
+     "avg_score": 0.303
+    },
+    {
+     "date": "2026-11-04",
+     "close": 187.23,
+     "news": 3,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.314
+    },
+    {
+     "date": "2026-11-05",
+     "close": 187.26,
+     "news": 7,
+     "positive": 4,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.322
+    },
+    {
+     "date": "2026-11-06",
+     "close": 189.57,
+     "news": 11,
+     "positive": 10,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.704
+    },
+    {
+     "date": "2026-11-09",
+     "close": 193.41,
+     "news": 3,
+     "positive": 0,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.023
+    },
+    {
+     "date": "2026-11-10",
+     "close": 183.0,
+     "news": 11,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 8,
+     "avg_score": -0.366
+    },
+    {
+     "date": "2026-11-11",
+     "close": 184.62,
+     "news": 13,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 7,
+     "avg_score": -0.057
+    },
+    {
+     "date": "2026-11-12",
+     "close": 184.17,
+     "news": 9,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.641
+    },
+    {
+     "date": "2026-11-13",
+     "close": 187.38,
+     "news": 14,
+     "positive": 11,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.562
+    },
+    {
+     "date": "2026-11-16",
+     "close": 187.22,
+     "news": 8,
+     "positive": 0,
+     "neutral": 6,
+     "negative": 2,
+     "avg_score": -0.249
+    },
+    {
+     "date": "2026-11-17",
+     "close": 182.52,
+     "news": 9,
+     "positive": 2,
+     "neutral": 7,
+     "negative": 0,
+     "avg_score": 0.136
+    },
+    {
+     "date": "2026-11-18",
+     "close": 177.91,
+     "news": 9,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.632
+    },
+    {
+     "date": "2026-11-19",
+     "close": 177.74,
+     "news": 5,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": -0.165
+    }
+   ],
+   "news": [
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T07:38:05Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "Wenge AI Adds Google and Apple Sign-In Options for ScienceOra International Users",
+     "headline_th": "Wenge AI เพิ่มการเข้าสู่ระบบด้วย Google และ Apple สำหรับผู้ใช้ ScienceOra ในต่างประเทศ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/wenge-ai-adds-google-apple-063000704.html?.tsrc=rss",
+     "published_at": "2026-11-20T06:30:00Z",
+     "sentiment": "positive",
+     "score": 0.897
+    },
+    {
+     "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
+     "published_at": "2026-11-20T02:23:55Z",
+     "sentiment": "positive",
+     "score": 0.866
+    },
+    {
+     "headline": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+     "headline_th": "ความต้องการศูนย์ข้อมูล AI ที่ Nvidia หนุนหลัง ทำให้หุ้น Schneider Electric เป็นที่จับตา",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
+     "published_at": "2026-11-20T02:14:20Z",
+     "sentiment": "neutral",
+     "score": 0.195
+    },
+    {
+     "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-20T00:58:20Z",
+     "sentiment": "neutral",
+     "score": -0.035
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes",
+     "headline_th": "นักวิเคราะห์ที่มอง Anthropic บวกที่สุดชี้ อัตรากำไร \"น่าจะดีกว่าผู้ให้บริการคลาวด์รายใหญ่\" และต้องทำอะไรบ้างจึงจะไปถึง",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/anthropics-margins-will-be-probably-better-than-a-hyperscaler-says-its-most-bullish-analyst-heres-what-that-takes?ref=yahoofinance&tlnk=yf-261119-7x5g2cff&.tsrc=rss",
+     "published_at": "2026-11-20T00:05:16Z",
+     "sentiment": "positive",
+     "score": 0.931
+    },
+    {
+     "headline": "Anthropic Just Went Public at $1.5 Trillion. VOO Won’t Own a Share Until Late 2027 at the Earliest",
+     "headline_th": "Anthropic เพิ่งเข้าตลาดด้วยมูลค่า 1.5 ล้านล้านดอลลาร์ แต่ VOO จะยังไม่ถือหุ้นแม้แต่หุ้นเดียวจนถึงปลายปี 2027 เป็นอย่างเร็ว",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/etf/2026/11/19/anthropic-just-went-public-at-1-5-trillion-voo-wont-own-a-share-until-late-2027-at-the-earliest/?.tsrc=rss",
+     "published_at": "2026-11-19T23:52:41Z",
+     "sentiment": "neutral",
+     "score": -0.014
+    },
+    {
+     "headline": "Anthropic’s Record IPO Is Good News for Hut 8. Here’s the Number That Matters",
+     "headline_th": "IPO ครั้งประวัติการณ์ของ Anthropic เป็นข่าวดีของ Hut 8 นี่คือตัวเลขที่สำคัญ",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/anthropics-record-ipo-is-good-news-for-hut-8-heres-the-number-that-matters?ref=yahoofinance&tlnk=yf-261119-h84r624c&.tsrc=rss",
+     "published_at": "2026-11-19T23:05:25Z",
+     "sentiment": "positive",
+     "score": 0.858
+    },
+    {
+     "headline": "Stock Market Today, Nov. 19: Stock Market Today, Nov. 19: Alphabet Shares Fall as Anthropic Nasdaq Debut Puts Fresh Value on Google's Stake",
+     "headline_th": "ตลาดหุ้นวันนี้ 19 พ.ย.: หุ้น Alphabet ร่วง หลังการเปิดตัวของ Anthropic ใน Nasdaq ทำให้ต้องประเมินมูลค่าหุ้นที่ Google ถืออยู่ใหม่",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-google-s-stake/?.tsrc=rss",
+     "published_at": "2026-11-19T23:05:02Z",
+     "sentiment": "negative",
+     "score": -0.954
+    },
+    {
+     "headline": "Anthropic IPO value surges in stock market debut",
+     "headline_th": "มูลค่า IPO ของ Anthropic พุ่งขึ้นในวันเปิดตัวในตลาดหุ้น",
+     "source": "Yahoo",
+     "url": "https://www.cnn.com/2026/11/19/business/video/anthropic-ipo-value-surges-in-stock-market-debut-lead-jake-tapper?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
+     "published_at": "2026-11-19T22:54:27Z",
+     "sentiment": "neutral",
+     "score": 0.229
+    },
+    {
+     "headline": "Morgan Stanley’s Vintage Values 2027: 5 Stocks Analysts See Climbing Further",
+     "headline_th": "Vintage Values 2027 ของ Morgan Stanley: 5 หุ้นที่นักวิเคราะห์มองว่าจะขึ้นต่อ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-vintage-values-2027-223235273.html?.tsrc=rss",
+     "published_at": "2026-11-19T22:32:35Z",
+     "sentiment": "negative",
+     "score": -0.317
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "AMZN": {
+   "ticker": "AMZN",
+   "close": 217.73,
+   "prev_close": 214.53,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 33,
+    "positive": 12,
+    "neutral": 14,
+    "negative": 7
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 198.91,
+     "news": 11,
+     "positive": 0,
+     "neutral": 10,
+     "negative": 1,
+     "avg_score": -0.096
+    },
+    {
+     "date": "2026-10-12",
+     "close": 199.07,
+     "news": 4,
+     "positive": 1,
+     "neutral": 0,
+     "negative": 3,
+     "avg_score": -0.391
+    },
+    {
+     "date": "2026-10-13",
+     "close": 196.89,
+     "news": 13,
+     "positive": 3,
+     "neutral": 9,
+     "negative": 1,
+     "avg_score": 0.132
+    },
+    {
+     "date": "2026-10-14",
+     "close": 198.94,
+     "news": 11,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 9,
+     "avg_score": -0.52
+    },
+    {
+     "date": "2026-10-15",
+     "close": 194.37,
+     "news": 5,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.114
+    },
+    {
+     "date": "2026-10-16",
+     "close": 203.54,
+     "news": 14,
+     "positive": 14,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.823
+    },
+    {
+     "date": "2026-10-19",
+     "close": 204.51,
+     "news": 11,
+     "positive": 8,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.614
+    },
+    {
+     "date": "2026-10-20",
+     "close": 202.85,
+     "news": 12,
+     "positive": 12,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.759
+    },
+    {
+     "date": "2026-10-21",
+     "close": 208.08,
+     "news": 4,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.406
+    },
+    {
+     "date": "2026-10-22",
+     "close": 209.67,
+     "news": 13,
+     "positive": 0,
+     "neutral": 3,
+     "negative": 10,
+     "avg_score": -0.612
+    },
+    {
+     "date": "2026-10-23",
+     "close": 209.98,
+     "news": 10,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 8,
+     "avg_score": -0.52
+    },
+    {
+     "date": "2026-10-26",
+     "close": 213.15,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.825
+    },
+    {
+     "date": "2026-10-27",
+     "close": 206.47,
+     "news": 7,
+     "positive": 3,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": 0.202
+    },
+    {
+     "date": "2026-10-28",
+     "close": 207.78,
+     "news": 13,
+     "positive": 7,
+     "neutral": 3,
+     "negative": 3,
+     "avg_score": 0.281
+    },
+    {
+     "date": "2026-10-29",
+     "close": 215.27,
+     "news": 7,
+     "positive": 0,
+     "neutral": 4,
+     "negative": 3,
+     "avg_score": -0.385
+    },
+    {
+     "date": "2026-10-30",
+     "close": 219.43,
+     "news": 5,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 2,
+     "avg_score": 0.015
+    },
+    {
+     "date": "2026-11-02",
+     "close": 217.72,
+     "news": 5,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 3,
+     "avg_score": -0.524
+    },
+    {
+     "date": "2026-11-03",
+     "close": 212.83,
+     "news": 7,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 5,
+     "avg_score": -0.485
+    },
+    {
+     "date": "2026-11-04",
+     "close": 207.03,
+     "news": 7,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.797
+    },
+    {
+     "date": "2026-11-05",
+     "close": 207.62,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.781
+    },
+    {
+     "date": "2026-11-06",
+     "close": 211.46,
+     "news": 7,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.832
+    },
+    {
+     "date": "2026-11-09",
+     "close": 213.88,
+     "news": 10,
+     "positive": 4,
+     "neutral": 3,
+     "negative": 3,
+     "avg_score": 0.051
+    },
+    {
+     "date": "2026-11-10",
+     "close": 216.59,
+     "news": 12,
+     "positive": 1,
+     "neutral": 9,
+     "negative": 2,
+     "avg_score": -0.042
+    },
+    {
+     "date": "2026-11-11",
+     "close": 215.91,
+     "news": 7,
+     "positive": 5,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.582
+    },
+    {
+     "date": "2026-11-12",
+     "close": 213.99,
+     "news": 4,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.4
+    },
+    {
+     "date": "2026-11-13",
+     "close": 211.91,
+     "news": 10,
+     "positive": 6,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.446
+    },
+    {
+     "date": "2026-11-16",
+     "close": 217.61,
+     "news": 9,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 5,
+     "avg_score": -0.125
+    },
+    {
+     "date": "2026-11-17",
+     "close": 216.0,
+     "news": 8,
+     "positive": 6,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.462
+    },
+    {
+     "date": "2026-11-18",
+     "close": 214.53,
+     "news": 8,
+     "positive": 6,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.644
+    },
+    {
+     "date": "2026-11-19",
+     "close": 217.73,
+     "news": 6,
+     "positive": 5,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.707
+    }
+   ],
+   "news": [
+    {
+     "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
+     "published_at": "2026-11-20T07:16:11Z",
+     "sentiment": "negative",
+     "score": -0.96
+    },
+    {
+     "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
+     "published_at": "2026-11-20T06:58:31Z",
+     "sentiment": "positive",
+     "score": 0.857
+    },
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
+     "published_at": "2026-11-20T02:23:55Z",
+     "sentiment": "positive",
+     "score": 0.866
+    },
+    {
+     "headline": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+     "headline_th": "ความต้องการศูนย์ข้อมูล AI ที่ Nvidia หนุนหลัง ทำให้หุ้น Schneider Electric เป็นที่จับตา",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
+     "published_at": "2026-11-20T02:14:20Z",
+     "sentiment": "neutral",
+     "score": 0.195
+    },
+    {
+     "headline": "Peter Thiel Now Has as Much Money in an Argentine Oil Stock as in Amazon. It’s Down 23% Since September 30",
+     "headline_th": "ปีเตอร์ ธีล มีเงินในหุ้นน้ำมันอาร์เจนตินาเท่ากับที่มีใน Amazon แล้ว หุ้นตัวนี้ร่วง 23% นับจาก 30 ก.ย.",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/peter-thiel-now-has-as-much-money-in-an-argentine-oil-stock-as-in-amazon-its-down-23-since-september-30/?.tsrc=rss",
+     "published_at": "2026-11-20T01:17:06Z",
+     "sentiment": "negative",
+     "score": -0.915
+    },
+    {
+     "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-20T00:58:20Z",
+     "sentiment": "neutral",
+     "score": -0.035
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "Anthropic’s Margins Will Be “Probably Better Than a Hyperscaler,” Says Its Most Bullish Analyst. Here’s What That Takes",
+     "headline_th": "นักวิเคราะห์ที่มอง Anthropic บวกที่สุดชี้ อัตรากำไร \"น่าจะดีกว่าผู้ให้บริการคลาวด์รายใหญ่\" และต้องทำอะไรบ้างจึงจะไปถึง",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/anthropics-margins-will-be-probably-better-than-a-hyperscaler-says-its-most-bullish-analyst-heres-what-that-takes?ref=yahoofinance&tlnk=yf-261119-7x5g2cff&.tsrc=rss",
+     "published_at": "2026-11-20T00:05:16Z",
+     "sentiment": "positive",
+     "score": 0.931
+    },
+    {
+     "headline": "Anthropic Just Went Public at $1.5 Trillion. VOO Won’t Own a Share Until Late 2027 at the Earliest",
+     "headline_th": "Anthropic เพิ่งเข้าตลาดด้วยมูลค่า 1.5 ล้านล้านดอลลาร์ แต่ VOO จะยังไม่ถือหุ้นแม้แต่หุ้นเดียวจนถึงปลายปี 2027 เป็นอย่างเร็ว",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/etf/2026/11/19/anthropic-just-went-public-at-1-5-trillion-voo-wont-own-a-share-until-late-2027-at-the-earliest/?.tsrc=rss",
+     "published_at": "2026-11-19T23:52:41Z",
+     "sentiment": "neutral",
+     "score": -0.014
+    },
+    {
+     "headline": "NYC lawmakers weigh compromise on Amazon delivery worker bill, Bloomberg reports",
+     "headline_th": "Bloomberg รายงาน สมาชิกสภานิวยอร์กพิจารณาข้อประนีประนอมเรื่องร่างกฎหมายคนส่งของ Amazon",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/economy/policy/articles/nyc-lawmakers-weigh-compromise-amazon-234713116.html?.tsrc=rss",
+     "published_at": "2026-11-19T23:47:13Z",
+     "sentiment": "positive",
+     "score": 0.29
+    },
+    {
+     "headline": "Jeff Bezos says 2 policies drive up housing costs, and it's 'not hard to figure out'",
+     "headline_th": "เจฟฟ์ เบโซส ชี้ 2 นโยบายดันค่าที่อยู่อาศัยให้แพงขึ้น และ \"ไม่ยากที่จะเข้าใจ\"",
+     "source": "Yahoo",
+     "url": "https://www.thestreet.com/real-estate/jeff-bezos-says-2-policies-drive-up-housing-costs-subsidize-demand-constrain-supply?.tsrc=rss",
+     "published_at": "2026-11-19T23:07:00Z",
+     "sentiment": "neutral",
+     "score": -0.077
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "NVDA": {
+   "ticker": "NVDA",
+   "close": 178.35,
+   "prev_close": 181.87,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 31,
+    "positive": 10,
+    "neutral": 4,
+    "negative": 17
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 152.37,
+     "news": 9,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.591
+    },
+    {
+     "date": "2026-10-12",
+     "close": 147.72,
+     "news": 3,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.822
+    },
+    {
+     "date": "2026-10-13",
+     "close": 152.62,
+     "news": 3,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.811
+    },
+    {
+     "date": "2026-10-14",
+     "close": 156.34,
+     "news": 10,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 8,
+     "avg_score": -0.677
+    },
+    {
+     "date": "2026-10-15",
+     "close": 160.84,
+     "news": 10,
+     "positive": 6,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": 0.298
+    },
+    {
+     "date": "2026-10-16",
+     "close": 160.83,
+     "news": 13,
+     "positive": 4,
+     "neutral": 3,
+     "negative": 6,
+     "avg_score": -0.107
+    },
+    {
+     "date": "2026-10-19",
+     "close": 165.73,
+     "news": 7,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.762
+    },
+    {
+     "date": "2026-10-20",
+     "close": 165.17,
+     "news": 11,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 4,
+     "avg_score": 0.19
+    },
+    {
+     "date": "2026-10-21",
+     "close": 164.41,
+     "news": 8,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.564
+    },
+    {
+     "date": "2026-10-22",
+     "close": 165.03,
+     "news": 8,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.782
+    },
+    {
+     "date": "2026-10-23",
+     "close": 166.41,
+     "news": 8,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 4,
+     "avg_score": -0.03
+    },
+    {
+     "date": "2026-10-26",
+     "close": 172.58,
+     "news": 9,
+     "positive": 6,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.432
+    },
+    {
+     "date": "2026-10-27",
+     "close": 173.55,
+     "news": 8,
+     "positive": 0,
+     "neutral": 1,
+     "negative": 7,
+     "avg_score": -0.722
+    },
+    {
+     "date": "2026-10-28",
+     "close": 175.31,
+     "news": 11,
+     "positive": 8,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.468
+    },
+    {
+     "date": "2026-10-29",
+     "close": 175.15,
+     "news": 6,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 3,
+     "avg_score": 0.015
+    },
+    {
+     "date": "2026-10-30",
+     "close": 172.85,
+     "news": 3,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.259
+    },
+    {
+     "date": "2026-11-02",
+     "close": 174.14,
+     "news": 10,
+     "positive": 9,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.59
+    },
+    {
+     "date": "2026-11-03",
+     "close": 168.75,
+     "news": 11,
+     "positive": 7,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": 0.266
+    },
+    {
+     "date": "2026-11-04",
+     "close": 173.29,
+     "news": 4,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": -0.035
+    },
+    {
+     "date": "2026-11-05",
+     "close": 174.94,
+     "news": 14,
+     "positive": 11,
+     "neutral": 0,
+     "negative": 3,
+     "avg_score": 0.416
+    },
+    {
+     "date": "2026-11-06",
+     "close": 174.85,
+     "news": 3,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": -0.293
+    },
+    {
+     "date": "2026-11-09",
+     "close": 178.99,
+     "news": 7,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 5,
+     "avg_score": -0.368
+    },
+    {
+     "date": "2026-11-10",
+     "close": 176.94,
+     "news": 13,
+     "positive": 6,
+     "neutral": 6,
+     "negative": 1,
+     "avg_score": 0.268
+    },
+    {
+     "date": "2026-11-11",
+     "close": 174.74,
+     "news": 6,
+     "positive": 3,
+     "neutral": 1,
+     "negative": 2,
+     "avg_score": 0.106
+    },
+    {
+     "date": "2026-11-12",
+     "close": 182.08,
+     "news": 12,
+     "positive": 0,
+     "neutral": 12,
+     "negative": 0,
+     "avg_score": 0.004
+    },
+    {
+     "date": "2026-11-13",
+     "close": 184.91,
+     "news": 8,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 3,
+     "avg_score": 0.003
+    },
+    {
+     "date": "2026-11-16",
+     "close": 185.03,
+     "news": 11,
+     "positive": 3,
+     "neutral": 8,
+     "negative": 0,
+     "avg_score": 0.264
+    },
+    {
+     "date": "2026-11-17",
+     "close": 184.41,
+     "news": 3,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.038
+    },
+    {
+     "date": "2026-11-18",
+     "close": 181.87,
+     "news": 13,
+     "positive": 6,
+     "neutral": 6,
+     "negative": 1,
+     "avg_score": 0.283
+    },
+    {
+     "date": "2026-11-19",
+     "close": 178.35,
+     "news": 6,
+     "positive": 3,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.42
+    }
+   ],
+   "news": [
+    {
+     "headline": "$500 Invested in GE Aerospace (GE) Stock Today Could Be Worth This Much in 3 Years",
+     "headline_th": "เงิน 500 ดอลลาร์ที่ลงทุนในหุ้น GE Aerospace (GE) วันนี้ อาจมีมูลค่าเท่านี้ในอีก 3 ปี",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/20/500-invested-in-ge-aerospace-ge-stock-today-could/?.tsrc=rss",
+     "published_at": "2026-11-20T07:25:00Z",
+     "sentiment": "positive",
+     "score": 0.808
+    },
+    {
+     "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
+     "published_at": "2026-11-20T07:16:11Z",
+     "sentiment": "negative",
+     "score": -0.96
+    },
+    {
+     "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
+     "published_at": "2026-11-20T06:58:31Z",
+     "sentiment": "positive",
+     "score": 0.857
+    },
+    {
+     "headline": "This Unstoppable ETF Is Up by Double Digits in 2026. Here's Where I Think It's Headed in 2027.",
+     "headline_th": "ETF ที่หยุดไม่อยู่ตัวนี้บวกเป็นเลขสองหลักในปี 2026 และนี่คือทิศทางที่ผมมองไว้สำหรับปี 2027",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/20/this-unstoppable-etf-is-up-double-digits-in-2026-here-s-where-i-think-it-s-headed-in-2027/?.tsrc=rss",
+     "published_at": "2026-11-20T06:30:02Z",
+     "sentiment": "positive",
+     "score": 0.291
+    },
+    {
+     "headline": "Elon Musk’s Dream Meets Wall Street Reality: SpaceX Lenders Don’t Want Nvidia Chips Leaving Earth",
+     "headline_th": "ความฝันของอีลอน มัสก์ เจอความจริงของวอลล์สตรีท: ผู้ให้กู้ของ SpaceX ไม่อยากให้ชิป Nvidia ออกนอกโลก",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-dream-meets-wall-062433324.html?.tsrc=rss",
+     "published_at": "2026-11-20T06:24:33Z",
+     "sentiment": "negative",
+     "score": -0.941
+    },
+    {
+     "headline": "CRWV, IREN, NBIS Stocks Extend Neocloud Selloff As Anthropic IPO Rally Fades - Michael Burry Takes A Victory Lap",
+     "headline_th": "หุ้น CRWV, IREN และ NBIS ถูกเทขายต่อในกลุ่ม neocloud หลังแรงบวกจาก IPO ของ Anthropic แผ่วลง ด้านไมเคิล เบอร์รี ออกมาฉลองชัย",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/crwv-iren-nbis-stocks-extend-neocloud-selloff-as-anthropic-ipo-rally-fades-michael-burry-takes-a-victory-lap/cNbSEj6R9KJ?.tsrc=rss",
+     "published_at": "2026-11-20T06:21:09Z",
+     "sentiment": "negative",
+     "score": -0.91
+    },
+    {
+     "headline": "AI Token Prices Are Tumbling. Is It a Red Flag for Anthropic Stock?",
+     "headline_th": "ราคาโทเคน AI กำลังดิ่งลง เป็นสัญญาณเตือนสำหรับหุ้น Anthropic หรือไม่",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/20/ai-token-prices-are-tumbling-is-it-a-red-flag-for-anthropic-stock/?.tsrc=rss",
+     "published_at": "2026-11-20T05:50:02Z",
+     "sentiment": "negative",
+     "score": -0.922
+    },
+    {
+     "headline": "Stocks, gold and silver fall after blockbuster Anthropic IPO",
+     "headline_th": "หุ้น ทองคำ และเงินร่วงลง หลัง IPO ครั้งใหญ่ของ Anthropic",
+     "source": "Yahoo",
+     "url": "https://www.euronews.com/2026/11/20/stocks-gold-and-silver-fall-after-blockbuster-anthropic-ipo?.tsrc=rss",
+     "published_at": "2026-11-20T05:48:38Z",
+     "sentiment": "negative",
+     "score": -0.932
+    },
+    {
+     "headline": "Cathie Wood’s ARK Invest Loads Up $90M In Anthropic Shares, Dumps Nvidia As China Chip Sale Woes Deepen",
+     "headline_th": "ARK Invest ของแคธี วูด ซื้อหุ้น Anthropic 90 ล้านดอลลาร์ และเทขาย Nvidia ขณะปัญหาการขายชิปในจีนรุนแรงขึ้น",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/cathie-wood-s-ark-invest-loads-up-anthropic-shares-dumps-nvidia-as-china-chip-sale-woes-deepen/cNbS5zBR9KI?.tsrc=rss",
+     "published_at": "2026-11-20T05:22:06Z",
+     "sentiment": "negative",
+     "score": -0.724
+    },
+    {
+     "headline": "‘Bright Red Flags’: Nvidia Subpoenaed By California, Attorney General Also Probing Jensen Huang’s ‘Actions’",
+     "headline_th": "\"สัญญาณอันตรายชัดเจน\": แคลิฟอร์เนียออกหมายเรียก Nvidia อัยการสูงสุดสอบ \"การกระทำ\" ของเจนเซน หวง ด้วย",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/bright-red-flags-nvidia-subpoenaed-045550463.html?.tsrc=rss",
+     "published_at": "2026-11-20T04:55:50Z",
+     "sentiment": "negative",
+     "score": -0.659
+    },
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "AI sell-off: These sectors held firm as tech slumped in Oct, Nov",
+     "headline_th": "แรงเทขายหุ้น AI: กลุ่มที่ยังยืนได้ขณะที่หุ้นเทคทรุดในเดือน ต.ค. และ พ.ย.",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/ai-sell-off-sectors-held-044523371.html?.tsrc=rss",
+     "published_at": "2026-11-20T04:45:23Z",
+     "sentiment": "negative",
+     "score": -0.962
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "META": {
+   "ticker": "META",
+   "close": 630.44,
+   "prev_close": 616.09,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 34,
+    "positive": 11,
+    "neutral": 13,
+    "negative": 10
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 597.97,
+     "news": 7,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 4,
+     "avg_score": -0.343
+    },
+    {
+     "date": "2026-10-12",
+     "close": 616.47,
+     "news": 5,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": -0.328
+    },
+    {
+     "date": "2026-10-13",
+     "close": 603.36,
+     "news": 5,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.451
+    },
+    {
+     "date": "2026-10-14",
+     "close": 581.15,
+     "news": 12,
+     "positive": 2,
+     "neutral": 4,
+     "negative": 6,
+     "avg_score": -0.311
+    },
+    {
+     "date": "2026-10-15",
+     "close": 591.46,
+     "news": 14,
+     "positive": 14,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.823
+    },
+    {
+     "date": "2026-10-16",
+     "close": 595.97,
+     "news": 4,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 2,
+     "avg_score": -0.231
+    },
+    {
+     "date": "2026-10-19",
+     "close": 589.04,
+     "news": 10,
+     "positive": 0,
+     "neutral": 6,
+     "negative": 4,
+     "avg_score": -0.304
+    },
+    {
+     "date": "2026-10-20",
+     "close": 579.05,
+     "news": 9,
+     "positive": 5,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": 0.261
+    },
+    {
+     "date": "2026-10-21",
+     "close": 582.89,
+     "news": 4,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.246
+    },
+    {
+     "date": "2026-10-22",
+     "close": 586.15,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.788
+    },
+    {
+     "date": "2026-10-23",
+     "close": 587.8,
+     "news": 9,
+     "positive": 1,
+     "neutral": 8,
+     "negative": 0,
+     "avg_score": 0.109
+    },
+    {
+     "date": "2026-10-26",
+     "close": 579.36,
+     "news": 6,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 4,
+     "avg_score": -0.225
+    },
+    {
+     "date": "2026-10-27",
+     "close": 583.42,
+     "news": 10,
+     "positive": 0,
+     "neutral": 0,
+     "negative": 10,
+     "avg_score": -0.809
+    },
+    {
+     "date": "2026-10-28",
+     "close": 593.36,
+     "news": 13,
+     "positive": 12,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.631
+    },
+    {
+     "date": "2026-10-29",
+     "close": 597.71,
+     "news": 3,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.558
+    },
+    {
+     "date": "2026-10-30",
+     "close": 599.14,
+     "news": 12,
+     "positive": 5,
+     "neutral": 2,
+     "negative": 5,
+     "avg_score": -0.023
+    },
+    {
+     "date": "2026-11-02",
+     "close": 614.16,
+     "news": 7,
+     "positive": 5,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.437
+    },
+    {
+     "date": "2026-11-03",
+     "close": 610.75,
+     "news": 14,
+     "positive": 12,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.613
+    },
+    {
+     "date": "2026-11-04",
+     "close": 593.82,
+     "news": 3,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.264
+    },
+    {
+     "date": "2026-11-05",
+     "close": 575.32,
+     "news": 10,
+     "positive": 6,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": 0.361
+    },
+    {
+     "date": "2026-11-06",
+     "close": 578.08,
+     "news": 10,
+     "positive": 2,
+     "neutral": 8,
+     "negative": 0,
+     "avg_score": 0.19
+    },
+    {
+     "date": "2026-11-09",
+     "close": 573.56,
+     "news": 14,
+     "positive": 4,
+     "neutral": 8,
+     "negative": 2,
+     "avg_score": 0.125
+    },
+    {
+     "date": "2026-11-10",
+     "close": 569.88,
+     "news": 8,
+     "positive": 1,
+     "neutral": 4,
+     "negative": 3,
+     "avg_score": -0.211
+    },
+    {
+     "date": "2026-11-11",
+     "close": 578.39,
+     "news": 5,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": -0.364
+    },
+    {
+     "date": "2026-11-12",
+     "close": 591.88,
+     "news": 8,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 3,
+     "avg_score": -0.062
+    },
+    {
+     "date": "2026-11-13",
+     "close": 595.32,
+     "news": 4,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": -0.042
+    },
+    {
+     "date": "2026-11-16",
+     "close": 606.27,
+     "news": 14,
+     "positive": 7,
+     "neutral": 5,
+     "negative": 2,
+     "avg_score": 0.259
+    },
+    {
+     "date": "2026-11-17",
+     "close": 614.18,
+     "news": 9,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.484
+    },
+    {
+     "date": "2026-11-18",
+     "close": 616.09,
+     "news": 13,
+     "positive": 12,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.766
+    },
+    {
+     "date": "2026-11-19",
+     "close": 630.44,
+     "news": 7,
+     "positive": 4,
+     "neutral": 1,
+     "negative": 2,
+     "avg_score": 0.235
+    }
+   ],
+   "news": [
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-20T00:58:20Z",
+     "sentiment": "neutral",
+     "score": -0.035
+    },
+    {
+     "headline": "Meta Platforms 'Reevaluating' 2030 Net Zero Goal as AI Buildout Strains Clean Energy Supply",
+     "headline_th": "Meta Platforms \"ทบทวน\" เป้าหมาย Net Zero ปี 2030 เพราะการขยาย AI กดดันปริมาณพลังงานสะอาด",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/energy/articles/meta-platforms-apos-reevaluating-apos-004314275.html?.tsrc=rss",
+     "published_at": "2026-11-20T00:43:14Z",
+     "sentiment": "neutral",
+     "score": 0.097
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "Apple May Try to Challenge Meta for Personal Agent Supremacy",
+     "headline_th": "Apple อาจท้าชิงความเป็นเจ้าตลาดผู้ช่วย AI ส่วนตัวกับ Meta",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/m/218adf20-fceb-3955-ab5b-5c4bc9cf9107/apple-may-try-to-challenge.html?.tsrc=rss",
+     "published_at": "2026-11-19T23:51:00Z",
+     "sentiment": "neutral",
+     "score": 0.13
+    },
+    {
+     "headline": "S&P 500, Nasdaq, Dow End Lower As Anthropic Trading Debut Fails To Provide Adequate Confidence — ANT, META, AAPL, GME In Focus",
+     "headline_th": "S&P 500, Nasdaq และ Dow ปิดลบ หลังการซื้อขายวันแรกของ Anthropic สร้างความมั่นใจได้ไม่พอ จับตา ANT, META, AAPL และ GME",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-end-lower-as-anthropic-trading-debut-fails-to-provide-adequate-confidence/cNbio2mR90v?.tsrc=rss",
+     "published_at": "2026-11-19T23:01:05Z",
+     "sentiment": "negative",
+     "score": -0.676
+    },
+    {
+     "headline": "A $6.6 Billion Fund Dumps These 2 Stocks",
+     "headline_th": "กองทุนมูลค่า 6.6 พันล้านดอลลาร์เทขาย 2 หุ้นนี้",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/a-6-6-billion-fund-dumps-these-2-stocks?ref=yahoofinance&tlnk=yf-261119-6frhj2xf&.tsrc=rss",
+     "published_at": "2026-11-19T22:37:54Z",
+     "sentiment": "neutral",
+     "score": -0.249
+    },
+    {
+     "headline": "Stock Market Today, Nov. 19: Alphabet Shares Fall as Anthropic Nasdaq Debut Puts Fresh Value on Google's Stake",
+     "headline_th": "ตลาดหุ้นวันนี้ 19 พ.ย.: หุ้น Alphabet ร่วง หลังการเปิดตัวของ Anthropic ใน Nasdaq ทำให้ต้องประเมินมูลค่าหุ้นที่ Google ถืออยู่ใหม่",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-googles-stake/?.tsrc=rss",
+     "published_at": "2026-11-19T22:18:30Z",
+     "sentiment": "negative",
+     "score": -0.961
+    },
+    {
+     "headline": "Anthropic Just Finished Its First Day as a Public Company. Five of the Six Biggest Tech IPOs Since Facebook Were Underwater Six Months After Theirs, and Elon Musk’s SpaceX Is Following the Script",
+     "headline_th": "Anthropic เพิ่งจบวันแรกในฐานะบริษัทมหาชน โดย 5 ใน 6 IPO เทคที่ใหญ่ที่สุดนับจาก Facebook ราคาต่ำกว่าจองหลังเข้าตลาด 6 เดือน และ SpaceX ของอีลอน มัสก์ ก็กำลังเดินตามรอยเดิม",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/anthropic-just-finished-its-first-day-as-a-public-company-five-of-the-six-biggest-tech-ipos-since-facebook-were-underwater-six-months-after-theirs-and-elon-musks-spacex-is-following-the-script/?.tsrc=rss",
+     "published_at": "2026-11-19T22:13:02Z",
+     "sentiment": "positive",
+     "score": 0.896
+    },
+    {
+     "headline": "META Plans To Reportedly Charge $300 For Muse Charm Gadget In Hope To Revive Hardware Business",
+     "headline_th": "มีรายงานว่า META เตรียมขายอุปกรณ์ Muse Charm ราคา 300 ดอลลาร์ หวังฟื้นธุรกิจฮาร์ดแวร์",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/meta-plans-to-reportedly-charge-300-for-muse-charm-gadget-in-hope-to-revive-hardware-business/cNbinkUR90H?.tsrc=rss",
+     "published_at": "2026-11-19T22:03:31Z",
+     "sentiment": "positive",
+     "score": 0.713
+    },
+    {
+     "headline": "The 25 Biggest US IPOs of All Time",
+     "headline_th": "25 IPO ที่ใหญ่ที่สุดตลอดกาลของสหรัฐฯ",
+     "source": "Yahoo",
+     "url": "https://www.kiplinger.com/slideshow/investing/t052-s001-the-25-biggest-ipos-in-u-s-history/index.html?.tsrc=rss",
+     "published_at": "2026-11-19T21:38:58Z",
+     "sentiment": "neutral",
+     "score": 0.029
+    },
+    {
+     "headline": "Intuit Beats Fiscal Q1 Goals, Gives Soft Outlook, Sells Mailchimp",
+     "headline_th": "Intuit ทำได้ดีกว่าเป้าไตรมาส 1 ตามปีบัญชี แต่คาดการณ์อ่อนลง และขาย Mailchimp",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/m/0223735b-3b14-3a4f-8c8a-91bc4681cda6/intuit-beats-fiscal-q1-goals%2C.html?.tsrc=rss",
+     "published_at": "2026-11-19T21:21:37Z",
+     "sentiment": "positive",
+     "score": 0.908
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "TSLA": {
+   "ticker": "TSLA",
+   "close": 396.25,
+   "prev_close": 399.51,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 31,
+    "positive": 7,
+    "neutral": 12,
+    "negative": 12
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 334.04,
+     "news": 6,
+     "positive": 5,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.682
+    },
+    {
+     "date": "2026-10-12",
+     "close": 337.17,
+     "news": 10,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 7,
+     "avg_score": -0.279
+    },
+    {
+     "date": "2026-10-13",
+     "close": 337.35,
+     "news": 3,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.495
+    },
+    {
+     "date": "2026-10-14",
+     "close": 343.73,
+     "news": 12,
+     "positive": 3,
+     "neutral": 8,
+     "negative": 1,
+     "avg_score": 0.121
+    },
+    {
+     "date": "2026-10-15",
+     "close": 359.52,
+     "news": 5,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.136
+    },
+    {
+     "date": "2026-10-16",
+     "close": 362.59,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.772
+    },
+    {
+     "date": "2026-10-19",
+     "close": 347.44,
+     "news": 8,
+     "positive": 5,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.354
+    },
+    {
+     "date": "2026-10-20",
+     "close": 349.53,
+     "news": 14,
+     "positive": 10,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": 0.546
+    },
+    {
+     "date": "2026-10-21",
+     "close": 349.88,
+     "news": 8,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.387
+    },
+    {
+     "date": "2026-10-22",
+     "close": 348.39,
+     "news": 3,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.756
+    },
+    {
+     "date": "2026-10-23",
+     "close": 347.0,
+     "news": 4,
+     "positive": 3,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.614
+    },
+    {
+     "date": "2026-10-26",
+     "close": 350.48,
+     "news": 14,
+     "positive": 4,
+     "neutral": 4,
+     "negative": 6,
+     "avg_score": -0.065
+    },
+    {
+     "date": "2026-10-27",
+     "close": 352.88,
+     "news": 13,
+     "positive": 4,
+     "neutral": 3,
+     "negative": 6,
+     "avg_score": -0.078
+    },
+    {
+     "date": "2026-10-28",
+     "close": 350.09,
+     "news": 8,
+     "positive": 6,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.452
+    },
+    {
+     "date": "2026-10-29",
+     "close": 357.97,
+     "news": 8,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 3,
+     "avg_score": 0.023
+    },
+    {
+     "date": "2026-10-30",
+     "close": 358.53,
+     "news": 5,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.512
+    },
+    {
+     "date": "2026-11-02",
+     "close": 359.56,
+     "news": 9,
+     "positive": 9,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.796
+    },
+    {
+     "date": "2026-11-03",
+     "close": 360.51,
+     "news": 11,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 6,
+     "avg_score": -0.332
+    },
+    {
+     "date": "2026-11-04",
+     "close": 361.82,
+     "news": 12,
+     "positive": 5,
+     "neutral": 5,
+     "negative": 2,
+     "avg_score": 0.165
+    },
+    {
+     "date": "2026-11-05",
+     "close": 360.54,
+     "news": 4,
+     "positive": 0,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": -0.601
+    },
+    {
+     "date": "2026-11-06",
+     "close": 368.61,
+     "news": 6,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": 0.167
+    },
+    {
+     "date": "2026-11-09",
+     "close": 383.09,
+     "news": 8,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 6,
+     "avg_score": -0.641
+    },
+    {
+     "date": "2026-11-10",
+     "close": 387.58,
+     "news": 14,
+     "positive": 9,
+     "neutral": 0,
+     "negative": 5,
+     "avg_score": 0.261
+    },
+    {
+     "date": "2026-11-11",
+     "close": 394.52,
+     "news": 6,
+     "positive": 4,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.411
+    },
+    {
+     "date": "2026-11-12",
+     "close": 405.45,
+     "news": 6,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.768
+    },
+    {
+     "date": "2026-11-13",
+     "close": 407.32,
+     "news": 11,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 6,
+     "avg_score": -0.305
+    },
+    {
+     "date": "2026-11-16",
+     "close": 414.99,
+     "news": 5,
+     "positive": 1,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": -0.046
+    },
+    {
+     "date": "2026-11-17",
+     "close": 403.78,
+     "news": 3,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.522
+    },
+    {
+     "date": "2026-11-18",
+     "close": 399.51,
+     "news": 10,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.508
+    },
+    {
+     "date": "2026-11-19",
+     "close": 396.25,
+     "news": 6,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 3,
+     "avg_score": 0.016
+    }
+   ],
+   "news": [
+    {
+     "headline": "Tech takes a beating as Anthropic surge fails to ease AI worries",
+     "headline_th": "หุ้นเทคร่วงหนัก หลังแรงพุ่งของ Anthropic ไม่ช่วยคลายความกังวลเรื่อง AI",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tech-takes-beating-ai-trade-030257717.html?.tsrc=rss",
+     "published_at": "2026-11-20T07:16:11Z",
+     "sentiment": "negative",
+     "score": -0.96
+    },
+    {
+     "headline": "Could Tesla Become The Next Lumentum? Gary Black Warns A SpaceX Stock Deal Could Send TSLA Down 25%",
+     "headline_th": "Tesla จะเป็น Lumentum รายต่อไปหรือไม่ แกรี แบล็ก เตือนดีลหุ้นกับ SpaceX อาจทำให้ TSLA ร่วง 25%",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/could-tesla-become-next-lumentum-gary-black-spacex-stock-deal-send-tsla-down/cNbSEW5R9K7?.tsrc=rss",
+     "published_at": "2026-11-20T06:15:59Z",
+     "sentiment": "negative",
+     "score": -0.958
+    },
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "What Tesla (TSLA)'s Shanghai Expansion Means For Shareholders",
+     "headline_th": "การขยายโรงงานเซี่ยงไฮ้ของ Tesla (TSLA) มีความหมายอย่างไรต่อผู้ถือหุ้น",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-shanghai-expansion-means-043058154.html?.tsrc=rss",
+     "published_at": "2026-11-20T04:30:58Z",
+     "sentiment": "positive",
+     "score": 0.893
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "Is Tech in a Bear Market? 20 Tech Stocks Fall Up to 76% From Highs",
+     "headline_th": "หุ้นเทคเข้าสู่ตลาดหมีแล้วหรือยัง 20 หุ้นเทคร่วงสูงสุด 76% จากจุดสูงสุด",
+     "source": "Yahoo",
+     "url": "https://beincrypto.com/tech-stocks-bear-market-record-highs/?.tsrc=rss",
+     "published_at": "2026-11-19T22:40:39Z",
+     "sentiment": "negative",
+     "score": -0.966
+    },
+    {
+     "headline": "Musk Says Optimus Will Do the Dishes “Within 12-18 Months.” Here’s Where Tesla’s Robot Stands",
+     "headline_th": "มัสก์บอก Optimus จะล้างจานได้ \"ภายใน 12-18 เดือน\" หุ่นยนต์ของ Tesla ตอนนี้อยู่จุดไหน",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/musk-says-optimus-will-do-the-dishes-within-12-18-months-heres-where-teslas-robot-stands?ref=yahoofinance&tlnk=yf-261119-6gjh8j3r&.tsrc=rss",
+     "published_at": "2026-11-19T22:37:52Z",
+     "sentiment": "neutral",
+     "score": 0.098
+    },
+    {
+     "headline": "Tesla Robo-Taxi Expands to Dallas. It Isn’t Enough.",
+     "headline_th": "Robo-Taxi ของ Tesla ขยายไปดัลลัส แต่ยังไม่พอ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/m/bb73f711-c5b1-3f23-8b24-3dd6a248b942/tesla-robo-taxi-expands-to.html?.tsrc=rss",
+     "published_at": "2026-11-19T21:07:00Z",
+     "sentiment": "neutral",
+     "score": 0.088
+    },
+    {
+     "headline": "Michael Burry Adds To Tesla Rival BYD At Five-Year Lows",
+     "headline_th": "ไมเคิล เบอร์รี ซื้อหุ้น BYD คู่แข่งของ Tesla เพิ่ม ที่ราคาต่ำสุดในรอบ 5 ปี",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-adds-to-tesla-rival-byd-at-five-year-lows/cNbiNbKR90M?.tsrc=rss",
+     "published_at": "2026-11-19T21:06:31Z",
+     "sentiment": "negative",
+     "score": -0.955
+    },
+    {
+     "headline": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal",
+     "headline_th": "ทรัมป์เพิ่งเปิดเผยการซื้อหุ้น Tesla และ SpaceX การขยับพอร์ตครั้งนี้บอกอะไร",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/19/trump-just-disclosed-tesla-and-spacex-stock-purchases-here-s-what-his-portfolio-moves-reveal/?.tsrc=rss",
+     "published_at": "2026-11-19T20:29:31Z",
+     "sentiment": "neutral",
+     "score": 0.008
+    },
+    {
+     "headline": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal",
+     "headline_th": "ทรัมป์เพิ่งเปิดเผยการซื้อหุ้น Tesla และ SpaceX การขยับพอร์ตครั้งนี้บอกอะไร",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/trump-just-disclosed-tesla-and-spacex-stock-purchases-heres-what-his-portfolio-moves",
+     "published_at": "2026-11-19T20:29:31Z",
+     "sentiment": "neutral",
+     "score": 0.002
+    },
+    {
+     "headline": "Inside Brad Gerstner’s Portfolio: Every Move He Made in the Third Quarter",
+     "headline_th": "เจาะพอร์ตแบรด เกิร์สต์เนอร์: ทุกการเคลื่อนไหวในไตรมาสที่ 3",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/inside-brad-gerstners-portfolio-every-move-he-made-in-the-third-quarter?ref=yahoofinance&tlnk=yf-261119-8874cxx4&.tsrc=rss",
+     "published_at": "2026-11-19T20:05:22Z",
+     "sentiment": "neutral",
+     "score": 0.056
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "AVGO": {
+   "ticker": "AVGO",
+   "close": 240.28,
+   "prev_close": 240.78,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 34,
+    "positive": 9,
+    "neutral": 12,
+    "negative": 13
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 182.5,
+     "news": 8,
+     "positive": 1,
+     "neutral": 0,
+     "negative": 7,
+     "avg_score": -0.6
+    },
+    {
+     "date": "2026-10-12",
+     "close": 183.95,
+     "news": 13,
+     "positive": 0,
+     "neutral": 13,
+     "negative": 0,
+     "avg_score": 0.014
+    },
+    {
+     "date": "2026-10-13",
+     "close": 188.81,
+     "news": 14,
+     "positive": 8,
+     "neutral": 6,
+     "negative": 0,
+     "avg_score": 0.413
+    },
+    {
+     "date": "2026-10-14",
+     "close": 191.73,
+     "news": 11,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 5,
+     "avg_score": 0.118
+    },
+    {
+     "date": "2026-10-15",
+     "close": 196.39,
+     "news": 12,
+     "positive": 11,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.703
+    },
+    {
+     "date": "2026-10-16",
+     "close": 201.85,
+     "news": 10,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 6,
+     "avg_score": -0.118
+    },
+    {
+     "date": "2026-10-19",
+     "close": 205.31,
+     "news": 6,
+     "positive": 0,
+     "neutral": 0,
+     "negative": 6,
+     "avg_score": -0.815
+    },
+    {
+     "date": "2026-10-20",
+     "close": 211.12,
+     "news": 7,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 2,
+     "avg_score": 0.04
+    },
+    {
+     "date": "2026-10-21",
+     "close": 210.24,
+     "news": 5,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 3,
+     "avg_score": -0.189
+    },
+    {
+     "date": "2026-10-22",
+     "close": 217.32,
+     "news": 7,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": 0.102
+    },
+    {
+     "date": "2026-10-23",
+     "close": 218.79,
+     "news": 13,
+     "positive": 4,
+     "neutral": 4,
+     "negative": 5,
+     "avg_score": -0.022
+    },
+    {
+     "date": "2026-10-26",
+     "close": 222.81,
+     "news": 5,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.347
+    },
+    {
+     "date": "2026-10-27",
+     "close": 230.59,
+     "news": 10,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.488
+    },
+    {
+     "date": "2026-10-28",
+     "close": 233.29,
+     "news": 4,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.013
+    },
+    {
+     "date": "2026-10-29",
+     "close": 227.61,
+     "news": 7,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.579
+    },
+    {
+     "date": "2026-10-30",
+     "close": 232.36,
+     "news": 8,
+     "positive": 5,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.494
+    },
+    {
+     "date": "2026-11-02",
+     "close": 235.65,
+     "news": 3,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.248
+    },
+    {
+     "date": "2026-11-03",
+     "close": 242.16,
+     "news": 12,
+     "positive": 10,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.623
+    },
+    {
+     "date": "2026-11-04",
+     "close": 242.35,
+     "news": 7,
+     "positive": 6,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.573
+    },
+    {
+     "date": "2026-11-05",
+     "close": 239.5,
+     "news": 3,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": -0.027
+    },
+    {
+     "date": "2026-11-06",
+     "close": 239.22,
+     "news": 3,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.227
+    },
+    {
+     "date": "2026-11-09",
+     "close": 238.71,
+     "news": 8,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.791
+    },
+    {
+     "date": "2026-11-10",
+     "close": 238.22,
+     "news": 8,
+     "positive": 7,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.663
+    },
+    {
+     "date": "2026-11-11",
+     "close": 240.64,
+     "news": 6,
+     "positive": 5,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.662
+    },
+    {
+     "date": "2026-11-12",
+     "close": 243.11,
+     "news": 13,
+     "positive": 12,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.667
+    },
+    {
+     "date": "2026-11-13",
+     "close": 244.3,
+     "news": 7,
+     "positive": 0,
+     "neutral": 7,
+     "negative": 0,
+     "avg_score": 0.014
+    },
+    {
+     "date": "2026-11-16",
+     "close": 240.77,
+     "news": 13,
+     "positive": 9,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": 0.379
+    },
+    {
+     "date": "2026-11-17",
+     "close": 239.48,
+     "news": 11,
+     "positive": 11,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.775
+    },
+    {
+     "date": "2026-11-18",
+     "close": 240.78,
+     "news": 11,
+     "positive": 0,
+     "neutral": 5,
+     "negative": 6,
+     "avg_score": -0.468
+    },
+    {
+     "date": "2026-11-19",
+     "close": 240.28,
+     "news": 5,
+     "positive": 0,
+     "neutral": 5,
+     "negative": 0,
+     "avg_score": -0.049
+    }
+   ],
+   "news": [
+    {
+     "headline": "Stock Indices Plunge Amid Broad Market Weakness",
+     "headline_th": "ดัชนีหุ้นดิ่งลงท่ามกลางตลาดที่อ่อนแรงเป็นวงกว้าง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stock-indices-plunge-amid-broad-market-weakness",
+     "published_at": "2026-11-20T04:55:15Z",
+     "sentiment": "negative",
+     "score": -0.967
+    },
+    {
+     "headline": "Is Broadcom (AVGO) Stock Stretched Or Still Reasonable On Cash Flow?",
+     "headline_th": "หุ้น Broadcom (AVGO) แพงเกินไป หรือยังสมเหตุสมผลเมื่อดูจากกระแสเงินสด",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-avgo-stock-stretched-still-031317832.html?.tsrc=rss",
+     "published_at": "2026-11-20T03:13:17Z",
+     "sentiment": "positive",
+     "score": 0.593
+    },
+    {
+     "headline": "Is Your VOO Fund Secretly An AI Bet?",
+     "headline_th": "กองทุน VOO ของคุณแอบเป็นการเดิมพันกับ AI หรือเปล่า",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/voo/articles/626646/is-your-voo-fund-secretly-an-ai-bet/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-20T00:58:20Z",
+     "sentiment": "neutral",
+     "score": -0.035
+    },
+    {
+     "headline": "Stocks Climb on AI Optimism After Strong Debut for Anthropic",
+     "headline_th": "หุ้นขึ้นจากความหวังเรื่อง AI หลัง Anthropic เปิดตัวในตลาดอย่างแข็งแกร่ง",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/stocks-climb-ai-optimism-after-strong-debut-anthropic",
+     "published_at": "2026-11-20T00:14:30Z",
+     "sentiment": "positive",
+     "score": 0.918
+    },
+    {
+     "headline": "This Beaten-Down Semiconductor Stock Could Soar in 2027",
+     "headline_th": "หุ้นเซมิคอนดักเตอร์ที่ราคาทรุดหนักตัวนี้อาจพุ่งขึ้นในปี 2027",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/19/this-beaten-down-semiconductor-stock-could-soar-in-2027/?.tsrc=rss",
+     "published_at": "2026-11-19T22:45:02Z",
+     "sentiment": "neutral",
+     "score": 0.061
+    },
+    {
+     "headline": "This Beaten-Down Semiconductor Stock Could Soar in 2027",
+     "headline_th": "หุ้นเซมิคอนดักเตอร์ที่ราคาทรุดหนักตัวนี้อาจพุ่งขึ้นในปี 2027",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/beaten-down-semiconductor-stock-could-soar-2027",
+     "published_at": "2026-11-19T22:45:02Z",
+     "sentiment": "neutral",
+     "score": 0.086
+    },
+    {
+     "headline": "Stock Market Today, Nov. 19: Nvidia Slides as Investors Weigh CEO Transition Fallout Despite Strong Q3 Results",
+     "headline_th": "ตลาดหุ้นวันนี้ 19 พ.ย.: Nvidia ร่วง นักลงทุนชั่งน้ำหนักผลกระทบจากการเปลี่ยนซีอีโอ แม้ผลประกอบการไตรมาส 3 แข็งแกร่ง",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-nvidia-slides-as-investors-weigh-ceo-transition-fallout-despite-strong-q3-results/?.tsrc=rss",
+     "published_at": "2026-11-19T22:20:25Z",
+     "sentiment": "negative",
+     "score": -0.966
+    },
+    {
+     "headline": "Why Broadcom Inc. (AVGO) Dipped More Than Broader Market Today",
+     "headline_th": "ทำไมวันนี้หุ้น Broadcom (AVGO) ร่วงมากกว่าตลาดโดยรวม",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-inc-avgo-dipped-214502356.html?.tsrc=rss",
+     "published_at": "2026-11-19T21:45:02Z",
+     "sentiment": "negative",
+     "score": -0.883
+    },
+    {
+     "headline": "Why Broadcom Inc. (AVGO) Dipped More Than Broader Market Today",
+     "headline_th": "ทำไมวันนี้หุ้น Broadcom (AVGO) ร่วงมากกว่าตลาดโดยรวม",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/why-broadcom-inc-avgo-dipped-more-broader-market-today",
+     "published_at": "2026-11-19T21:45:02Z",
+     "sentiment": "negative",
+     "score": -0.883
+    },
+    {
+     "headline": "Globant (GLOB) Q3 Earnings and Revenues Top Estimates",
+     "headline_th": "กำไรและรายได้ไตรมาส 3 ของ Globant (GLOB) สูงกว่าคาด",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/globant-glob-q3-earnings-revenues-213002053.html?.tsrc=rss",
+     "published_at": "2026-11-19T21:30:02Z",
+     "sentiment": "neutral",
+     "score": -0.001
+    },
+    {
+     "headline": "Globant (GLOB) Q3 Earnings and Revenues Top Estimates",
+     "headline_th": "กำไรและรายได้ไตรมาส 3 ของ Globant (GLOB) สูงกว่าคาด",
+     "source": "Nasdaq",
+     "url": "https://www.nasdaq.com/articles/globant-glob-q3-earnings-and-revenues-top-estimates",
+     "published_at": "2026-11-19T21:30:02Z",
+     "sentiment": "neutral",
+     "score": -0.001
+    },
+    {
+     "headline": "Marvell Stock Halved Again. What Does Its Cash Say?",
+     "headline_th": "หุ้น Marvell ร่วงลงครึ่งหนึ่งอีกครั้ง เงินสดของบริษัทบอกอะไร",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/mrvl/articles/626972/own-marvell-its-cash-says-2022-not-2006/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-19T20:25:57Z",
+     "sentiment": "negative",
+     "score": -0.889
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "RKLB": {
+   "ticker": "RKLB",
+   "close": 27.28,
+   "prev_close": 27.83,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 20,
+    "positive": 6,
+    "neutral": 4,
+    "negative": 10
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 22.67,
+     "news": 14,
+     "positive": 12,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.65
+    },
+    {
+     "date": "2026-10-12",
+     "close": 23.48,
+     "news": 14,
+     "positive": 14,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.758
+    },
+    {
+     "date": "2026-10-13",
+     "close": 23.54,
+     "news": 13,
+     "positive": 7,
+     "neutral": 5,
+     "negative": 1,
+     "avg_score": 0.342
+    },
+    {
+     "date": "2026-10-14",
+     "close": 23.8,
+     "news": 3,
+     "positive": 0,
+     "neutral": 1,
+     "negative": 2,
+     "avg_score": -0.494
+    },
+    {
+     "date": "2026-10-15",
+     "close": 24.02,
+     "news": 14,
+     "positive": 13,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.707
+    },
+    {
+     "date": "2026-10-16",
+     "close": 23.99,
+     "news": 9,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.602
+    },
+    {
+     "date": "2026-10-19",
+     "close": 24.56,
+     "news": 6,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 4,
+     "avg_score": -0.582
+    },
+    {
+     "date": "2026-10-20",
+     "close": 24.56,
+     "news": 14,
+     "positive": 3,
+     "neutral": 9,
+     "negative": 2,
+     "avg_score": 0.082
+    },
+    {
+     "date": "2026-10-21",
+     "close": 24.91,
+     "news": 8,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 3,
+     "avg_score": -0.017
+    },
+    {
+     "date": "2026-10-22",
+     "close": 25.0,
+     "news": 13,
+     "positive": 11,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.588
+    },
+    {
+     "date": "2026-10-23",
+     "close": 26.0,
+     "news": 11,
+     "positive": 7,
+     "neutral": 1,
+     "negative": 3,
+     "avg_score": 0.325
+    },
+    {
+     "date": "2026-10-26",
+     "close": 25.73,
+     "news": 9,
+     "positive": 3,
+     "neutral": 2,
+     "negative": 4,
+     "avg_score": -0.05
+    },
+    {
+     "date": "2026-10-27",
+     "close": 24.89,
+     "news": 6,
+     "positive": 3,
+     "neutral": 3,
+     "negative": 0,
+     "avg_score": 0.407
+    },
+    {
+     "date": "2026-10-28",
+     "close": 24.97,
+     "news": 4,
+     "positive": 0,
+     "neutral": 0,
+     "negative": 4,
+     "avg_score": -0.757
+    },
+    {
+     "date": "2026-10-29",
+     "close": 25.1,
+     "news": 8,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 5,
+     "avg_score": -0.347
+    },
+    {
+     "date": "2026-10-30",
+     "close": 25.79,
+     "news": 13,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 11,
+     "avg_score": -0.72
+    },
+    {
+     "date": "2026-11-02",
+     "close": 26.0,
+     "news": 3,
+     "positive": 0,
+     "neutral": 1,
+     "negative": 2,
+     "avg_score": -0.563
+    },
+    {
+     "date": "2026-11-03",
+     "close": 26.59,
+     "news": 13,
+     "positive": 1,
+     "neutral": 0,
+     "negative": 12,
+     "avg_score": -0.635
+    },
+    {
+     "date": "2026-11-04",
+     "close": 26.45,
+     "news": 9,
+     "positive": 1,
+     "neutral": 5,
+     "negative": 3,
+     "avg_score": -0.207
+    },
+    {
+     "date": "2026-11-05",
+     "close": 26.57,
+     "news": 13,
+     "positive": 1,
+     "neutral": 0,
+     "negative": 12,
+     "avg_score": -0.664
+    },
+    {
+     "date": "2026-11-06",
+     "close": 26.68,
+     "news": 7,
+     "positive": 7,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.763
+    },
+    {
+     "date": "2026-11-09",
+     "close": 26.88,
+     "news": 7,
+     "positive": 5,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.45
+    },
+    {
+     "date": "2026-11-10",
+     "close": 26.24,
+     "news": 3,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.31
+    },
+    {
+     "date": "2026-11-11",
+     "close": 27.02,
+     "news": 8,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.835
+    },
+    {
+     "date": "2026-11-12",
+     "close": 27.3,
+     "news": 12,
+     "positive": 11,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.762
+    },
+    {
+     "date": "2026-11-13",
+     "close": 27.91,
+     "news": 4,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.22
+    },
+    {
+     "date": "2026-11-16",
+     "close": 28.05,
+     "news": 11,
+     "positive": 9,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.676
+    },
+    {
+     "date": "2026-11-17",
+     "close": 28.39,
+     "news": 7,
+     "positive": 2,
+     "neutral": 2,
+     "negative": 3,
+     "avg_score": -0.164
+    },
+    {
+     "date": "2026-11-18",
+     "close": 27.83,
+     "news": 6,
+     "positive": 2,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.217
+    },
+    {
+     "date": "2026-11-19",
+     "close": 27.28,
+     "news": 5,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.145
+    }
+   ],
+   "news": [
+    {
+     "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
+     "published_at": "2026-11-20T06:58:31Z",
+     "sentiment": "positive",
+     "score": 0.857
+    },
+    {
+     "headline": "Rocket Lab (RKLB) Stock Could Be Overvalued On Record Backlog Growth",
+     "headline_th": "หุ้น Rocket Lab (RKLB) อาจแพงเกินจริง จากงานในมือที่โตเป็นประวัติการณ์",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-rklb-stock-could-181656006.html?.tsrc=rss",
+     "published_at": "2026-11-19T18:16:56Z",
+     "sentiment": "positive",
+     "score": 0.908
+    },
+    {
+     "headline": "AST SpaceMobile Is Down 37% in a Month. Can B. Riley’s Upgrade Get ASTS Stock Back to $48?",
+     "headline_th": "AST SpaceMobile ร่วง 37% ในหนึ่งเดือน การปรับเพิ่มคำแนะนำของ B. Riley จะพาหุ้น ASTS กลับไป 48 ดอลลาร์ได้หรือไม่",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/ast-spacemobile-is-down-37-in-a-month-can-b-rileys-upgrade-get-asts-stock-back-to-48/?.tsrc=rss",
+     "published_at": "2026-11-19T17:03:43Z",
+     "sentiment": "negative",
+     "score": -0.962
+    },
+    {
+     "headline": "Jim Cramer Says Rocket Lab Has ‘Gotten Too Cheap’ Just After Its Electron Rocket Hit 100 Launches Faster Than Any Other Commercial Rocket",
+     "headline_th": "จิม แครเมอร์ บอก Rocket Lab \"ถูกเกินไปแล้ว\" หลังจรวด Electron ปล่อยครบ 100 ครั้งเร็วกว่าจรวดเชิงพาณิชย์ลำอื่น",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/jim-cramer-says-rocket-lab-has-gotten-too-cheap-just-after-its-electron-rocket-hit-100-launches-faster-than-any-other-commercial-rocket/?.tsrc=rss",
+     "published_at": "2026-11-19T16:34:34Z",
+     "sentiment": "neutral",
+     "score": 0.008
+    },
+    {
+     "headline": "Rocket Lab Has 2 Big Opportunities Ahead. Either One Could Change the Stock’s Trajectory",
+     "headline_th": "Rocket Lab มี 2 โอกาสใหญ่รออยู่ข้างหน้า โอกาสใดก็อาจเปลี่ยนทิศทางหุ้นได้",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/rocket-lab-has-2-big-opportunities-ahead-either-one-could-change-the-stocks-trajectory/?.tsrc=rss",
+     "published_at": "2026-11-19T16:34:26Z",
+     "sentiment": "negative",
+     "score": -0.838
+    },
+    {
+     "headline": "Rocket Lab Sold Out Neutron Through the 2030s Before It Ever Flew. Here’s Why the Stock Fell After Earnings Anyway.",
+     "headline_th": "Rocket Lab ขายคิว Neutron หมดยาวถึงทศวรรษ 2030 ทั้งที่ยังไม่เคยบิน ทำไมหุ้นยังร่วงหลังประกาศผลประกอบการ",
+     "source": "Yahoo",
+     "url": "https://www.fool.com/investing/2026/11/19/rocket-lab-sold-out-neutron-through-the-2030s-before-it-ever-flew-heres-why-the-stock-fell-after-earnings-anyway/?.tsrc=rss",
+     "published_at": "2026-11-19T15:05:02Z",
+     "sentiment": "negative",
+     "score": -0.883
+    },
+    {
+     "headline": "Musk: SpaceX Has a “Monopoly” in Space. That’s Bad News for Amazon’s Leo. But Also Bad for SpaceX",
+     "headline_th": "มัสก์: SpaceX \"ผูกขาด\" ในอวกาศ เป็นข่าวร้ายของ Leo ของ Amazon แต่ก็เป็นข่าวร้ายของ SpaceX ด้วย",
+     "source": "Yahoo",
+     "url": "https://www.tikr.com/blog/musk-spacex-has-a-monopoly-in-space-thats-bad-news-for-amazons-leo-but-also-bad-for-spacex?ref=yahoofinance&tlnk=yf-261119-53r8796f&.tsrc=rss",
+     "published_at": "2026-11-19T14:50:42Z",
+     "sentiment": "negative",
+     "score": -0.937
+    },
+    {
+     "headline": "AST SpaceMobile Stock Has Fallen Far Enough, Analyst Says. He Sees Nearly 90% Upside.",
+     "headline_th": "นักวิเคราะห์ชี้หุ้น AST SpaceMobile ร่วงมามากพอแล้ว มองมีโอกาสขึ้นเกือบ 90%",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/m/1a1ffc90-3418-3fac-8814-7cad6248258e/ast-spacemobile-stock-has.html?.tsrc=rss",
+     "published_at": "2026-11-19T14:41:00Z",
+     "sentiment": "negative",
+     "score": -0.954
+    },
+    {
+     "headline": "How Much Downside Is Left In Rocket Lab Stock?",
+     "headline_th": "หุ้น Rocket Lab ยังลงได้อีกแค่ไหน",
+     "source": "Yahoo",
+     "url": "https://www.trefis.com/stock/rklb/articles/626676/how-much-downside-is-left-in-rocket-lab-stock/2026-11-19?.tsrc=rss",
+     "published_at": "2026-11-19T14:18:24Z",
+     "sentiment": "negative",
+     "score": -0.928
+    },
+    {
+     "headline": "Redwire Climbs 4% on $15 Million AscendArc Solar Deal and Oppenheimer Initiation; AST SpaceMobile Jumps 8%, Rocket Lab Gains 3%",
+     "headline_th": "Redwire ขึ้น 4% จากดีลโซลาร์ AscendArc 15 ล้านดอลลาร์ และ Oppenheimer เริ่มออกบทวิเคราะห์ ส่วน AST SpaceMobile พุ่ง 8% และ Rocket Lab บวก 3%",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/redwire-climbs-4-on-15-million-ascendarc-solar-deal-and-oppenheimer-initiation-ast-spacemobile-jumps-8-rocket-lab-gains-3/?.tsrc=rss",
+     "published_at": "2026-11-19T14:10:26Z",
+     "sentiment": "positive",
+     "score": 0.657
+    },
+    {
+     "headline": "4 Stocks Analysts and Hedge Funds Surprisingly Prefer Over Tesla",
+     "headline_th": "4 หุ้นที่นักวิเคราะห์และเฮดจ์ฟันด์ชอบมากกว่า Tesla อย่างน่าประหลาดใจ",
+     "source": "Yahoo",
+     "url": "https://247wallst.com/investing/2026/11/19/4-stocks-analysts-and-hedge-funds-surprisingly-prefer-over-tesla/?.tsrc=rss",
+     "published_at": "2026-11-19T12:39:06Z",
+     "sentiment": "positive",
+     "score": 0.724
+    },
+    {
+     "headline": "RKLB Stock Rises Overnight: Jim Cramer Likes SpaceX But Calls Rocket Lab ‘Too Cheap’ — Electron Tops Falcon 9 In 100 Launches",
+     "headline_th": "หุ้น RKLB ขึ้นนอกเวลาทำการ: จิม แครเมอร์ ชอบ SpaceX แต่บอกว่า Rocket Lab \"ถูกเกินไป\" ขณะที่ Electron แซง Falcon 9 เรื่องปล่อยครบ 100 ครั้ง",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-jim-cramer-likes-spacex-rocketlab-cheap-electron-falcon-9-100-launches/cNbiGliR9iN?.tsrc=rss",
+     "published_at": "2026-11-19T07:04:47Z",
+     "sentiment": "positive",
+     "score": 0.474
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  },
+  "SPCX": {
+   "ticker": "SPCX",
+   "close": 32.47,
+   "prev_close": 32.57,
+   "trade_date": "2026-11-19",
+   "today": {
+    "news": 21,
+    "positive": 10,
+    "neutral": 5,
+    "negative": 6
+   },
+   "daily": [
+    {
+     "date": "2026-10-09",
+     "close": 31.84,
+     "news": 9,
+     "positive": 1,
+     "neutral": 2,
+     "negative": 6,
+     "avg_score": -0.406
+    },
+    {
+     "date": "2026-10-12",
+     "close": 32.33,
+     "news": 3,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.514
+    },
+    {
+     "date": "2026-10-13",
+     "close": 31.71,
+     "news": 5,
+     "positive": 3,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.133
+    },
+    {
+     "date": "2026-10-14",
+     "close": 32.05,
+     "news": 10,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 8,
+     "avg_score": -0.471
+    },
+    {
+     "date": "2026-10-15",
+     "close": 31.79,
+     "news": 3,
+     "positive": 2,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.269
+    },
+    {
+     "date": "2026-10-16",
+     "close": 31.1,
+     "news": 10,
+     "positive": 10,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.767
+    },
+    {
+     "date": "2026-10-19",
+     "close": 30.24,
+     "news": 12,
+     "positive": 3,
+     "neutral": 7,
+     "negative": 2,
+     "avg_score": 0.05
+    },
+    {
+     "date": "2026-10-20",
+     "close": 30.62,
+     "news": 13,
+     "positive": 11,
+     "neutral": 2,
+     "negative": 0,
+     "avg_score": 0.678
+    },
+    {
+     "date": "2026-10-21",
+     "close": 30.55,
+     "news": 12,
+     "positive": 2,
+     "neutral": 8,
+     "negative": 2,
+     "avg_score": 0.047
+    },
+    {
+     "date": "2026-10-22",
+     "close": 31.5,
+     "news": 14,
+     "positive": 5,
+     "neutral": 0,
+     "negative": 9,
+     "avg_score": -0.226
+    },
+    {
+     "date": "2026-10-23",
+     "close": 31.79,
+     "news": 6,
+     "positive": 2,
+     "neutral": 4,
+     "negative": 0,
+     "avg_score": 0.233
+    },
+    {
+     "date": "2026-10-26",
+     "close": 32.26,
+     "news": 13,
+     "positive": 1,
+     "neutral": 9,
+     "negative": 3,
+     "avg_score": -0.135
+    },
+    {
+     "date": "2026-10-27",
+     "close": 33.32,
+     "news": 14,
+     "positive": 4,
+     "neutral": 4,
+     "negative": 6,
+     "avg_score": -0.137
+    },
+    {
+     "date": "2026-10-28",
+     "close": 33.24,
+     "news": 4,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 2,
+     "avg_score": -0.429
+    },
+    {
+     "date": "2026-10-29",
+     "close": 33.16,
+     "news": 9,
+     "positive": 6,
+     "neutral": 2,
+     "negative": 1,
+     "avg_score": 0.444
+    },
+    {
+     "date": "2026-10-30",
+     "close": 33.29,
+     "news": 13,
+     "positive": 4,
+     "neutral": 2,
+     "negative": 7,
+     "avg_score": -0.232
+    },
+    {
+     "date": "2026-11-02",
+     "close": 33.28,
+     "news": 3,
+     "positive": 1,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.02
+    },
+    {
+     "date": "2026-11-03",
+     "close": 34.29,
+     "news": 12,
+     "positive": 11,
+     "neutral": 0,
+     "negative": 1,
+     "avg_score": 0.701
+    },
+    {
+     "date": "2026-11-04",
+     "close": 33.89,
+     "news": 13,
+     "positive": 11,
+     "neutral": 0,
+     "negative": 2,
+     "avg_score": 0.589
+    },
+    {
+     "date": "2026-11-05",
+     "close": 33.15,
+     "news": 13,
+     "positive": 2,
+     "neutral": 1,
+     "negative": 10,
+     "avg_score": -0.53
+    },
+    {
+     "date": "2026-11-06",
+     "close": 32.76,
+     "news": 14,
+     "positive": 1,
+     "neutral": 7,
+     "negative": 6,
+     "avg_score": -0.311
+    },
+    {
+     "date": "2026-11-09",
+     "close": 32.98,
+     "news": 9,
+     "positive": 2,
+     "neutral": 3,
+     "negative": 4,
+     "avg_score": -0.143
+    },
+    {
+     "date": "2026-11-10",
+     "close": 32.9,
+     "news": 9,
+     "positive": 8,
+     "neutral": 1,
+     "negative": 0,
+     "avg_score": 0.751
+    },
+    {
+     "date": "2026-11-11",
+     "close": 32.94,
+     "news": 8,
+     "positive": 0,
+     "neutral": 2,
+     "negative": 6,
+     "avg_score": -0.567
+    },
+    {
+     "date": "2026-11-12",
+     "close": 33.21,
+     "news": 7,
+     "positive": 3,
+     "neutral": 3,
+     "negative": 1,
+     "avg_score": 0.25
+    },
+    {
+     "date": "2026-11-13",
+     "close": 33.09,
+     "news": 6,
+     "positive": 4,
+     "neutral": 1,
+     "negative": 1,
+     "avg_score": 0.36
+    },
+    {
+     "date": "2026-11-16",
+     "close": 32.46,
+     "news": 14,
+     "positive": 7,
+     "neutral": 7,
+     "negative": 0,
+     "avg_score": 0.414
+    },
+    {
+     "date": "2026-11-17",
+     "close": 32.16,
+     "news": 8,
+     "positive": 8,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.791
+    },
+    {
+     "date": "2026-11-18",
+     "close": 32.57,
+     "news": 13,
+     "positive": 2,
+     "neutral": 5,
+     "negative": 6,
+     "avg_score": -0.245
+    },
+    {
+     "date": "2026-11-19",
+     "close": 32.47,
+     "news": 4,
+     "positive": 4,
+     "neutral": 0,
+     "negative": 0,
+     "avg_score": 0.814
+    }
+   ],
+   "news": [
+    {
+     "headline": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth — Inside A Rough Week For FLY, ASTS, RKLB And RDW",
+     "headline_th": "SpaceX ประคองตัวได้ขณะที่หุ้นอวกาศร่วงกลับสู่พื้นโลก เจาะสัปดาห์ที่ยากลำบากของ FLY, ASTS, RKLB และ RDW",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/spacex-holds-orbit-space-stocks-fall-back-earth-rough-week-fly-asts-rklb-rdw/cNbS4SbR9KQ?.tsrc=rss",
+     "published_at": "2026-11-20T06:58:31Z",
+     "sentiment": "positive",
+     "score": 0.857
+    },
+    {
+     "headline": "Elon Musk’s Dream Meets Wall Street Reality: SpaceX Lenders Don’t Want Nvidia Chips Leaving Earth",
+     "headline_th": "ความฝันของอีลอน มัสก์ เจอความจริงของวอลล์สตรีท: ผู้ให้กู้ของ SpaceX ไม่อยากให้ชิป Nvidia ออกนอกโลก",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-dream-meets-wall-062433324.html?.tsrc=rss",
+     "published_at": "2026-11-20T06:24:33Z",
+     "sentiment": "negative",
+     "score": -0.941
+    },
+    {
+     "headline": "Could Tesla Become The Next Lumentum? Gary Black Warns A SpaceX Stock Deal Could Send TSLA Down 25%",
+     "headline_th": "Tesla จะเป็น Lumentum รายต่อไปหรือไม่ แกรี แบล็ก เตือนดีลหุ้นกับ SpaceX อาจทำให้ TSLA ร่วง 25%",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/could-tesla-become-next-lumentum-gary-black-spacex-stock-deal-send-tsla-down/cNbSEW5R9K7?.tsrc=rss",
+     "published_at": "2026-11-20T06:15:59Z",
+     "sentiment": "negative",
+     "score": -0.958
+    },
+    {
+     "headline": "‘I Don’t Hate Data Centers’: Gina Hinojosa Willing to Talk to SpaceX CEO Elon Musk, but Will Make Sure Texans Are ‘Thriving’",
+     "headline_th": "\"ฉันไม่ได้เกลียดศูนย์ข้อมูล\": จีนา ฮิโนโฮซา พร้อมคุยกับอีลอน มัสก์ ซีอีโอ SpaceX แต่จะดูแลให้ชาวเท็กซัส \"รุ่งเรือง\"",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/economy/policy/articles/don-t-hate-data-centers-043014215.html?.tsrc=rss",
+     "published_at": "2026-11-20T04:30:14Z",
+     "sentiment": "neutral",
+     "score": 0.018
+    },
+    {
+     "headline": "Elon Musk Says Grok Can ‘Do Your Accounting’ as SpaceXSI Adds Five Full-Time AI Bots, Cutting Invoice Processing From 24 Hours to Minutes",
+     "headline_th": "อีลอน มัสก์ บอก Grok \"ทำบัญชีให้คุณได้\" ขณะ SpaceXSI เพิ่มบอต AI ทำงานเต็มเวลา 5 ตัว ลดเวลาจัดการใบแจ้งหนี้จาก 24 ชั่วโมงเหลือไม่กี่นาที",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-grok-accounting-043007297.html?.tsrc=rss",
+     "published_at": "2026-11-20T04:30:07Z",
+     "sentiment": "neutral",
+     "score": 0.215
+    },
+    {
+     "headline": "Apollo Global Management Targets Over 20% Earnings Growth in 2027 as Credit Expands",
+     "headline_th": "Apollo Global Management ตั้งเป้ากำไรโตเกิน 20% ในปี 2027 จากธุรกิจสินเชื่อที่ขยายตัว",
+     "source": "Yahoo",
+     "url": "https://www.marketbeat.com/instant-alerts/event-apollo-global-management-targets-over-20-earnings-growth-in-2027-as-credit-expands-2026-11-19/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+     "published_at": "2026-11-20T04:12:11Z",
+     "sentiment": "positive",
+     "score": 0.929
+    },
+    {
+     "headline": "SpaceX lenders seek safeguards against Musk sending AI chips into space - FT",
+     "headline_th": "FT รายงาน ผู้ให้กู้ของ SpaceX ต้องการหลักประกัน ป้องกันมัสก์ส่งชิป AI ขึ้นอวกาศ",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/ai/articles/spacex-lenders-seek-safeguards-against-031830082.html?.tsrc=rss",
+     "published_at": "2026-11-20T03:18:30Z",
+     "sentiment": "positive",
+     "score": 0.145
+    },
+    {
+     "headline": "Tom Lee Says Anthropic Debut Selloff Feels Like ‘Max Pain’: Will Tech Rebound?",
+     "headline_th": "ทอม ลี บอกแรงเทขายหลัง Anthropic เปิดตัวให้ความรู้สึกเหมือน \"จุดเจ็บปวดที่สุด\" หุ้นเทคจะฟื้นไหม",
+     "source": "Yahoo",
+     "url": "https://beincrypto.com/tom-lee-anthropic-ipo-max-pain/?.tsrc=rss",
+     "published_at": "2026-11-20T03:05:00Z",
+     "sentiment": "negative",
+     "score": -0.955
+    },
+    {
+     "headline": "How High Can ANT Stock Go? Wall Street Debut Sparks Valuation Debate – One Analyst Sees Amazon-Google Scale Opportunity In Anthropic",
+     "headline_th": "หุ้น ANT จะไปได้ไกลแค่ไหน การเปิดตัวในวอลล์สตรีทจุดประเด็นถกเถียงเรื่องมูลค่า นักวิเคราะห์รายหนึ่งมองว่า Anthropic มีโอกาสโตระดับ Amazon และ Google",
+     "source": "Yahoo",
+     "url": "https://stocktwits.com/news-articles/markets/equity/how-high-can-ant-stock-go-wall-street-valuation-analyst-amazon-google-scale-opportunity/cNbSG4tR90C?.tsrc=rss",
+     "published_at": "2026-11-20T02:23:55Z",
+     "sentiment": "positive",
+     "score": 0.866
+    },
+    {
+     "headline": "How many millionaires did Anthropic’s blockbuster IPO just create?",
+     "headline_th": "IPO ครั้งใหญ่ของ Anthropic สร้างเศรษฐีเงินล้านขึ้นมากี่คน",
+     "source": "Yahoo",
+     "url": "https://www.cnn.com/2026/11/19/business/video/ebof-harry-enten-anthropic-ipo?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
+     "published_at": "2026-11-20T01:48:29Z",
+     "sentiment": "negative",
+     "score": -0.608
+    },
+    {
+     "headline": "SpaceX's Data Center Vote Should Be Delayed, Arizona AG Tells Cochise County",
+     "headline_th": "อัยการสูงสุดแอริโซนาบอกเทศมณฑลโคชีสว่าควรเลื่อนการลงมติเรื่องศูนย์ข้อมูลของ SpaceX",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/technology/articles/spacex-apos-data-center-vote-003116969.html?.tsrc=rss",
+     "published_at": "2026-11-20T00:31:16Z",
+     "sentiment": "negative",
+     "score": -0.527
+    },
+    {
+     "headline": "Anthropic’s IPO nets Goldman Sachs and Morgan Stanley $113 million apiece in fees, eclipsing their SpaceX paydays",
+     "headline_th": "IPO ของ Anthropic ทำให้ Goldman Sachs และ Morgan Stanley ได้ค่าธรรมเนียมรายละ 113 ล้านดอลลาร์ มากกว่าที่ได้จาก SpaceX",
+     "source": "Yahoo",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-nets-goldman-sachs-233822497.html?.tsrc=rss",
+     "published_at": "2026-11-19T23:38:22Z",
+     "sentiment": "positive",
+     "score": 0.753
+    }
+   ],
+   "updated_at": "2026-11-20T07:43:00Z"
+  }
+ }
+}

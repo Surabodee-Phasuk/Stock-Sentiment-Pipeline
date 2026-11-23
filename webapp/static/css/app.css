@@ -1,0 +1,168 @@
+/* F5-01: ดีไซน์ของทีม — พื้นขาว, สะอาด, สีน้ำเงินเป็นสีหลัก (ADR-0008) */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --faint: #94a3b8;
+  --line: #e5e9f0;
+  --brand: #2563eb;
+  --brand-soft: #eff4ff;
+  /* sentiment: ชุดเดียวทั้งระบบ ใช้คู่กับคำ Positive / Neutral / Negative เสมอ */
+  --pos: #16a34a;
+  --pos-bg: #dcfce7;
+  --neu: #64748b;
+  --neu-bg: #eef1f5;
+  --neg: #dc2626;
+  --neg-bg: #fee2e2;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.04);
+  --font: "Inter", "Sarabun", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.5 var(--font);
+  padding-bottom: 80px; /* เว้นที่ให้เมนูล่าง */
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--brand); text-decoration: none; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.narrow { max-width: 560px; }
+
+/* หัวหน้า */
+.topbar { display: flex; align-items: center; gap: 12px; padding: 20px 0 12px; }
+.topbar h1 { font-size: 22px; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
+.topbar .sub { color: var(--muted); font-size: 13px; }
+.back { color: var(--ink); font-size: 22px; line-height: 1; padding: 4px 6px 4px 0; }
+.sample {
+  margin-left: auto; font-size: 12px; color: var(--muted);
+  background: var(--neu-bg); border-radius: 999px; padding: 3px 10px; white-space: nowrap;
+}
+
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px;
+}
+.card-title { font-size: 14px; font-weight: 700; margin: 0 0 12px; }
+.muted { color: var(--muted); }
+.faint { color: var(--faint); }
+.small { font-size: 12px; }
+.row { display: flex; align-items: center; gap: 12px; }
+.grow { flex: 1; min-width: 0; }
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* โลโก้ตัวอักษร */
+.logo {
+  width: 36px; height: 36px; border-radius: 9px; flex: none;
+  display: grid; place-items: center;
+  color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.02em;
+}
+.logo.lg { width: 40px; height: 40px; font-size: 13px; }
+
+.ticker { font-weight: 700; font-size: 15px; }
+.name { color: var(--muted); font-size: 12px; }
+
+/* ป้าย sentiment */
+.pill {
+  display: inline-block; font-size: 12px; font-weight: 600; line-height: 1;
+  border-radius: 999px; padding: 6px 12px; white-space: nowrap;
+}
+.pill.positive { color: var(--pos); background: var(--pos-bg); }
+.pill.neutral { color: var(--neu); background: var(--neu-bg); }
+.pill.negative { color: var(--neg); background: var(--neg-bg); }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.dot.positive { background: var(--pos); }
+.dot.neutral { background: var(--faint); }
+.dot.negative { background: var(--neg); }
+
+/* ปุ่ม */
+button, .btn {
+  font: inherit; font-weight: 600; font-size: 14px; cursor: pointer;
+  border-radius: 10px; padding: 11px 16px; border: 1px solid var(--brand);
+  background: var(--brand); color: #fff; display: inline-flex; align-items: center;
+  justify-content: center; gap: 6px; text-decoration: none;
+}
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-outline {
+  background: var(--surface); color: var(--brand); border: 1px solid #c7d7fb;
+  border-radius: 999px; padding: 6px 14px; font-size: 13px;
+}
+.btn-block { width: 100%; }
+.icon-btn {
+  background: none; border: 0; padding: 4px; color: var(--faint); font-size: 20px;
+}
+.icon-btn.on { color: #f59e0b; }
+
+/* ช่องค้นหา + chip */
+.search {
+  display: flex; align-items: center; gap: 8px; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 10px; padding: 0 12px;
+}
+.search input {
+  border: 0; outline: 0; font: inherit; flex: 1; padding: 11px 0; background: transparent; color: var(--ink);
+}
+.search:focus-within { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 4px; }
+.chip {
+  font-size: 12px; font-weight: 500; border: 1px solid var(--line); background: var(--surface);
+  color: var(--muted); border-radius: 999px; padding: 5px 12px; cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+/* รายการ */
+.list { list-style: none; margin: 0; padding: 0; }
+.list > li { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+.list > li:first-child { border-top: 0; }
+.check { width: 18px; height: 18px; accent-color: var(--brand); flex: none; cursor: pointer; }
+
+.stock-card {
+  display: flex; align-items: center; gap: 12px; color: inherit;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.stock-card:hover { border-color: #c7d7fb; }
+.chev { color: var(--faint); font-size: 20px; }
+
+/* Stock Detail */
+.grid-2 { display: grid; gap: 12px; grid-template-columns: 1.4fr 1fr; }
+@media (max-width: 640px) { .grid-2 { grid-template-columns: 1fr; } }
+.big-pill { font-size: 18px; font-weight: 700; padding: 12px 20px; border-radius: 10px; color: #fff; }
+.big-pill.positive { background: var(--pos); }
+.big-pill.neutral { background: var(--neu); }
+.big-pill.negative { background: var(--neg); }
+.donut {
+  width: 96px; height: 96px; border-radius: 50%; flex: none; position: relative;
+  display: grid; place-items: center;
+}
+.donut::after { content: ""; position: absolute; inset: 12px; background: var(--surface); border-radius: 50%; }
+.donut span { position: relative; z-index: 1; text-align: center; font-weight: 700; font-size: 17px; line-height: 1.1; }
+.donut small { display: block; font-size: 10px; font-weight: 500; color: var(--muted); }
+.legend { list-style: none; margin: 0; padding: 0; font-size: 12px; color: var(--muted); }
+.legend li { display: flex; align-items: center; gap: 6px; margin: 4px 0; }
+.price-big { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.up { color: var(--pos); } .down { color: var(--neg); }
+.news-item { align-items: flex-start !important; }
+.news-item time { color: var(--muted); font-size: 12px; width: 44px; flex: none; padding-top: 1px; font-variant-numeric: tabular-nums; }
+.news-item .dot { margin-top: 6px; }
+.news-item .head { font-weight: 600; font-size: 13px; color: var(--ink); }
+
+.empty { text-align: center; padding: 28px 16px; color: var(--muted); }
+.disclaimer { font-size: 12px; color: var(--faint); text-align: center; margin: 20px 0 8px; }
+.skeleton { background: linear-gradient(90deg, #eef1f5, #f6f8fb, #eef1f5); border-radius: var(--radius); min-height: 64px; }
+section + section { margin-top: 12px; }
+
+/* เมนูล่าง */
+nav.bottom {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+  background: var(--surface); border-top: 1px solid var(--line);
+  display: flex; justify-content: center; padding-bottom: env(safe-area-inset-bottom);
+}
+nav.bottom a {
+  flex: 1; max-width: 160px; text-align: center; padding: 8px 0 10px;
+  color: var(--faint); font-size: 11px; font-weight: 500;
+}
+nav.bottom a svg { display: block; margin: 0 auto 2px; width: 20px; height: 20px; }
+nav.bottom a[aria-current="page"] { color: var(--brand); font-weight: 700; }
