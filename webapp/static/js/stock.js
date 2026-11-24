@@ -7,8 +7,14 @@ const ticker = decodeURIComponent(location.pathname.split("/").pop()).toUpperCas
 const main = document.getElementById("main");
 document.getElementById("title").textContent = ticker;
 
-// แหล่งข้อมูลของหน้า: prototype ใช้ข้อมูลตัวอย่าง (F5-02 เปลี่ยนเป็น API จริง)
+// แหล่งข้อมูลของหน้า: API จริงจาก Athena (F5-02) — เติม ?mock=1 เพื่อดูข้อมูลตัวอย่าง
+const useMock = new URLSearchParams(location.search).has("mock");
+
 async function loadStock(t) {
+  if (!useMock) {
+    const s = await SS.getJSON(`/api/stock/${encodeURIComponent(t)}`);
+    return { ...s, data_source: `ข้อมูลจริง · Athena ${s.query_seconds} วินาที` };
+  }
   const data = await SS.mock();
   if (!data.stocks[t]) {
     const err = new Error("not found");
@@ -125,5 +131,5 @@ Promise.all([loadStock(ticker), SS.tickers()])
     main.innerHTML =
       e.status === 404
         ? `<div class="card empty">${SS.esc(ticker)} ไม่อยู่ในระบบ<br><br><a class="btn" href="/search">ค้นหาหุ้น</a></div>`
-        : `<div class="card empty">โหลดข้อมูลไม่สำเร็จ (${SS.esc(e.message)})<br><br><button onclick="location.reload()">ลองใหม่</button></div>`;
+        : `<div class="card empty">โหลดข้อมูลไม่สำเร็จ (${SS.esc(e.message)})<br><br><button onclick="location.reload()">ลองใหม่</button>${useMock ? "" : ` <a class="btn btn-outline" href="?mock=1">ดูข้อมูลตัวอย่าง</a>`}</div>`;
   });

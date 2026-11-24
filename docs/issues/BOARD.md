@@ -61,7 +61,7 @@ PRD: [f5-webapp/PRD.md](f5-webapp/PRD.md)
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
 | [F5-01](f5-webapp/issues/01-ui-prototype.md) | Prototype ครบ 4 หน้า + ตัดสินใจเทคโนโลยีเว็บ (ADR) | M2 | PoC (T1/2569) | in-review | `feat/f5-01-ui-prototype` | [#35](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/35) |
-| [F5-02](f5-webapp/issues/02-stock-detail-real-data.md) | Stock Detail PoC ดึงข้อมูลจริงจาก Athena | M2 | PoC (T1/2569) | todo | `feat/f5-02-stock-detail-real-data` | — |
+| [F5-02](f5-webapp/issues/02-stock-detail-real-data.md) | Stock Detail PoC ดึงข้อมูลจริงจาก Athena | M2 | PoC (T1/2569) | in-review | `feat/f5-02-stock-detail-real-data` | [#36](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/36) |
 | [F5-03](f5-webapp/issues/03-search-page.md) | หน้า Search | M2 | Full (T2/2570) | todo | `feat/f5-03-search-page` | — |
 | [F5-04](f5-webapp/issues/04-home-watchlist.md) | หน้า Home (Watchlist) | M2 | Full (T2/2570) | todo | `feat/f5-04-home-watchlist` | — |
 | [F5-05](f5-webapp/issues/05-stock-detail-full.md) | หน้า Stock Detail เต็ม + disclaimer | M2 | Full (T2/2570) | todo | `feat/f5-05-stock-detail-full` | — |

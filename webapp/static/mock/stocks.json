@@ -1,5 +1,5 @@
 {
- "generated_from": "ข่าวจริงจาก collector 20 พ.ย. 2569 + ป้าย FinBERT จริง; ราคาและกราฟรายวันเป็นข้อมูลสุ่ม; headline_th แปลด้วย AI (Claude) สำหรับ prototype",
+ "generated_from": "ข่าวจริงจาก collector 20 พ.ย. 2569 + ป้าย FinBERT จริง; ราคาและกราฟรายวันเป็นข้อมูลสุ่ม; headline_th แปลด้วย AI สำหรับ prototype",
  "stocks": {
   "AAPL": {
    "ticker": "AAPL",
