@@ -136,3 +136,26 @@ def test_client_stops_query_after_timeout():
     with pytest.raises(AthenaError, match="timed out"):
         AthenaClient(cfg, boto).query("SELECT 1")
     assert boto.stopped
+
+
+def test_client_turns_boto_errors_into_athena_error():
+    class NoCredentialsError(Exception):
+        pass
+
+    NoCredentialsError.__module__ = "botocore.exceptions"
+
+    class Broken(FakeBoto):
+        def start_query_execution(self, **kw):
+            raise NoCredentialsError("secret detail")
+
+    with pytest.raises(AthenaError, match="^NoCredentialsError$"):
+        AthenaClient(CFG, Broken(["SUCCEEDED"])).query("SELECT 1")
+
+
+def test_client_does_not_hide_programming_errors():
+    class Broken(FakeBoto):
+        def start_query_execution(self, **kw):
+            raise KeyError("bug")
+
+    with pytest.raises(KeyError):
+        AthenaClient(CFG, Broken(["SUCCEEDED"])).query("SELECT 1")

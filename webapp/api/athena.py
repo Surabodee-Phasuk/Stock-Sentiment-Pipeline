@@ -147,6 +147,17 @@ class AthenaClient:
         self._client = client
 
     def query(self, sql: str) -> list[dict]:
+        try:
+            return self._run(sql)
+        except AthenaError:
+            raise
+        except Exception as exc:
+            # boto3: ไม่มี credential, ไม่มีสิทธิ์, เครือข่ายล้ม → API ตอบ 503 ไม่ใช่ 500
+            if type(exc).__module__.startswith(("botocore", "boto3")):
+                raise AthenaError(type(exc).__name__) from exc
+            raise
+
+    def _run(self, sql: str) -> list[dict]:
         c = self._client
         qid = c.start_query_execution(
             QueryString=sql,
