@@ -1,6 +1,6 @@
 # F3-01: FinBERT ใน Spark Structured Streaming → `news_sentiment`
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M2  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-3.1  
@@ -48,4 +48,4 @@ news_sentiment[finbert-v1] rows=5 unique (news_id, ticker)=5 duplicates=0
 
 ## Comments
 
-- 2026-11-20 (M2): เพิ่ม `sentiment/finbert.py`, `sentiment/pipeline.py`, `streaming/news_sentiment_job.py` และ service `spark-ml` (`infra/spark/Dockerfile.ml`, นอก File scope เพราะ image เดิมไม่มี torch) ทดสอบ end-to-end ในเครื่องผ่าน ผ่านเกณฑ์ด้วยชุดทดสอบในเครื่อง ผลกับตารางจริงใน Glue จะเติมใน Comments หลังรัน โค้ดเตรียมด้วย Claude Code (เปิดเผยในภาคผนวก ก ของรายงาน)
+- 2026-11-20 (M2): เพิ่ม `sentiment/finbert.py`, `sentiment/pipeline.py`, `streaming/news_sentiment_job.py` และ service `spark-ml` (`infra/spark/Dockerfile.ml`, นอก File scope เพราะ image เดิมไม่มี torch) ทดสอบ end-to-end ในเครื่องผ่าน ผ่านเกณฑ์ด้วยชุดทดสอบในเครื่อง ผลกับตารางจริงใน Glue จะเติมใน Comments หลังรัน

@@ -37,5 +37,5 @@ source_stats=SourceStats(requests=10, retries=0, failures=0, status_counts={200:
 
 ## Comments
 
-- 2026-10-20 (Claude, ขอโดย M1): ใช้ Yahoo chart API (`/v8/finance/chart`) ตรงด้วย urllib แทน yfinance เพื่อไม่ต้องลง pandas และทดสอบด้วย fixture ได้ (endpoint เดียวกับ yfinance ความเสี่ยงใน docs/09 ยังเหมือนเดิม) ดึงย้อนหลัง 7 วันทุกรอบ ไม่เอาแท่งของวันที่ตลาดยังเปิด และ `trade_date` ใช้วันตามเวลานิวยอร์ก
-- 2026-10-25 (Claude, ขอโดย M1): PR #24 merge เข้า `main` แล้ว ปิด issue
+- 2026-10-20 (M1): ใช้ Yahoo chart API (`/v8/finance/chart`) ตรงด้วย urllib แทน yfinance เพื่อไม่ต้องลง pandas และทดสอบด้วย fixture ได้ (endpoint เดียวกับ yfinance ความเสี่ยงใน docs/09 ยังเหมือนเดิม) ดึงย้อนหลัง 7 วันทุกรอบ ไม่เอาแท่งของวันที่ตลาดยังเปิด และ `trade_date` ใช้วันตามเวลานิวยอร์ก
+- 2026-10-25 (M1): PR #24 merge เข้า `main` แล้ว ปิด issue

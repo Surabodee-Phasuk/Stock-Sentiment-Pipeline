@@ -67,6 +67,6 @@ iceberg smoke test passed
   - `infra/spark/smoke_kafka.py`, `infra/spark/smoke_iceberg.py`: สคริปต์ทดสอบ Spark ↔ Kafka และ Spark → Iceberg บน S3
   - `infra/.env.example` และวิธีใช้ใน `infra/README.md`
   - ค้าง: รัน `docker compose up` + produce/consume (acceptance criteria), รัน smoke test ทั้งสอง, แล้วเติม Evidence
-- **2026-10-17 (Claude, ขอโดย M1):** sync `main` แล้ว (รวม INFRA-02 จาก PR #22) ยังไม่ได้รันทดสอบ — Docker daemon ในเครื่องยังไม่เปิด ค้างเหมือนเดิม: `docker compose up` + produce/consume, `smoke_kafka.py`, `smoke_iceberg.py` แล้วเติม Evidence
-- **2026-10-17 (Claude, ขอโดย M1):** รันทดสอบครบ ผ่านทุกขั้น (ดู Evidence) และเปลี่ยนคำสั่ง console producer/consumer ใน `infra/README.md` เป็น `--reader-property` / `--formatter-property` เพราะ `--property` ถูก deprecate ใน Kafka 4.x
-- **2026-10-20 (Claude, ขอโดย M1):** PR #23 merge เข้า `main` แล้ว ปิด issue
+- **2026-10-17 (M1):** sync `main` แล้ว (รวม INFRA-02 จาก PR #22) ยังไม่ได้รันทดสอบ — Docker daemon ในเครื่องยังไม่เปิด ค้างเหมือนเดิม: `docker compose up` + produce/consume, `smoke_kafka.py`, `smoke_iceberg.py` แล้วเติม Evidence
+- **2026-10-17 (M1):** รันทดสอบครบ ผ่านทุกขั้น (ดู Evidence) และเปลี่ยนคำสั่ง console producer/consumer ใน `infra/README.md` เป็น `--reader-property` / `--formatter-property` เพราะ `--property` ถูก deprecate ใน Kafka 4.x
+- **2026-10-20 (M1):** PR #23 merge เข้า `main` แล้ว ปิด issue

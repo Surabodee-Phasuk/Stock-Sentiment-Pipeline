@@ -1,6 +1,6 @@
 # F5-02: Stock Detail PoC ดึงข้อมูลจริงจาก Athena
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M2  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-4.3  

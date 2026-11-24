@@ -1,6 +1,6 @@
 # F2-03: ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M1  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.3, NFR-4  
@@ -47,5 +47,5 @@ clean_news rows=439 unique (news_id, ticker)=439 duplicates=0 duplicate_rate=0.0
 
 ## Comments
 
-- 2026-11-15 (Claude, ขอโดย M1): เขียน `streaming/clean_news_job.py` อ่าน `raw_news` แบบ streaming แล้ว MERGE ลง `clean_news` เฉพาะคีย์ที่ยังไม่มี ตรวจ 3 ข้อ: ฟิลด์ว่าง (`news_id`, `ticker`, `headline`, `url`), เวลาผิดปกติ (`published_at` ว่าง ก่อนปี 2000 หรือเกินเวลาที่โหลด 1 ชั่วโมง), ticker ไม่อยู่ใน `config/tickers.yaml` ค้าง: ทดสอบใน container แล้วรันกับตารางจริง และ query duplicate rate ใน Athena
-- 2026-11-15 (Claude, ขอโดย M1): ทดสอบใน container กับ Iceberg catalog ชั่วคราว ข้อมูลทดสอบ 11 แถว: ซ้ำ 3 แบบ, ฟิลด์ว่าง 2, เวลาผิด 2, ticker นอก config 1 → ไม่รับ 5 แถวตรงเหตุผล, ได้ 3 คีย์, `duplicate_rate=0.00%` รันซ้ำไม่มีอะไรเพิ่ม และเพิ่มข่าวซ้ำกับข่าวใหม่แล้วเพิ่มเฉพาะข่าวใหม่ (inserted=1, already_in_clean=1) ข่าวที่เจอหลายแหล่งเก็บแหล่งแรก ค้าง: รันกับตารางจริงแล้วเติม Evidence
+- 2026-11-15 (M1): เขียน `streaming/clean_news_job.py` อ่าน `raw_news` แบบ streaming แล้ว MERGE ลง `clean_news` เฉพาะคีย์ที่ยังไม่มี ตรวจ 3 ข้อ: ฟิลด์ว่าง (`news_id`, `ticker`, `headline`, `url`), เวลาผิดปกติ (`published_at` ว่าง ก่อนปี 2000 หรือเกินเวลาที่โหลด 1 ชั่วโมง), ticker ไม่อยู่ใน `config/tickers.yaml` ค้าง: ทดสอบใน container แล้วรันกับตารางจริง และ query duplicate rate ใน Athena
+- 2026-11-15 (M1): ทดสอบใน container กับ Iceberg catalog ชั่วคราว ข้อมูลทดสอบ 11 แถว: ซ้ำ 3 แบบ, ฟิลด์ว่าง 2, เวลาผิด 2, ticker นอก config 1 → ไม่รับ 5 แถวตรงเหตุผล, ได้ 3 คีย์, `duplicate_rate=0.00%` รันซ้ำไม่มีอะไรเพิ่ม และเพิ่มข่าวซ้ำกับข่าวใหม่แล้วเพิ่มเฉพาะข่าวใหม่ (inserted=1, already_in_clean=1) ข่าวที่เจอหลายแหล่งเก็บแหล่งแรก ค้าง: รันกับตารางจริงแล้วเติม Evidence

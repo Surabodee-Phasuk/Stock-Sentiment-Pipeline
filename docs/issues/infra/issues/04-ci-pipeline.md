@@ -44,4 +44,4 @@ $ pytest
 
 ## Comments
 
-- 2026-11-20 (M1): เพิ่ม `pyproject.toml` (ruff + pytest + dependency groups) และ workflow `CI` job `lint-test` โค้ดเตรียมด้วย Claude Code (เปิดเผยในภาคผนวก ก ของรายงาน) รอเจ้าของ repo ตั้ง branch protection
+- 2026-11-20 (M1): เพิ่ม `pyproject.toml` (ruff + pytest + dependency groups) และ workflow `CI` job `lint-test` รอเจ้าของ repo ตั้ง branch protection

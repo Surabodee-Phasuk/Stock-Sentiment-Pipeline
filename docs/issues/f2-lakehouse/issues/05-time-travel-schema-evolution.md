@@ -1,11 +1,11 @@
 # F2-05: สาธิต time travel และ schema evolution
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M1  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.5  
 **Branch:** `exp/f2-05-time-travel-schema-evolution`  
-**PR:** —
+**PR:** [#29](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/29)
 
 ## งาน
 
@@ -48,4 +48,4 @@ rows now                                                    = 696
 
 ## Comments
 
-- 2026-11-15 (Claude, ขอโดย M1): เขียนสคริปต์สาธิตและ query Athena ทดสอบใน container กับ Iceberg catalog ชั่วคราว: time travel ทั้ง `VERSION AS OF` และ `TIMESTAMP AS OF` ได้จำนวนแถวตรงทุกเวอร์ชัน (v1=30, v2=40, v3=30 หลังลบ TSLA), เพิ่มและเปลี่ยนชื่อคอลัมน์แล้ว data files 1 → 1 และไม่มี snapshot ใหม่, เวอร์ชันเก่ายังเห็น schema เดิม, rollback กลับ v2 ได้ ค้าง: รันกับ `raw_news` จริงแล้วเติม Evidence
+- 2026-11-15 (M1): เขียนสคริปต์สาธิตและ query Athena ทดสอบใน container กับ Iceberg catalog ชั่วคราว: time travel ทั้ง `VERSION AS OF` และ `TIMESTAMP AS OF` ได้จำนวนแถวตรงทุกเวอร์ชัน (v1=30, v2=40, v3=30 หลังลบ TSLA), เพิ่มและเปลี่ยนชื่อคอลัมน์แล้ว data files 1 → 1 และไม่มี snapshot ใหม่, เวอร์ชันเก่ายังเห็น schema เดิม, rollback กลับ v2 ได้ ค้าง: รันกับ `raw_news` จริงแล้วเติม Evidence

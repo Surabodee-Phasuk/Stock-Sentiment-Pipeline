@@ -1,6 +1,6 @@
 # F3-02: PoC: F1 บน 100 ข่าว และ throughput
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M2  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-3.1  
@@ -63,5 +63,5 @@ Confusion matrix (แถว = gold, คอลัมน์ = FinBERT)
 
 ## Comments
 
-- 2026-11-20 (M2): เพิ่ม `sentiment/eval/sample_goldset.py`, `sentiment/eval/evaluate.py` และชุด 100 ข่าว `sentiment/goldset/poc_100.csv` (ยังไม่มีป้าย) วัด throughput แล้ว 19.2 ข่าว/วินาที รอคนติดป้ายเพื่อวัด F1 โค้ดเตรียมด้วย Claude Code (เปิดเผยในภาคผนวก ก ของรายงาน)
+- 2026-11-20 (M2): เพิ่ม `sentiment/eval/sample_goldset.py`, `sentiment/eval/evaluate.py` และชุด 100 ข่าว `sentiment/goldset/poc_100.csv` (ยังไม่มีป้าย) วัด throughput แล้ว 19.2 ข่าว/วินาที รอคนติดป้ายเพื่อวัด F1
 - 2026-11-22 (M1): ติดป้ายครบ 100 ข่าวแล้ววัดผล Macro-F1 0.476, throughput 29.1 ข่าว/วินาที (ตัวเลข 19.2 ข่าว/วินาทีของวันที่ 20 พ.ย. เป็นการวัดรอบก่อนติดป้าย ใช้ผลรอบนี้แทน)

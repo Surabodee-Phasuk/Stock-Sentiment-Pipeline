@@ -36,7 +36,7 @@
 - Rate limit ของ Yahoo Finance RSS: ยิงติดกัน 50 request โดยไม่เว้นระยะ (22 วินาที) ได้ HTTP 200 ทั้งหมด ไม่เจอ 429 รอบละ 10 request ทุก 5–15 นาทีจึงต่ำกว่าขีดจำกัดมาก Yahoo ไม่ประกาศ limit อย่างเป็นทางการ จึงยังมี retry + backoff (เคารพ `Retry-After`) ไว้
 
 ## Comments
-- 2026-10-05 (Claude, ขอโดย M1): ใช้ Yahoo Finance RSS เป็นแหล่งแรก (ไม่ต้องมี key) แหล่งอื่นอยู่ใน F1-03 ใส่ dependency ไว้ที่ `ingestion/news/requirements.txt` ชั่วคราวจนกว่า INFRA-04 จะมี `pyproject.toml` และเพิ่ม `ingestion/__init__.py` (นอก File scope) เพื่อให้ import `ingestion.news` ได้
-- 2026-10-05 (Claude, ขอโดย M1): **ต้องตัดสินใจก่อน F2-03:** ข่าวชิ้นเดียวอยู่ได้หลาย ticker (เจอ 14/169) ถ้า `clean_news` MERGE ด้วย `news_id` อย่างเดียวจะเหลือ ticker เดียว ควรใช้ key `(news_id, ticker)` หรือแยกตาราง mapping
-- 2026-10-06 (Claude, ขอโดย M1): เปลี่ยนรายชื่อหุ้นเป็น Magnificent 7 + AVGO, RKLB, SPCX หุ้นกลุ่มเดียวกันทำให้ข่าวซ้ำข้าม ticker เพิ่มเป็น 27/125 (เดิม 14/169) — ประเด็น MERGE key ด้านบนยิ่งสำคัญ
-- 2026-10-11 (Claude, ขอโดย M1): PR #4 merge เข้า `main` แล้ว (2026-10-10) เปลี่ยน Status เป็น done และใส่ลิงก์ PR ย้อนหลังใน branch ของ INFRA-03 ส่วนการทดสอบส่งเข้า Kafka จริงจะทำใน INFRA-03
+- 2026-10-05 (M1): ใช้ Yahoo Finance RSS เป็นแหล่งแรก (ไม่ต้องมี key) แหล่งอื่นอยู่ใน F1-03 ใส่ dependency ไว้ที่ `ingestion/news/requirements.txt` ชั่วคราวจนกว่า INFRA-04 จะมี `pyproject.toml` และเพิ่ม `ingestion/__init__.py` (นอก File scope) เพื่อให้ import `ingestion.news` ได้
+- 2026-10-05 (M1): **ต้องตัดสินใจก่อน F2-03:** ข่าวชิ้นเดียวอยู่ได้หลาย ticker (เจอ 14/169) ถ้า `clean_news` MERGE ด้วย `news_id` อย่างเดียวจะเหลือ ticker เดียว ควรใช้ key `(news_id, ticker)` หรือแยกตาราง mapping
+- 2026-10-06 (M1): เปลี่ยนรายชื่อหุ้นเป็น Magnificent 7 + AVGO, RKLB, SPCX หุ้นกลุ่มเดียวกันทำให้ข่าวซ้ำข้าม ticker เพิ่มเป็น 27/125 (เดิม 14/169) — ประเด็น MERGE key ด้านบนยิ่งสำคัญ
+- 2026-10-11 (M1): PR #4 merge เข้า `main` แล้ว (2026-10-10) เปลี่ยน Status เป็น done และใส่ลิงก์ PR ย้อนหลังใน branch ของ INFRA-03 ส่วนการทดสอบส่งเข้า Kafka จริงจะทำใน INFRA-03

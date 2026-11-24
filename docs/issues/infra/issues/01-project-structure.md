@@ -31,5 +31,5 @@
 - มี README ทุกโฟลเดอร์ระดับบน, docs 00–11, ADR 0001–0006, BOARD, PR/issue template และ `.gitignore` ครอบคลุม `.env`
 
 ## Comments
-- 2026-10-03 (Claude, ขอโดย M1): วางโครงสร้างนี้ก่อนที่กฎ branch จะมีผล จึงทำบน branch ของ session `claude/wizardly-brahmagupta-lgsdtm` แทน `chore/infra-01-project-structure` — เป็นข้อยกเว้นครั้งเดียว งานต่อจากนี้ใช้ชื่อตาม BOARD
-- 2026-10-04 (Claude, ขอโดย M1): ปิด issue หลัง merge PR #2 และเพิ่มชื่ออาจารย์ที่ปรึกษา — รอ M2 ยืนยันการตกลง agents.md ใน review ของ PR นี้
+- 2026-10-03 (M1): วางโครงสร้างนี้ก่อนที่กฎ branch จะมีผล จึงทำบน branch ของ session `wizardly-brahmagupta-lgsdtm` แทน `chore/infra-01-project-structure` — เป็นข้อยกเว้นครั้งเดียว งานต่อจากนี้ใช้ชื่อตาม BOARD
+- 2026-10-04 (M1): ปิด issue หลัง merge PR #2 และเพิ่มชื่ออาจารย์ที่ปรึกษา — รอ M2 ยืนยันการตกลง agents.md ใน review ของ PR นี้

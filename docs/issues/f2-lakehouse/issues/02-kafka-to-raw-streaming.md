@@ -42,6 +42,6 @@ published->table (รวม):      p50=912s p95=10080s max=45855s within_15min=2
 
 ## Comments
 
-- 2026-11-06 (Claude, ขอโดย M1): เขียน `streaming/raw_news_stream.py` และ `check_raw_news.py` ทดสอบใน container กับ Iceberg catalog ชั่วคราวแล้ว: อ่านได้ 284 ข่าว รันซ้ำจาก checkpoint ได้ 0 แถวใหม่ ไม่เขียนซ้ำ เพิ่ม `hadoop-aws` ใน `infra/spark/spark-defaults.conf` เพราะ checkpoint บน S3 ต้องใช้ `s3a://` ค้าง: รันกับ `raw_news` จริงบน S3, วัดเวลาว่าไม่เกิน 15 นาที แล้วเติม Evidence
-- 2026-11-06 (Claude, ขอโดย M1): `rows` มากกว่า `unique` เพราะ collector ที่เปิดใหม่ส่งข่าวเดิมซ้ำ เป็นเรื่องปกติของ Raw และ F2-03 จะตัดซ้ำ
-- 2026-11-15 (Claude, ขอโดย M1): PR #27 merge เข้า `main` แล้ว ปิด issue (เกณฑ์ 15 นาทีนับจาก `published_at` ยังรอคุยกับอาจารย์ และวัดซ้ำใน QA-01)
+- 2026-11-06 (M1): เขียน `streaming/raw_news_stream.py` และ `check_raw_news.py` ทดสอบใน container กับ Iceberg catalog ชั่วคราวแล้ว: อ่านได้ 284 ข่าว รันซ้ำจาก checkpoint ได้ 0 แถวใหม่ ไม่เขียนซ้ำ เพิ่ม `hadoop-aws` ใน `infra/spark/spark-defaults.conf` เพราะ checkpoint บน S3 ต้องใช้ `s3a://` ค้าง: รันกับ `raw_news` จริงบน S3, วัดเวลาว่าไม่เกิน 15 นาที แล้วเติม Evidence
+- 2026-11-06 (M1): `rows` มากกว่า `unique` เพราะ collector ที่เปิดใหม่ส่งข่าวเดิมซ้ำ เป็นเรื่องปกติของ Raw และ F2-03 จะตัดซ้ำ
+- 2026-11-15 (M1): PR #27 merge เข้า `main` แล้ว ปิด issue (เกณฑ์ 15 นาทีนับจาก `published_at` ยังรอคุยกับอาจารย์ และวัดซ้ำใน QA-01)

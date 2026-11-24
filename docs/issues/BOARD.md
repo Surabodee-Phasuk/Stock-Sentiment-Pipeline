@@ -31,9 +31,9 @@ PRD: [f2-lakehouse/PRD.md](f2-lakehouse/PRD.md)
 |---|---|---|---|---|---|---|
 | [F2-01](f2-lakehouse/issues/01-iceberg-tables.md) | DDL ตาราง Iceberg ทั้งสามชั้นใน Glue | M1 | PoC (T1/2569) | done | `feat/f2-01-iceberg-tables` | [#26](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/26) |
 | [F2-02](f2-lakehouse/issues/02-kafka-to-raw-streaming.md) | Spark Structured Streaming: Kafka → `raw_news` พร้อม checkpoint | M1 | PoC (T1/2569) | done | `feat/f2-02-kafka-to-raw-streaming` | [#27](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/27) |
-| [F2-03](f2-lakehouse/issues/03-dedup-to-cleaned.md) | ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE | M1 | PoC (T1/2569) | in-review | `feat/f2-03-dedup-to-cleaned` | [#28](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/28) |
-| [F2-04](f2-lakehouse/issues/04-price-batch-load.md) | Spark batch: ราคาปิด → `raw_daily_price` / `daily_price` | M2 | PoC (T1/2569) | in-review | `feat/f2-04-price-batch-load` | [#31](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/31) |
-| [F2-05](f2-lakehouse/issues/05-time-travel-schema-evolution.md) | สาธิต time travel และ schema evolution | M1 | PoC (T1/2569) | in-review | `exp/f2-05-time-travel-schema-evolution` | — |
+| [F2-03](f2-lakehouse/issues/03-dedup-to-cleaned.md) | ตัดข่าวซ้ำ: `raw_news` → `clean_news` ด้วย MERGE | M1 | PoC (T1/2569) | done | `feat/f2-03-dedup-to-cleaned` | [#28](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/28) |
+| [F2-04](f2-lakehouse/issues/04-price-batch-load.md) | Spark batch: ราคาปิด → `raw_daily_price` / `daily_price` | M2 | PoC (T1/2569) | done | `feat/f2-04-price-batch-load` | [#31](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/31) |
+| [F2-05](f2-lakehouse/issues/05-time-travel-schema-evolution.md) | สาธิต time travel และ schema evolution | M1 | PoC (T1/2569) | done | `exp/f2-05-time-travel-schema-evolution` | [#29](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/29) |
 | [F2-06](f2-lakehouse/issues/06-scale-50-tickers.md) | ขยาย pipeline เป็น ~50 หุ้นและข้อมูลตั้งแต่ 2020 | M1 | Full (T2/2570) | todo | `feat/f2-06-scale-50-tickers` | — |
 | [F2-07](f2-lakehouse/issues/07-partition-benchmark.md) | Benchmark partition และล็อก partition spec | M1 | Full (T2/2570) | todo | `test/f2-07-partition-benchmark` | — |
 
@@ -42,10 +42,10 @@ PRD: [f3-sentiment/PRD.md](f3-sentiment/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F3-01](f3-sentiment/issues/01-finbert-streaming.md) | FinBERT ใน Spark Structured Streaming → `news_sentiment` | M2 | PoC (T1/2569) | in-review | `feat/f3-01-finbert-streaming` | [#32](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/32) |
-| [F3-02](f3-sentiment/issues/02-finbert-poc-benchmark.md) | PoC: F1 บน 100 ข่าว และ throughput | M2 | PoC (T1/2569) | in-review | `exp/f3-02-finbert-poc-benchmark` | [#34](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/34) |
+| [F3-01](f3-sentiment/issues/01-finbert-streaming.md) | FinBERT ใน Spark Structured Streaming → `news_sentiment` | M2 | PoC (T1/2569) | done | `feat/f3-01-finbert-streaming` | [#32](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/32) |
+| [F3-02](f3-sentiment/issues/02-finbert-poc-benchmark.md) | PoC: F1 บน 100 ข่าว และ throughput | M2 | PoC (T1/2569) | done | `exp/f3-02-finbert-poc-benchmark` | [#34](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/34) |
 | [F3-03](f3-sentiment/issues/03-goldset-300-eval.md) | Gold set 300 ข่าว: ติดป้ายแยกกัน, Cohen's kappa, Macro-F1 | M1+M2 | Full (T2/2570) | todo | `test/f3-03-goldset-300-eval` | — |
-| [F3-04](f3-sentiment/issues/04-reprocess-from-raw.md) | Reprocess sentiment ทั้งหมดจาก Raw เมื่อเปลี่ยน `model_version` | M2 | PoC (T1/2569) | in-review | `feat/f3-04-reprocess-from-raw` | [#33](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/33) |
+| [F3-04](f3-sentiment/issues/04-reprocess-from-raw.md) | Reprocess sentiment ทั้งหมดจาก Raw เมื่อเปลี่ยน `model_version` | M2 | PoC (T1/2569) | done | `feat/f3-04-reprocess-from-raw` | [#33](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/33) |
 
 ## F4 — Aggregation & Serving API
 PRD: [f4-aggregation/PRD.md](f4-aggregation/PRD.md)
@@ -60,8 +60,8 @@ PRD: [f5-webapp/PRD.md](f5-webapp/PRD.md)
 
 | ID | งาน | Owner | Phase | Status | Branch | PR |
 |---|---|---|---|---|---|---|
-| [F5-01](f5-webapp/issues/01-ui-prototype.md) | Prototype ครบ 4 หน้า + ตัดสินใจเทคโนโลยีเว็บ (ADR) | M2 | PoC (T1/2569) | in-review | `feat/f5-01-ui-prototype` | [#35](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/35) |
-| [F5-02](f5-webapp/issues/02-stock-detail-real-data.md) | Stock Detail PoC ดึงข้อมูลจริงจาก Athena | M2 | PoC (T1/2569) | in-review | `feat/f5-02-stock-detail-real-data` | [#36](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/36) |
+| [F5-01](f5-webapp/issues/01-ui-prototype.md) | Prototype ครบ 4 หน้า + ตัดสินใจเทคโนโลยีเว็บ (ADR) | M2 | PoC (T1/2569) | done | `feat/f5-01-ui-prototype` | [#35](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/35) |
+| [F5-02](f5-webapp/issues/02-stock-detail-real-data.md) | Stock Detail PoC ดึงข้อมูลจริงจาก Athena | M2 | PoC (T1/2569) | done | `feat/f5-02-stock-detail-real-data` | [#36](https://github.com/Surabodee-Phasuk/Stock-Sentiment-Pipeline/pull/36) |
 | [F5-03](f5-webapp/issues/03-search-page.md) | หน้า Search | M2 | Full (T2/2570) | todo | `feat/f5-03-search-page` | — |
 | [F5-04](f5-webapp/issues/04-home-watchlist.md) | หน้า Home (Watchlist) | M2 | Full (T2/2570) | todo | `feat/f5-04-home-watchlist` | — |
 | [F5-05](f5-webapp/issues/05-stock-detail-full.md) | หน้า Stock Detail เต็ม + disclaimer | M2 | Full (T2/2570) | todo | `feat/f5-05-stock-detail-full` | — |

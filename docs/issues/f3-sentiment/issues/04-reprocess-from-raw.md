@@ -1,6 +1,6 @@
 # F3-04: Reprocess sentiment ทั้งหมดจาก Raw เมื่อเปลี่ยน `model_version`
 
-**Status:** in-review  
+**Status:** done  
 **Owner:** M2  
 **Phase:** PoC (T1/2569)  
 **Refs:** FR-2.6  
@@ -41,4 +41,4 @@ reprocess ProsusAI/finbert as finbert-v2: scored=0 inserted=0 skipped_existing=5
 
 ## Comments
 
-- 2026-11-20 (M2): เพิ่ม `batch/reprocess/reprocess_sentiment.py` ใช้ขั้นตอนร่วม `sentiment/pipeline.py` จาก F3-01 สาธิตกับชุดทดสอบในเครื่องผ่าน ผ่านเกณฑ์ด้วยชุดทดสอบในเครื่อง ผลกับตารางจริงใน Glue จะเติมใน Comments หลังรัน โค้ดเตรียมด้วย Claude Code (เปิดเผยในภาคผนวก ก ของรายงาน)
+- 2026-11-20 (M2): เพิ่ม `batch/reprocess/reprocess_sentiment.py` ใช้ขั้นตอนร่วม `sentiment/pipeline.py` จาก F3-01 สาธิตกับชุดทดสอบในเครื่องผ่าน ผ่านเกณฑ์ด้วยชุดทดสอบในเครื่อง ผลกับตารางจริงใน Glue จะเติมใน Comments หลังรัน
